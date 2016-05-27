@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Mine_IntegralViewController">
+            <connections>
+                <outlet property="tableView" destination="faL-c1-TEX" id="GbT-DP-mVY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="faL-c1-TEX">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mgw-Tu-Z8E"/>
+                        <outlet property="delegate" destination="-1" id="hzD-8w-8h8"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="faL-c1-TEX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FKG-Xk-1Dm"/>
+                <constraint firstAttribute="bottom" secondItem="faL-c1-TEX" secondAttribute="bottom" id="LyP-tr-Iha"/>
+                <constraint firstItem="faL-c1-TEX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="khf-k9-Ltj"/>
+                <constraint firstAttribute="trailing" secondItem="faL-c1-TEX" secondAttribute="trailing" id="r6j-9S-bMA"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
