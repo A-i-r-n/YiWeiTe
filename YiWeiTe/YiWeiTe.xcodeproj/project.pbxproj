@@ -8,16 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7E63C50875AB11B8D0AF354D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3124C9CABFF9D76AD554826 /* libPods.a */; };
-		BC1BDA941CED59C50067F08A /* Integral_ScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1BDA891CED59C50067F08A /* Integral_ScrollTableViewCell.m */; };
-		BC1BDA951CED59C50067F08A /* Integral_ScrollTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1BDA8A1CED59C50067F08A /* Integral_ScrollTableViewCell.xib */; };
-		BC1BDA961CED59C50067F08A /* Integral_ThreeBtnTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1BDA8C1CED59C50067F08A /* Integral_ThreeBtnTableViewCell.m */; };
-		BC1BDA971CED59C50067F08A /* Integral_ThreeBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1BDA8D1CED59C50067F08A /* Integral_ThreeBtnTableViewCell.xib */; };
-		BC1BDA981CED59C50067F08A /* Integral_NotificateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1BDA8F1CED59C50067F08A /* Integral_NotificateTableViewCell.m */; };
-		BC1BDA991CED59C50067F08A /* Integral_NotificateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1BDA901CED59C50067F08A /* Integral_NotificateTableViewCell.xib */; };
-		BC1BDA9A1CED59C50067F08A /* Integral_ChoujiangTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1BDA921CED59C50067F08A /* Integral_ChoujiangTableViewCell.m */; };
-		BC1BDA9B1CED59C50067F08A /* Integral_ChoujiangTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1BDA931CED59C50067F08A /* Integral_ChoujiangTableViewCell.xib */; };
-		BC1BDA9F1CED918B0067F08A /* ChoujiangCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1BDA9D1CED918B0067F08A /* ChoujiangCollectionViewCell.m */; };
-		BC1BDAA01CED918B0067F08A /* ChoujiangCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1BDA9E1CED918B0067F08A /* ChoujiangCollectionViewCell.xib */; };
 		BC4B0CEF1CF68B0E00B53927 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CEE1CF68B0E00B53927 /* MyButton.m */; };
 		BC4B0CF21CF68B3700B53927 /* MessageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CF11CF68B3700B53927 /* MessageButton.m */; };
 		BC4B0CF71CF6DA2200B53927 /* Cate_ScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CF51CF6DA2200B53927 /* Cate_ScrollTableViewCell.m */; };
@@ -160,6 +150,16 @@
 		BCC1E1AC1CF8078C00C4261F /* cart_default_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC1E1A51CF8078C00C4261F /* cart_default_bg.png */; };
 		BCC1E1AD1CF8078C00C4261F /* cart_selected_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC1E1A61CF8078C00C4261F /* cart_selected_btn@2x.png */; };
 		BCC1E1AE1CF8078C00C4261F /* cart_unSelect_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC1E1A71CF8078C00C4261F /* cart_unSelect_btn@2x.png */; };
+		BCC25AB31CF8343600B5DAF9 /* Integral_ScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC25AA51CF8343600B5DAF9 /* Integral_ScrollTableViewCell.m */; };
+		BCC25AB41CF8343600B5DAF9 /* Integral_ScrollTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC25AA61CF8343600B5DAF9 /* Integral_ScrollTableViewCell.xib */; };
+		BCC25AB51CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC25AA81CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.m */; };
+		BCC25AB61CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC25AA91CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.xib */; };
+		BCC25AB71CF8343600B5DAF9 /* Integral_NotificateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC25AAB1CF8343600B5DAF9 /* Integral_NotificateTableViewCell.m */; };
+		BCC25AB81CF8343600B5DAF9 /* Integral_NotificateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC25AAC1CF8343600B5DAF9 /* Integral_NotificateTableViewCell.xib */; };
+		BCC25AB91CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC25AAE1CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.m */; };
+		BCC25ABA1CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC25AAF1CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.xib */; };
+		BCC25ABB1CF8343600B5DAF9 /* ChoujiangCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC25AB11CF8343600B5DAF9 /* ChoujiangCollectionViewCell.m */; };
+		BCC25ABC1CF8343600B5DAF9 /* ChoujiangCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC25AB21CF8343600B5DAF9 /* ChoujiangCollectionViewCell.xib */; };
 		BCD4FE321CF2D4B9001B9121 /* BalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD4FE301CF2D4B9001B9121 /* BalanceViewController.m */; };
 		BCD4FE331CF2D4B9001B9121 /* BalanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD4FE311CF2D4B9001B9121 /* BalanceViewController.xib */; };
 		BCD4FE371CF2D4D5001B9121 /* BankcardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD4FE351CF2D4D5001B9121 /* BankcardViewController.m */; };
@@ -226,21 +226,6 @@
 /* Begin PBXFileReference section */
 		62BA95DFFFC57FC44D56C736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B3124C9CABFF9D76AD554826 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC1BDA881CED59C50067F08A /* Integral_ScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Integral_ScrollTableViewCell.h; sourceTree = "<group>"; };
-		BC1BDA891CED59C50067F08A /* Integral_ScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Integral_ScrollTableViewCell.m; sourceTree = "<group>"; };
-		BC1BDA8A1CED59C50067F08A /* Integral_ScrollTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Integral_ScrollTableViewCell.xib; sourceTree = "<group>"; };
-		BC1BDA8B1CED59C50067F08A /* Integral_ThreeBtnTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Integral_ThreeBtnTableViewCell.h; sourceTree = "<group>"; };
-		BC1BDA8C1CED59C50067F08A /* Integral_ThreeBtnTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Integral_ThreeBtnTableViewCell.m; sourceTree = "<group>"; };
-		BC1BDA8D1CED59C50067F08A /* Integral_ThreeBtnTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Integral_ThreeBtnTableViewCell.xib; sourceTree = "<group>"; };
-		BC1BDA8E1CED59C50067F08A /* Integral_NotificateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Integral_NotificateTableViewCell.h; sourceTree = "<group>"; };
-		BC1BDA8F1CED59C50067F08A /* Integral_NotificateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Integral_NotificateTableViewCell.m; sourceTree = "<group>"; };
-		BC1BDA901CED59C50067F08A /* Integral_NotificateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Integral_NotificateTableViewCell.xib; sourceTree = "<group>"; };
-		BC1BDA911CED59C50067F08A /* Integral_ChoujiangTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Integral_ChoujiangTableViewCell.h; sourceTree = "<group>"; };
-		BC1BDA921CED59C50067F08A /* Integral_ChoujiangTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Integral_ChoujiangTableViewCell.m; sourceTree = "<group>"; };
-		BC1BDA931CED59C50067F08A /* Integral_ChoujiangTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Integral_ChoujiangTableViewCell.xib; sourceTree = "<group>"; };
-		BC1BDA9C1CED918B0067F08A /* ChoujiangCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoujiangCollectionViewCell.h; sourceTree = "<group>"; };
-		BC1BDA9D1CED918B0067F08A /* ChoujiangCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoujiangCollectionViewCell.m; sourceTree = "<group>"; };
-		BC1BDA9E1CED918B0067F08A /* ChoujiangCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoujiangCollectionViewCell.xib; sourceTree = "<group>"; };
 		BC4B0CED1CF68B0E00B53927 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
 		BC4B0CEE1CF68B0E00B53927 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		BC4B0CF01CF68B3700B53927 /* MessageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageButton.h; sourceTree = "<group>"; };
@@ -468,6 +453,21 @@
 		BCC1E1A51CF8078C00C4261F /* cart_default_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart_default_bg.png; sourceTree = "<group>"; };
 		BCC1E1A61CF8078C00C4261F /* cart_selected_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_selected_btn@2x.png"; sourceTree = "<group>"; };
 		BCC1E1A71CF8078C00C4261F /* cart_unSelect_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart_unSelect_btn@2x.png"; sourceTree = "<group>"; };
+		BCC25AA41CF8343600B5DAF9 /* Integral_ScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Integral_ScrollTableViewCell.h; sourceTree = "<group>"; };
+		BCC25AA51CF8343600B5DAF9 /* Integral_ScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Integral_ScrollTableViewCell.m; sourceTree = "<group>"; };
+		BCC25AA61CF8343600B5DAF9 /* Integral_ScrollTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Integral_ScrollTableViewCell.xib; sourceTree = "<group>"; };
+		BCC25AA71CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Integral_ThreeBtnTableViewCell.h; sourceTree = "<group>"; };
+		BCC25AA81CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Integral_ThreeBtnTableViewCell.m; sourceTree = "<group>"; };
+		BCC25AA91CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Integral_ThreeBtnTableViewCell.xib; sourceTree = "<group>"; };
+		BCC25AAA1CF8343600B5DAF9 /* Integral_NotificateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Integral_NotificateTableViewCell.h; sourceTree = "<group>"; };
+		BCC25AAB1CF8343600B5DAF9 /* Integral_NotificateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Integral_NotificateTableViewCell.m; sourceTree = "<group>"; };
+		BCC25AAC1CF8343600B5DAF9 /* Integral_NotificateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Integral_NotificateTableViewCell.xib; sourceTree = "<group>"; };
+		BCC25AAD1CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Integral_ChoujiangTableViewCell.h; sourceTree = "<group>"; };
+		BCC25AAE1CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Integral_ChoujiangTableViewCell.m; sourceTree = "<group>"; };
+		BCC25AAF1CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Integral_ChoujiangTableViewCell.xib; sourceTree = "<group>"; };
+		BCC25AB01CF8343600B5DAF9 /* ChoujiangCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoujiangCollectionViewCell.h; sourceTree = "<group>"; };
+		BCC25AB11CF8343600B5DAF9 /* ChoujiangCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoujiangCollectionViewCell.m; sourceTree = "<group>"; };
+		BCC25AB21CF8343600B5DAF9 /* ChoujiangCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoujiangCollectionViewCell.xib; sourceTree = "<group>"; };
 		BCD4FE2F1CF2D4B9001B9121 /* BalanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceViewController.h; sourceTree = "<group>"; };
 		BCD4FE301CF2D4B9001B9121 /* BalanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceViewController.m; sourceTree = "<group>"; };
 		BCD4FE311CF2D4B9001B9121 /* BalanceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BalanceViewController.xib; sourceTree = "<group>"; };
@@ -1029,21 +1029,21 @@
 				BC78451D1CEB09710017C25D /* ShopTableViewCell.h */,
 				BC78451E1CEB09710017C25D /* ShopTableViewCell.m */,
 				BC78451F1CEB09710017C25D /* ShopTableViewCell.xib */,
-				BC1BDA881CED59C50067F08A /* Integral_ScrollTableViewCell.h */,
-				BC1BDA891CED59C50067F08A /* Integral_ScrollTableViewCell.m */,
-				BC1BDA8A1CED59C50067F08A /* Integral_ScrollTableViewCell.xib */,
-				BC1BDA8B1CED59C50067F08A /* Integral_ThreeBtnTableViewCell.h */,
-				BC1BDA8C1CED59C50067F08A /* Integral_ThreeBtnTableViewCell.m */,
-				BC1BDA8D1CED59C50067F08A /* Integral_ThreeBtnTableViewCell.xib */,
-				BC1BDA8E1CED59C50067F08A /* Integral_NotificateTableViewCell.h */,
-				BC1BDA8F1CED59C50067F08A /* Integral_NotificateTableViewCell.m */,
-				BC1BDA901CED59C50067F08A /* Integral_NotificateTableViewCell.xib */,
-				BC1BDA911CED59C50067F08A /* Integral_ChoujiangTableViewCell.h */,
-				BC1BDA921CED59C50067F08A /* Integral_ChoujiangTableViewCell.m */,
-				BC1BDA931CED59C50067F08A /* Integral_ChoujiangTableViewCell.xib */,
-				BC1BDA9C1CED918B0067F08A /* ChoujiangCollectionViewCell.h */,
-				BC1BDA9D1CED918B0067F08A /* ChoujiangCollectionViewCell.m */,
-				BC1BDA9E1CED918B0067F08A /* ChoujiangCollectionViewCell.xib */,
+				BCC25AA41CF8343600B5DAF9 /* Integral_ScrollTableViewCell.h */,
+				BCC25AA51CF8343600B5DAF9 /* Integral_ScrollTableViewCell.m */,
+				BCC25AA61CF8343600B5DAF9 /* Integral_ScrollTableViewCell.xib */,
+				BCC25AA71CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.h */,
+				BCC25AA81CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.m */,
+				BCC25AA91CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.xib */,
+				BCC25AAA1CF8343600B5DAF9 /* Integral_NotificateTableViewCell.h */,
+				BCC25AAB1CF8343600B5DAF9 /* Integral_NotificateTableViewCell.m */,
+				BCC25AAC1CF8343600B5DAF9 /* Integral_NotificateTableViewCell.xib */,
+				BCC25AAD1CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.h */,
+				BCC25AAE1CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.m */,
+				BCC25AAF1CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.xib */,
+				BCC25AB01CF8343600B5DAF9 /* ChoujiangCollectionViewCell.h */,
+				BCC25AB11CF8343600B5DAF9 /* ChoujiangCollectionViewCell.m */,
+				BCC25AB21CF8343600B5DAF9 /* ChoujiangCollectionViewCell.xib */,
 				BC7210F11CEC53AC00A43681 /* MineCollectionViewCell.h */,
 				BC7210F21CEC53AC00A43681 /* MineCollectionViewCell.m */,
 				BC7210F31CEC53AC00A43681 /* MineCollectionViewCell.xib */,
@@ -1698,7 +1698,6 @@
 				BC7A6C561CE561C30065E59B /* ReleaseTableViewCell.xib in Resources */,
 				BC7844D11CEABA650017C25D /* MyOrder_RefundViewController.xib in Resources */,
 				BC4B0CF81CF6DA2200B53927 /* Cate_ScrollTableViewCell.xib in Resources */,
-				BC1BDAA01CED918B0067F08A /* ChoujiangCollectionViewCell.xib in Resources */,
 				BCA0B3AD1CE1A4C7004AEC11 /* MyTreasureViewController.xib in Resources */,
 				BC7A6C351CE433270065E59B /* TrackViewController.xib in Resources */,
 				BCD4FEC81CF552B5001B9121 /* Two_LeftViewController.xib in Resources */,
@@ -1717,11 +1716,9 @@
 				BC7DC4EA1CE2FCA700F3BF27 /* TwoBtnTableViewCell.xib in Resources */,
 				BC7845211CEB09710017C25D /* ShopTableViewCell.xib in Resources */,
 				BCC1E1AB1CF8078C00C4261F /* cart_cutBtn_nomal@2x.png in Resources */,
-				BC1BDA991CED59C50067F08A /* Integral_NotificateTableViewCell.xib in Resources */,
 				BC7A6CBD1CE99E9C0065E59B /* MyOrder_PayViewController.xib in Resources */,
 				BCD4FE441CF2F7ED001B9121 /* Bankcard_DetailViewController.xib in Resources */,
 				BCD4FE621CF4094E001B9121 /* MarketViewController.xib in Resources */,
-				BC1BDA971CED59C50067F08A /* Integral_ThreeBtnTableViewCell.xib in Resources */,
 				BC7A6C061CE415FE0065E59B /* 1.png in Resources */,
 				BCC1E1A81CF8078C00C4261F /* cart_addBtn_highlight@2x.png in Resources */,
 				BCC1E1AE1CF8078C00C4261F /* cart_unSelect_btn@2x.png in Resources */,
@@ -1738,15 +1735,16 @@
 				BCA0B3A81CE1A443004AEC11 /* StoreViewController.xib in Resources */,
 				BC7844A31CEAABC40017C25D /* Mine_TreasureViewController.xib in Resources */,
 				BC7A6C911CE5C18A0065E59B /* Mine_StoreTableViewCell.xib in Resources */,
+				BCC25AB81CF8343600B5DAF9 /* Integral_NotificateTableViewCell.xib in Resources */,
 				BC7844BB1CEAB5060017C25D /* Mine_IntegralViewController.xib in Resources */,
 				BC7845271CEB18060017C25D /* Mine_JoinViewController.xib in Resources */,
-				BC1BDA9B1CED59C50067F08A /* Integral_ChoujiangTableViewCell.xib in Resources */,
 				BC7844F51CEAF3C30017C25D /* SalesViewController.xib in Resources */,
 				BCD4FE671CF4097C001B9121 /* ClothesViewController.xib in Resources */,
+				BCC25AB61CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.xib in Resources */,
 				BCD4FE331CF2D4B9001B9121 /* BalanceViewController.xib in Resources */,
-				BC1BDA951CED59C50067F08A /* Integral_ScrollTableViewCell.xib in Resources */,
 				BC7DC4EF1CE2FCC800F3BF27 /* ThreeBtnTableViewCell.xib in Resources */,
 				BC7844AD1CEAAC190017C25D /* Mine_WalletViewController.xib in Resources */,
+				BCC25ABC1CF8343600B5DAF9 /* ChoujiangCollectionViewCell.xib in Resources */,
 				BC7A6CCC1CE99F550065E59B /* MyOrder_EvaluateViewController.xib in Resources */,
 				BC7844F01CEAF3860017C25D /* DepreciateViewController.xib in Resources */,
 				BCD4FEA21CF54939001B9121 /* Two_RightViewController.xib in Resources */,
@@ -1762,8 +1760,10 @@
 				BCD4FEB01CF54939001B9121 /* Four_RBViewController.xib in Resources */,
 				BCD4FE4E1CF408C1001B9121 /* HotelViewController.xib in Resources */,
 				BCD4FE531CF40901001B9121 /* RelaxationViewController.xib in Resources */,
+				BCC25AB41CF8343600B5DAF9 /* Integral_ScrollTableViewCell.xib in Resources */,
 				BC7844A81CEAABE20017C25D /* Mine_ShopViewController.xib in Resources */,
 				BC7A6C9B1CE5C1FE0065E59B /* Mine_BrandTableViewCell.xib in Resources */,
+				BCC25ABA1CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.xib in Resources */,
 				BC7A6C8C1CE5C16E0065E59B /* Mine_LikeTableViewCell.xib in Resources */,
 				BCD4FEA41CF54939001B9121 /* Three_LeftViewController.xib in Resources */,
 				BC7A6CA01CE5CA6B0065E59B /* Mine_MineTableViewCell.xib in Resources */,
@@ -1840,8 +1840,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC7A6CB11CE977CB0065E59B /* ViewFilterDouble.m in Sources */,
-				BC1BDA981CED59C50067F08A /* Integral_NotificateTableViewCell.m in Sources */,
-				BC1BDA9A1CED59C50067F08A /* Integral_ChoujiangTableViewCell.m in Sources */,
 				BC7A6CB31CE977CB0065E59B /* FilterViewTool.m in Sources */,
 				BCD4FEA11CF54939001B9121 /* Two_RightViewController.m in Sources */,
 				BCA0B3701CE190FC004AEC11 /* YiWeiTe.xcdatamodeld in Sources */,
@@ -1861,9 +1859,9 @@
 				BCD4FEA91CF54939001B9121 /* Four_LTViewController.m in Sources */,
 				BC7A6C1B1CE422970065E59B /* DLLRUCache.m in Sources */,
 				BC7A6C031CE40EC60065E59B /* Main_ListTableViewCell.m in Sources */,
-				BC1BDA961CED59C50067F08A /* Integral_ThreeBtnTableViewCell.m in Sources */,
 				BCD4FE481CF4088D001B9121 /* CateViewController.m in Sources */,
 				BC7DC4F31CE2FCDD00F3BF27 /* FourBtnTableViewCell.m in Sources */,
+				BCC25AB71CF8343600B5DAF9 /* Integral_NotificateTableViewCell.m in Sources */,
 				BCD4FE321CF2D4B9001B9121 /* BalanceViewController.m in Sources */,
 				BC7A6C1D1CE422970065E59B /* DLSlideView.m in Sources */,
 				BC7844FE1CEAF50A0017C25D /* TreasureTableViewCell.m in Sources */,
@@ -1877,13 +1875,13 @@
 				BC7A6C201CE422970065E59B /* DLTabedSlideView.m in Sources */,
 				BC4B0CEF1CF68B0E00B53927 /* MyButton.m in Sources */,
 				BCD4FE661CF4097C001B9121 /* ClothesViewController.m in Sources */,
+				BCC25AB91CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.m in Sources */,
 				BC7845071CEB068F0017C25D /* Shop_DefaultViewController.m in Sources */,
 				BC7DC4DA1CE2C32500F3BF27 /* NavigationView.m in Sources */,
 				BC7844F91CEAF3F80017C25D /* RevokeViewController.m in Sources */,
 				BC7DC4E41CE2FC7900F3BF27 /* BtnTableViewCell.m in Sources */,
 				BC78450C1CEB06BD0017C25D /* Shop_SalesViewController.m in Sources */,
 				BCC1E19F1CF8077000C4261F /* CartTableViewCell.m in Sources */,
-				BC1BDA941CED59C50067F08A /* Integral_ScrollTableViewCell.m in Sources */,
 				BC7A6C551CE561C30065E59B /* ReleaseTableViewCell.m in Sources */,
 				BC7A6C1F1CE422970065E59B /* DLScrollTabbarView.m in Sources */,
 				BCC1E19E1CF8077000C4261F /* CartModel.m in Sources */,
@@ -1898,6 +1896,7 @@
 				BCA0B3B61CE1A517004AEC11 /* MineViewController.m in Sources */,
 				BC7845261CEB18060017C25D /* Mine_JoinViewController.m in Sources */,
 				BC7A6CB21CE977CB0065E59B /* ViewFilterSingle.m in Sources */,
+				BCC25ABB1CF8343600B5DAF9 /* ChoujiangCollectionViewCell.m in Sources */,
 				BCA0B3A71CE1A443004AEC11 /* StoreViewController.m in Sources */,
 				BCD4FEA31CF54939001B9121 /* Three_LeftViewController.m in Sources */,
 				BCC1E1A01CF8077000C4261F /* CartViewController.m in Sources */,
@@ -1913,15 +1912,16 @@
 				BC7A6CC61CE99F120065E59B /* MyOrder_ShouHuoViewController.m in Sources */,
 				BCD4FE3D1CF2ED35001B9121 /* AddCardViewController.m in Sources */,
 				BCC1E16B1CF7FE2300C4261F /* TwoTextCenterButton.m in Sources */,
+				BCC25AB51CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.m in Sources */,
 				BC4B0CFC1CF6DA3600B53927 /* Cate_BtnTableViewCell.m in Sources */,
 				BC7210F41CEC53AC00A43681 /* MineCollectionViewCell.m in Sources */,
 				BCA0B3671CE190FC004AEC11 /* AppDelegate.m in Sources */,
 				BCD4FE611CF4094E001B9121 /* MarketViewController.m in Sources */,
 				BCD4FECB1CF55A56001B9121 /* CustomTypeButton.m in Sources */,
-				BC1BDA9F1CED918B0067F08A /* ChoujiangCollectionViewCell.m in Sources */,
 				BC7A6C951CE5C1B00065E59B /* Mine_OrderTableViewCell.m in Sources */,
 				BC7844AC1CEAAC190017C25D /* Mine_WalletViewController.m in Sources */,
 				BCA0B3641CE190FC004AEC11 /* main.m in Sources */,
+				BCC25AB31CF8343600B5DAF9 /* Integral_ScrollTableViewCell.m in Sources */,
 				BC7A6C1C1CE422970065E59B /* DLCustomSlideView.m in Sources */,
 				BCD4FE521CF40901001B9121 /* RelaxationViewController.m in Sources */,
 				BC7A6CCB1CE99F550065E59B /* MyOrder_EvaluateViewController.m in Sources */,

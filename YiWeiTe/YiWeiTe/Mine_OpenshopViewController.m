@@ -48,4 +48,8 @@
 }
 */
 
+- (IBAction)personBtn:(id)sender {
+}
+- (IBAction)companyBtn:(id)sender {
+}
 @end

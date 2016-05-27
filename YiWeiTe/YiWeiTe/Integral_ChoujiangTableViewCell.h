@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Integral_ChoujiangTableViewCell : UITableViewCell
+@interface Integral_ChoujiangTableViewCell : UITableViewCell<UICollectionViewDelegate,UICollectionViewDataSource>
+//@property (strong, nonatomic)UICollectionView *collectionView;
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
+@property (nonatomic, strong) UICollectionViewFlowLayout *layout;
 @end

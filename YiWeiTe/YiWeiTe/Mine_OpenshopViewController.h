@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface Mine_OpenshopViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *personImg;
+- (IBAction)personBtn:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UIImageView *companyImg;
+- (IBAction)companyBtn:(id)sender;
 
 @end
