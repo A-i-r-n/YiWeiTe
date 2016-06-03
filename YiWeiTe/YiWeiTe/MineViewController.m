@@ -36,6 +36,8 @@
 
 #import "Mine_JoinViewController.h"
 
+#import "Mine_PersonalViewController.h"
+
 @interface MineViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     NSMutableArray *_dataArray;
@@ -111,6 +113,7 @@
 //            view.backgroundColor = [UIColor redColor];
 //            [cell addSubview:view];
             Mine_MineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mine_mineCell"];
+            [cell.logoBtn addTarget:self action:@selector(personClick:) forControlEvents:UIControlEventTouchUpInside];
             return cell;
             
         }
@@ -194,7 +197,7 @@
 
 }
 
-
+//代付款/待收货/待评价/退款
 - (void)mineClick:(ImageCenterButton *)button
 {
     UIViewController *viewController;
@@ -224,6 +227,7 @@
 
 }
 
+//宝贝收藏/店铺收藏/我的钱包/足迹
 - (void)mine_LikeClick:(ImageCenterButton *)button
 {
     if (button.tag == 10) {
@@ -252,6 +256,7 @@
     }
 }
 
+//积分商城/我的分享/会员中心/我要开店
 - (void)mine_StoreClick:(ImageCenterButton *)button
 {
     UIViewController *viewController;
@@ -280,7 +285,12 @@
     }
 }
 
-
+//个人中心
+- (void)personClick:(UIButton *)button
+{
+    Mine_PersonalViewController *personal = [[Mine_PersonalViewController alloc]init];
+    [self.navigationController pushViewController:personal animated:YES];
+}
 
 
 - (void)didReceiveMemoryWarning {

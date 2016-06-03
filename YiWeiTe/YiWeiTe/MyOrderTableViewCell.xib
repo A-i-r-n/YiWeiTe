@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -47,7 +48,7 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Ng-8B-WTS">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goods" translatesAutoresizingMaskIntoConstraints="NO" id="2Ng-8B-WTS">
                         <rect key="frame" x="8" y="48" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="2Ng-8B-WTS" secondAttribute="height" multiplier="1:1" id="GsN-ep-i2R"/>
@@ -260,8 +261,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="1.png" width="180" height="180"/>
         <image name="fifth_normal" width="26" height="26"/>
+        <image name="goods" width="154" height="152"/>
         <image name="second_normal" width="26" height="26"/>
     </resources>
 </document>

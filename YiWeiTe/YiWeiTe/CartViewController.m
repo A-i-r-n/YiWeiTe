@@ -9,6 +9,10 @@
 #import "CartViewController.h"
 #import "CartTableViewCell.h"
 
+#import "RDVTabBarController.h"
+
+#import "Cart_OrderViewController.h"
+
 #define  TAG_BACKGROUNDVIEW 100
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
@@ -35,6 +39,10 @@
 @implementation CartViewController
 
 -(void)viewWillAppear:(BOOL)animated {
+    
+    //设置tabbar不隐藏
+    [[self rdv_tabBarController] setTabBarHidden:NO animated:YES];
+    
     //每次进入购物车的时候把选择的置空
     [selectGoods removeAllObjects];
     isSelect = NO;
@@ -73,7 +81,7 @@
         model.nameStr = @"Apple iMac 21.5英寸一体机(Core i5处理器/8GB内存/1TB存储 MK42CH/A)";
         //model.price = @"100.00";
         model.number = 1;
-        model.image = [UIImage imageNamed:@"1"];
+        model.image = [UIImage imageNamed:@"goods"];
         model.dateStr = @"7988.00";
         model.sizeStr = @"版本:21.5英寸";
         
@@ -89,6 +97,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     
     self.view.backgroundColor = RGBCOLOR(245, 246, 248);
     
@@ -384,7 +393,13 @@
 
 //提交订单
 -(void)goPayBtnClick {
-    NSLog(@"去结算");
+    
+    Cart_OrderViewController *order = [[Cart_OrderViewController alloc]init];
+    
+    
+    [self.navigationController pushViewController:order animated:YES];
+    
+    //self.hidesBottomBarWhenPushed = NO;
 }
 
 -(void)goToMainmenuView {

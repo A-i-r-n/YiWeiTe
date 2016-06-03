@@ -7,6 +7,8 @@
 //
 
 #import "Mine_OpenshopViewController.h"
+#import "Personal_OpenViewController.h"
+#import "Company_OpenViewController.h"
 
 @interface Mine_OpenshopViewController ()
 
@@ -38,6 +40,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+//个人开店
+- (IBAction)personBtn:(id)sender
+{
+    Personal_OpenViewController *personal = [[Personal_OpenViewController alloc]init];
+    [self.navigationController pushViewController:personal animated:YES];
+}
+
+//企业开店
+- (IBAction)companyBtn:(id)sender
+{
+    Company_OpenViewController *company = [[Company_OpenViewController alloc]init];
+    [self.navigationController pushViewController:company animated:YES];
+}
+
 /*
 #pragma mark - Navigation
 
@@ -48,8 +64,5 @@
 }
 */
 
-- (IBAction)personBtn:(id)sender {
-}
-- (IBAction)companyBtn:(id)sender {
-}
+
 @end

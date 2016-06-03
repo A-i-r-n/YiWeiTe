@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MineViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Mine_PersonalViewController">
             <connections>
-                <outlet property="tableView" destination="Pyb-33-Cw0" id="joj-Y1-x50"/>
+                <outlet property="tableView" destination="Q8U-im-Cc9" id="Pcx-0u-01M"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,24 +16,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pyb-33-Cw0">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Q8U-im-Cc9">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="uK9-tT-HEA"/>
-                        <outlet property="delegate" destination="-1" id="ZIV-pY-5Se"/>
+                        <outlet property="dataSource" destination="-1" id="2dG-OL-OQc"/>
+                        <outlet property="delegate" destination="-1" id="yqt-HM-jH7"/>
                     </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Pyb-33-Cw0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4gF-xZ-GO0"/>
-                <constraint firstAttribute="bottom" secondItem="Pyb-33-Cw0" secondAttribute="bottom" id="fSy-kB-dpu"/>
-                <constraint firstItem="Pyb-33-Cw0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tRn-fq-xLD"/>
-                <constraint firstAttribute="trailing" secondItem="Pyb-33-Cw0" secondAttribute="trailing" id="uoj-vq-M8B"/>
+                <constraint firstAttribute="bottom" secondItem="Q8U-im-Cc9" secondAttribute="bottom" id="HNY-J2-IS6"/>
+                <constraint firstAttribute="trailing" secondItem="Q8U-im-Cc9" secondAttribute="trailing" id="Q64-v8-6bX"/>
+                <constraint firstItem="Q8U-im-Cc9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UvR-gQ-d57"/>
+                <constraint firstItem="Q8U-im-Cc9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bF2-hG-uey"/>
             </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="268.5" y="132.5"/>
         </view>
     </objects>
 </document>

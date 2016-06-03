@@ -69,6 +69,7 @@
 
 - (void)registTableView
 {
+    _tableView.allowsSelection = NO;
     [_tableView registerClass:[BtnTableViewCell class] forCellReuseIdentifier:@"btnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"TwoBtnTableViewCell" bundle:nil] forCellReuseIdentifier:@"twoBtnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"ThreeBtnTableViewCell" bundle:nil] forCellReuseIdentifier:@"threeBtnCell"];
