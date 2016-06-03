@@ -1,34 +1,33 @@
 //
-//  AddressViewController.m
+//  SubmitViewController.m
 //  YiWeiTe
 //
-//  Created by daiqile on 16/6/2.
+//  Created by daiqile on 16/6/3.
 //  Copyright © 2016年 DaiQiLe. All rights reserved.
 //
 
-#import "AddressViewController.h"
-#import "AddressTableViewCell.h"
+#import "SubmitViewController.h"
+#import "Address_LabTableViewCell.h"
 
-#import "RDVTabBarController.h"
+#import "DesignPayViewController.h"
 
-#import "NewAddressViewController.h"
-
-@interface AddressViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface SubmitViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
-@implementation AddressViewController
+@implementation SubmitViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-
-    //隐藏tabBar
-    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
-    self.title = @"管理收货地址";
-    [self registCell];
+    self.title = @"填写订单";
     [self createNavigation];
+    [self registCell];
+}
+
+- (void)registCell
+{
+    [_tableView registerNib:[UINib nibWithNibName:@"Address_LabTableViewCell" bundle:nil] forCellReuseIdentifier:@"labCell"];
 }
 
 - (void)createNavigation
@@ -44,25 +43,18 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)registCell
-{
-    [_tableView registerNib:[UINib nibWithNibName:@"AddressTableViewCell" bundle:nil] forCellReuseIdentifier:@"addCell"];
-}
 
+#pragma mark tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 10;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 1;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0.01;
+    return 2;
 }
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -71,22 +63,33 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 150 * ScreenWidth / 375.0;
+    return 44;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    AddressTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"addCell" forIndexPath:indexPath];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (indexPath.row == 0) {
+        Address_LabTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"labCell"];
+        cell.titleLab.text = @"付款方式";
+        cell.addressLab.text = @"余额支付";
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        return cell;
+    }
+    
+    Address_LabTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"labCell"];
+    cell.titleLab.text = @"需付款";
+    cell.addressLab.textColor = SELECT_TEXTCOLOR;
+    cell.addressLab.text = @"79888.00元";
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
+    
 }
 
-//添加地址
-- (IBAction)addAddress:(id)sender
+//确认付款
+- (IBAction)payClick:(id)sender
 {
-    NewAddressViewController *new = [[NewAddressViewController alloc]init];
-    [self.navigationController pushViewController:new animated:YES];
+    DesignPayViewController *design = [[DesignPayViewController alloc]init];
+    [self.navigationController pushViewController:design animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

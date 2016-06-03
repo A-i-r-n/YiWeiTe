@@ -18,6 +18,8 @@
 
 #import "AddressViewController.h"
 
+#import "SubmitViewController.h"
+
 @interface Cart_OrderViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)NSMutableArray *titleArray;
@@ -40,6 +42,7 @@
     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     
     [self registCell];
+    [self createNavigation];
     
 }
 
@@ -53,6 +56,19 @@
     [_tableView registerNib:[UINib nibWithNibName:@"Cart_TFTableViewCell" bundle:nil] forCellReuseIdentifier:@"tfCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"Cart_PayTableViewCell" bundle:nil] forCellReuseIdentifier:@"payCell"];
     
+}
+
+- (void)createNavigation
+{
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStylePlain target:self action:@selector(backClick)];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    
+}
+
+//返回
+- (void)backClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -161,6 +177,13 @@
     }
 }
 
+//提交订单
+- (IBAction)submitOrder:(id)sender
+{
+    SubmitViewController *submit = [[SubmitViewController alloc]init];
+    [self.navigationController pushViewController:submit animated:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -175,5 +198,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

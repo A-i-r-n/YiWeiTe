@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Cart_OrderViewController">
@@ -21,15 +22,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTZ-Ay-Mxi">
                     <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsc-cx-hpL">
-                            <rect key="frame" x="257" y="0.0" width="118" height="50"/>
-                            <color key="backgroundColor" red="0.50980392159999999" green="0.2156862745" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <state key="normal" title="提交订单">
-                                <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实付款:  ¥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6X-vs-pzu">
-                            <rect key="frame" x="72" y="14" width="75" height="21"/>
+                            <rect key="frame" x="60" y="14" width="75" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="75" id="TyD-YA-hzV"/>
                             </constraints>
@@ -38,7 +32,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7892.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDh-XD-Jiy">
-                            <rect key="frame" x="155" y="14" width="102" height="21"/>
+                            <rect key="frame" x="143" y="14" width="102" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="102" id="3J3-Fp-Tgu"/>
                             </constraints>
@@ -46,26 +40,36 @@
                             <color key="textColor" red="0.50980392159999999" green="0.2156862745" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsc-cx-hpL">
+                            <rect key="frame" x="250" y="0.0" width="125" height="50"/>
+                            <color key="backgroundColor" red="0.50980392159999999" green="0.2156862745" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="提交订单">
+                                <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="submitOrder:" destination="-1" eventType="touchUpInside" id="dj7-q9-qCZ"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="uDh-XD-Jiy" firstAttribute="baseline" secondItem="jsc-cx-hpL" secondAttribute="baseline" id="8WY-nD-K5w"/>
-                        <constraint firstItem="uDh-XD-Jiy" firstAttribute="centerY" secondItem="jsc-cx-hpL" secondAttribute="centerY" id="DiP-PD-yym"/>
-                        <constraint firstAttribute="trailing" secondItem="jsc-cx-hpL" secondAttribute="trailing" id="G0C-Dh-ZCg"/>
+                        <constraint firstItem="jsc-cx-hpL" firstAttribute="top" secondItem="uTZ-Ay-Mxi" secondAttribute="top" id="12a-xO-R4d"/>
+                        <constraint firstItem="jsc-cx-hpL" firstAttribute="centerY" secondItem="uDh-XD-Jiy" secondAttribute="centerY" id="7NG-Nb-MeZ"/>
+                        <constraint firstItem="jsc-cx-hpL" firstAttribute="width" secondItem="uTZ-Ay-Mxi" secondAttribute="width" multiplier="0.333" id="FFa-9s-LsR"/>
                         <constraint firstItem="uDh-XD-Jiy" firstAttribute="leading" secondItem="n6X-vs-pzu" secondAttribute="trailing" constant="8" symbolic="YES" id="JyH-Sc-Yqa"/>
                         <constraint firstItem="uDh-XD-Jiy" firstAttribute="bottom" secondItem="n6X-vs-pzu" secondAttribute="bottom" id="ORJ-k3-Ing"/>
-                        <constraint firstAttribute="bottom" secondItem="jsc-cx-hpL" secondAttribute="bottom" id="T0i-pL-KcW"/>
-                        <constraint firstItem="jsc-cx-hpL" firstAttribute="top" secondItem="uTZ-Ay-Mxi" secondAttribute="top" id="a7h-bh-tak"/>
-                        <constraint firstItem="n6X-vs-pzu" firstAttribute="leading" secondItem="uTZ-Ay-Mxi" secondAttribute="leading" constant="72" id="aG9-Hs-g6k"/>
-                        <constraint firstItem="jsc-cx-hpL" firstAttribute="leading" secondItem="uDh-XD-Jiy" secondAttribute="trailing" id="bmK-k1-tD3"/>
-                        <constraint firstItem="uDh-XD-Jiy" firstAttribute="baseline" secondItem="jsc-cx-hpL" secondAttribute="firstBaseline" id="hzi-PX-6Jd"/>
+                        <constraint firstItem="jsc-cx-hpL" firstAttribute="height" secondItem="uTZ-Ay-Mxi" secondAttribute="height" id="V2e-F2-Q2g"/>
+                        <constraint firstAttribute="trailing" secondItem="jsc-cx-hpL" secondAttribute="trailing" id="VH5-kH-lxo"/>
+                        <constraint firstItem="jsc-cx-hpL" firstAttribute="baseline" secondItem="uDh-XD-Jiy" secondAttribute="baseline" id="aTk-m6-KfB"/>
+                        <constraint firstItem="jsc-cx-hpL" firstAttribute="leading" secondItem="uDh-XD-Jiy" secondAttribute="trailing" constant="5" id="cqm-4D-ITJ"/>
                         <constraint firstAttribute="height" constant="50" id="k1S-gk-LF1"/>
+                        <constraint firstItem="jsc-cx-hpL" firstAttribute="firstBaseline" secondItem="uDh-XD-Jiy" secondAttribute="baseline" id="lX3-U4-XJx"/>
                         <constraint firstItem="uDh-XD-Jiy" firstAttribute="top" secondItem="n6X-vs-pzu" secondAttribute="top" id="zDw-bZ-one"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="8On-F5-W0v">
                     <rect key="frame" x="0.0" y="64" width="375" height="553"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="UOY-bm-NLV"/>
                         <outlet property="delegate" destination="-1" id="YPc-RG-U88"/>

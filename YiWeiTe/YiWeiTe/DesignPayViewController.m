@@ -1,34 +1,35 @@
 //
-//  AddressViewController.m
+//  DesignPayViewController.m
 //  YiWeiTe
 //
-//  Created by daiqile on 16/6/2.
+//  Created by daiqile on 16/6/3.
 //  Copyright © 2016年 DaiQiLe. All rights reserved.
 //
 
-#import "AddressViewController.h"
-#import "AddressTableViewCell.h"
+#import "DesignPayViewController.h"
+#import "PayedTableViewCell.h"
+#import "ZongJiaTableViewCell.h"
 
-#import "RDVTabBarController.h"
+@interface DesignPayViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-#import "NewAddressViewController.h"
 
-@interface AddressViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
-@implementation AddressViewController
+@implementation DesignPayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-
-    //隐藏tabBar
-    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
-    self.title = @"管理收货地址";
-    [self registCell];
+    self.title = @"支付成功";
     [self createNavigation];
+    [self registCell];
+}
+
+- (void)registCell
+{
+    [_tableView registerNib:[UINib nibWithNibName:@"PayedTableViewCell" bundle:nil] forCellReuseIdentifier:@"payCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"ZongJiaTableViewCell" bundle:nil] forCellReuseIdentifier:@"zongCell"];
 }
 
 - (void)createNavigation
@@ -44,19 +45,16 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)registCell
-{
-    [_tableView registerNib:[UINib nibWithNibName:@"AddressTableViewCell" bundle:nil] forCellReuseIdentifier:@"addCell"];
-}
 
+#pragma mark tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 10;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 3;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -71,22 +69,30 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 150 * ScreenWidth / 375.0;
+    if (indexPath.row == 0) {
+        return 80 * ScreenWidth / 375.0;
+    }
+    return 44;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    AddressTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"addCell" forIndexPath:indexPath];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (indexPath.row == 0) {
+        PayedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"payCell"];
+        return cell;
+    }
+    if (indexPath.row == 2) {
+        ZongJiaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"zongCell"];
+        return cell;
+    }
+    static NSString *cellID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+    }
+    cell.textLabel.text = @"收货人:周杰伦";
+    cell.detailTextLabel.text = @"浙江省宁波市鄞州区首南街道南部商务区";
     return cell;
-}
-
-//添加地址
-- (IBAction)addAddress:(id)sender
-{
-    NewAddressViewController *new = [[NewAddressViewController alloc]init];
-    [self.navigationController pushViewController:new animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -103,6 +109,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end

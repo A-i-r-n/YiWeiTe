@@ -10,5 +10,6 @@
 
 @interface AddressViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)addAddress:(id)sender;
 
 @end

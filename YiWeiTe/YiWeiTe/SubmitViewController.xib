@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubmitViewController">
             <connections>
-                <outlet property="tableView" destination="4VK-IC-MTT" id="Hub-IG-EJk"/>
+                <outlet property="tableView" destination="NvF-jw-4TQ" id="W6d-qA-LzQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,39 +16,40 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="4VK-IC-MTT">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="NvF-jw-4TQ">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="gMC-vh-Rqf"/>
-                        <outlet property="delegate" destination="-1" id="Qsf-Vb-WcF"/>
+                        <outlet property="dataSource" destination="-1" id="7ka-uI-hMQ"/>
+                        <outlet property="delegate" destination="-1" id="RkU-6Z-8ox"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcg-ss-cKC">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpV-Cu-Wyw">
                     <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                     <color key="backgroundColor" red="0.50980392159999999" green="0.2156862745" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="rXw-gZ-CjY"/>
+                        <constraint firstAttribute="height" constant="60" id="flF-rQ-eLH"/>
                     </constraints>
-                    <state key="normal" title="添加地址">
+                    <state key="normal" title="确认付款">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="addAddress:" destination="-1" eventType="touchUpInside" id="782-92-E3z"/>
+                        <action selector="payClick:" destination="-1" eventType="touchUpInside" id="xi0-2Y-Nub"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Fcg-ss-cKC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8d6-a2-TZF"/>
-                <constraint firstAttribute="trailing" secondItem="Fcg-ss-cKC" secondAttribute="trailing" id="LlP-8V-uy8"/>
-                <constraint firstItem="4VK-IC-MTT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U4z-vB-PeU"/>
-                <constraint firstAttribute="bottom" secondItem="Fcg-ss-cKC" secondAttribute="bottom" id="UBP-Y0-Nvx"/>
-                <constraint firstItem="4VK-IC-MTT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rvV-4T-Bhb"/>
-                <constraint firstAttribute="trailing" secondItem="4VK-IC-MTT" secondAttribute="trailing" id="sAA-p4-rPd"/>
-                <constraint firstItem="Fcg-ss-cKC" firstAttribute="top" secondItem="4VK-IC-MTT" secondAttribute="bottom" id="wXl-6e-zGj"/>
+                <constraint firstItem="NvF-jw-4TQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CCw-PF-sRV"/>
+                <constraint firstAttribute="bottom" secondItem="RpV-Cu-Wyw" secondAttribute="bottom" id="IEE-On-RMA"/>
+                <constraint firstAttribute="trailing" secondItem="RpV-Cu-Wyw" secondAttribute="trailing" id="JIM-Ds-kC6"/>
+                <constraint firstAttribute="trailing" secondItem="NvF-jw-4TQ" secondAttribute="trailing" id="OeM-f2-FyM"/>
+                <constraint firstItem="RpV-Cu-Wyw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OhU-ou-bH2"/>
+                <constraint firstItem="NvF-jw-4TQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ao4-fK-RM8"/>
+                <constraint firstItem="RpV-Cu-Wyw" firstAttribute="top" secondItem="NvF-jw-4TQ" secondAttribute="bottom" id="tTy-wQ-Sru"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="397.5" y="167.5"/>
         </view>
     </objects>
 </document>

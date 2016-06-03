@@ -1,15 +1,14 @@
 //
-//  Cart_OrderViewController.h
+//  NewAddressViewController.h
 //  YiWeiTe
 //
-//  Created by daiqile on 16/6/2.
+//  Created by daiqile on 16/6/3.
 //  Copyright © 2016年 DaiQiLe. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface Cart_OrderViewController : UIViewController
+@interface NewAddressViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-- (IBAction)submitOrder:(id)sender;
 
 @end

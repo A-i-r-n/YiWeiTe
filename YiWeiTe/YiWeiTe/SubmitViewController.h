@@ -1,15 +1,15 @@
 //
-//  Cart_OrderViewController.h
+//  SubmitViewController.h
 //  YiWeiTe
 //
-//  Created by daiqile on 16/6/2.
+//  Created by daiqile on 16/6/3.
 //  Copyright © 2016年 DaiQiLe. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface Cart_OrderViewController : UIViewController
+@interface SubmitViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-- (IBAction)submitOrder:(id)sender;
+- (IBAction)payClick:(id)sender;
 
 @end

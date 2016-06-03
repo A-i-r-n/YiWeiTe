@@ -1,15 +1,14 @@
 //
-//  Cart_OrderViewController.h
+//  DesignPayViewController.h
 //  YiWeiTe
 //
-//  Created by daiqile on 16/6/2.
+//  Created by daiqile on 16/6/3.
 //  Copyright © 2016年 DaiQiLe. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface Cart_OrderViewController : UIViewController
+@interface DesignPayViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-- (IBAction)submitOrder:(id)sender;
 
 @end
