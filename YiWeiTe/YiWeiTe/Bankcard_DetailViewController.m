@@ -43,7 +43,7 @@
     
     [self presentViewController:alertController animated:YES completion:nil];
 
-    //确定取消绑定
+    //取消绑定
     UIAlertAction *affirm = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
         NSLog(@"确定");

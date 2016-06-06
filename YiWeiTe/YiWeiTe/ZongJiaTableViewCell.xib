@@ -53,6 +53,9 @@
                     <constraint firstItem="TRr-jp-WV8" firstAttribute="baseline" secondItem="aqs-7y-z80" secondAttribute="baseline" id="wi0-Tw-Jfe"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="totalPriceLab" destination="aqs-7y-z80" id="0w8-c1-BJk"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

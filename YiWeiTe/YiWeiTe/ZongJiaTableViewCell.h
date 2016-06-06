@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ZongJiaTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *totalPriceLab;
 
 @end

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7E63C50875AB11B8D0AF354D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3124C9CABFF9D76AD554826 /* libPods.a */; };
+		BC022ECD1D0526FE0025C23E /* STConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BC022EC81D0526FE0025C23E /* STConst.m */; };
+		BC022ECE1D0526FE0025C23E /* STUI.m in Sources */ = {isa = PBXBuildFile; fileRef = BC022ECA1D0526FE0025C23E /* STUI.m */; };
+		BC022ECF1D0526FE0025C23E /* UIView+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = BC022ECC1D0526FE0025C23E /* UIView+ST.m */; };
+		BC022ED31D0527040025C23E /* STPickerSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC022ED21D0527040025C23E /* STPickerSingle.m */; };
+		BC022ED71D05270F0025C23E /* STPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC022ED61D05270F0025C23E /* STPickerView.m */; };
 		BC4B0CEF1CF68B0E00B53927 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CEE1CF68B0E00B53927 /* MyButton.m */; };
 		BC4B0CF21CF68B3700B53927 /* MessageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CF11CF68B3700B53927 /* MessageButton.m */; };
 		BC4B0CF71CF6DA2200B53927 /* Cate_ScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CF51CF6DA2200B53927 /* Cate_ScrollTableViewCell.m */; };
@@ -273,6 +278,17 @@
 /* Begin PBXFileReference section */
 		62BA95DFFFC57FC44D56C736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B3124C9CABFF9D76AD554826 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC022EC61D0526FE0025C23E /* STConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConfig.h; sourceTree = "<group>"; };
+		BC022EC71D0526FE0025C23E /* STConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConst.h; sourceTree = "<group>"; };
+		BC022EC81D0526FE0025C23E /* STConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConst.m; sourceTree = "<group>"; };
+		BC022EC91D0526FE0025C23E /* STUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUI.h; sourceTree = "<group>"; };
+		BC022ECA1D0526FE0025C23E /* STUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STUI.m; sourceTree = "<group>"; };
+		BC022ECB1D0526FE0025C23E /* UIView+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ST.h"; sourceTree = "<group>"; };
+		BC022ECC1D0526FE0025C23E /* UIView+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ST.m"; sourceTree = "<group>"; };
+		BC022ED11D0527040025C23E /* STPickerSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerSingle.h; sourceTree = "<group>"; };
+		BC022ED21D0527040025C23E /* STPickerSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerSingle.m; sourceTree = "<group>"; };
+		BC022ED51D05270F0025C23E /* STPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerView.h; sourceTree = "<group>"; };
+		BC022ED61D05270F0025C23E /* STPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerView.m; sourceTree = "<group>"; };
 		BC4B0CED1CF68B0E00B53927 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
 		BC4B0CEE1CF68B0E00B53927 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		BC4B0CF01CF68B3700B53927 /* MessageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageButton.h; sourceTree = "<group>"; };
@@ -694,6 +710,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC022EC51D0526FE0025C23E /* STConfig */ = {
+			isa = PBXGroup;
+			children = (
+				BC022EC61D0526FE0025C23E /* STConfig.h */,
+				BC022EC71D0526FE0025C23E /* STConst.h */,
+				BC022EC81D0526FE0025C23E /* STConst.m */,
+				BC022EC91D0526FE0025C23E /* STUI.h */,
+				BC022ECA1D0526FE0025C23E /* STUI.m */,
+				BC022ECB1D0526FE0025C23E /* UIView+ST.h */,
+				BC022ECC1D0526FE0025C23E /* UIView+ST.m */,
+			);
+			path = STConfig;
+			sourceTree = "<group>";
+		};
+		BC022ED01D0527040025C23E /* Single(单数组) */ = {
+			isa = PBXGroup;
+			children = (
+				BC022ED11D0527040025C23E /* STPickerSingle.h */,
+				BC022ED21D0527040025C23E /* STPickerSingle.m */,
+			);
+			path = "Single(单数组)";
+			sourceTree = "<group>";
+		};
+		BC022ED41D05270F0025C23E /* STPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				BC022ED51D05270F0025C23E /* STPickerView.h */,
+				BC022ED61D05270F0025C23E /* STPickerView.m */,
+			);
+			path = STPickerView;
+			sourceTree = "<group>";
+		};
 		BC4B0CEA1CF688EB00B53927 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -746,6 +794,9 @@
 		BC7046961CFFC5AC00D5104C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC022ED41D05270F0025C23E /* STPickerView */,
+				BC022ED01D0527040025C23E /* Single(单数组) */,
+				BC022EC51D0526FE0025C23E /* STConfig */,
 				BCC1E19A1CF8077000C4261F /* CartTableViewCell.h */,
 				BCC1E19B1CF8077000C4261F /* CartTableViewCell.m */,
 				BC70469E1D00099100D5104C /* Cart_AddressTableViewCell.h */,
@@ -2220,6 +2271,7 @@
 				BC7A6C201CE422970065E59B /* DLTabedSlideView.m in Sources */,
 				BC4B0CEF1CF68B0E00B53927 /* MyButton.m in Sources */,
 				BC7AF1F71CFD249200F01C06 /* Mine_ticketViewController.m in Sources */,
+				BC022ECF1D0526FE0025C23E /* UIView+ST.m in Sources */,
 				BCD4FE661CF4097C001B9121 /* ClothesViewController.m in Sources */,
 				BC906E071D014F36006072E1 /* Address_TFTableViewCell.m in Sources */,
 				BCC25AB91CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.m in Sources */,
@@ -2259,6 +2311,7 @@
 				BCD4FE4D1CF408C1001B9121 /* HotelViewController.m in Sources */,
 				BC7844E11CEACEAE0017C25D /* TreasureViewController.m in Sources */,
 				BC7A6C251CE432BC0065E59B /* NearbyViewController.m in Sources */,
+				BC022ED31D0527040025C23E /* STPickerSingle.m in Sources */,
 				BCA0B36A1CE190FC004AEC11 /* ViewController.m in Sources */,
 				BCC1E1691CF7FE2300C4261F /* ImageCenterButton+MyImageCenterButton.m in Sources */,
 				BC7A6CC61CE99F120065E59B /* MyOrder_ShouHuoViewController.m in Sources */,
@@ -2277,10 +2330,12 @@
 				BC7844AC1CEAAC190017C25D /* Mine_WalletViewController.m in Sources */,
 				BCA0B3641CE190FC004AEC11 /* main.m in Sources */,
 				BCC25AB31CF8343600B5DAF9 /* Integral_ScrollTableViewCell.m in Sources */,
+				BC022ECE1D0526FE0025C23E /* STUI.m in Sources */,
 				BC7046AB1D000A0F00D5104C /* Cart_TFTableViewCell.m in Sources */,
 				BC7A6C1C1CE422970065E59B /* DLCustomSlideView.m in Sources */,
 				BCD4FE521CF40901001B9121 /* RelaxationViewController.m in Sources */,
 				BC7A6CCB1CE99F550065E59B /* MyOrder_EvaluateViewController.m in Sources */,
+				BC022ECD1D0526FE0025C23E /* STConst.m in Sources */,
 				BC7844BA1CEAB5060017C25D /* Mine_IntegralViewController.m in Sources */,
 				BCD4FE431CF2F7ED001B9121 /* Bankcard_DetailViewController.m in Sources */,
 				BC7845201CEB09710017C25D /* ShopTableViewCell.m in Sources */,
@@ -2292,6 +2347,7 @@
 				BC4B0D061CF6DBD700B53927 /* Cate_SliderTableViewCell.m in Sources */,
 				BC7844C01CEAB5260017C25D /* Mine_ShareViewController.m in Sources */,
 				BC7A6C9A1CE5C1FE0065E59B /* Mine_BrandTableViewCell.m in Sources */,
+				BC022ED71D05270F0025C23E /* STPickerView.m in Sources */,
 				BC7A6CBC1CE99E9C0065E59B /* MyOrder_PayViewController.m in Sources */,
 				BCD4FEAB1CF54939001B9121 /* Four_LBViewController.m in Sources */,
 				BC7845161CEB07240017C25D /* Shop_ScreenViewController.m in Sources */,
