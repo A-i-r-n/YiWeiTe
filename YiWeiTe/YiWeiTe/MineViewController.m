@@ -38,6 +38,9 @@
 
 #import "Mine_PersonalViewController.h"
 
+//测试我的店铺
+#import "MyStoreViewController.h"
+
 @interface MineViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     NSMutableArray *_dataArray;
@@ -71,7 +74,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -84,42 +87,33 @@
     }
     return 1;
 }
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return 0.01;
-}
+//
+//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+//{
+//    return 10;
+//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    if (section == 0) {
-        return 0.01;
-    }
-    return 10;
+    return 0.01;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-
-//            static NSString *cellID = @"cell";
-//            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-//            if (!cell) {
-//                cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-//            }
-//            
-//            UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 120 * ScreenWidth / 375.0)];
-//            view.backgroundColor = [UIColor redColor];
-//            [cell addSubview:view];
             Mine_MineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mine_mineCell"];
             [cell.logoBtn addTarget:self action:@selector(personClick:) forControlEvents:UIControlEventTouchUpInside];
+            
+            
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
             
         }
         if (indexPath.row == 1) {
             Mine_OrderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"orderCell" forIndexPath:indexPath];
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
         if (indexPath.row == 2) {
@@ -129,6 +123,7 @@
                 [button addTarget:self action:@selector(mineClick:) forControlEvents:UIControlEventTouchUpInside];
             }
             
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
        
@@ -142,6 +137,7 @@
                 [button addTarget:self action:@selector(mine_LikeClick:) forControlEvents:UIControlEventTouchUpInside];
             }
             
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
         if (indexPath.row == 1) {
@@ -151,13 +147,25 @@
                 [button addTarget:self action:@selector(mine_StoreClick:) forControlEvents:UIControlEventTouchUpInside];
             }
 
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
     }
     
-    Mine_BrandTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"brandCell" forIndexPath:indexPath];
-    
+    if (indexPath.section ==2) {
+        Mine_BrandTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"brandCell" forIndexPath:indexPath];
+        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }
+    static NSString *cellID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    cell.textLabel.text = @"text";
     return cell;
+    
 }
 
 
@@ -192,6 +200,13 @@
         if (indexPath.row == 0) {
             Mine_JoinViewController *join = [[Mine_JoinViewController alloc]init];
             [self.navigationController pushViewController:join animated:YES];
+        }
+    }
+    if (indexPath.section == 3) {
+        if (indexPath.row == 0) {
+            MyStoreViewController *store = [[MyStoreViewController alloc]init];
+            [self.navigationController pushViewController:store animated:YES];
+
         }
     }
 

@@ -11,6 +11,8 @@
 
 #import "DesignPayViewController.h"
 
+//#import "STPickerSingle.h"
+
 @interface SubmitViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -20,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"填写订单";
+    self.title = @"付款";
     [self createNavigation];
     [self registCell];
 }
@@ -36,6 +38,7 @@
     self.navigationItem.leftBarButtonItem = leftItem;
     
 }
+
 
 //返回
 - (void)backClick
@@ -72,6 +75,7 @@
         Address_LabTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"labCell"];
         cell.titleLab.text = @"付款方式";
         cell.addressLab.text = @"余额支付";
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         return cell;
     }
@@ -80,10 +84,37 @@
     cell.titleLab.text = @"需付款";
     cell.addressLab.textColor = SELECT_TEXTCOLOR;
     cell.addressLab.text = @"79888.00元";
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
     
 }
+
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if (indexPath.row == 0) {
+//
+//        
+//        NSMutableArray *arrayData = [NSMutableArray arrayWithObjects:@"余额支付",@"货到付款",@"到店支付", nil];
+//        STPickerSingle *pickerSingle = [[STPickerSingle alloc]init];
+//        pickerSingle.selectIndexPath = indexPath;
+//        [pickerSingle setArrayData:arrayData];
+//        [pickerSingle setTitle:@"请选择支付方式"];
+//        [pickerSingle setTitleUnit:@""];
+//        [pickerSingle setContentMode:STPickerContentModeBottom];
+//        [pickerSingle setDelegate:self];
+//        [pickerSingle show];
+//    }
+//}
+//
+//#pragma mark STPickerSingleDelegate
+//- (void)pickerSingle:(STPickerSingle *)pickerSingle selectedTitle:(NSString *)selectedTitle
+//{
+//    NSString *text = [NSString stringWithFormat:@"%@", selectedTitle];
+//    Address_LabTableViewCell *cell = [self.tableView cellForRowAtIndexPath:pickerSingle.selectIndexPath];
+//    cell.addressLab.text = text;
+//    
+//}
 
 //确认付款
 - (IBAction)payClick:(id)sender

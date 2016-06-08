@@ -19,7 +19,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"个人开店";
+    [self createNavigation];
     
+}
+- (void)createNavigation
+{
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStylePlain target:self action:@selector(backClick)];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    
+}
+
+//返回
+- (void)backClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

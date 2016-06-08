@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "我的店铺_发布宝贝.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "back2.png",
       "scale" : "2x"
     },
     {

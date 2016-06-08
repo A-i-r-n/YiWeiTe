@@ -222,6 +222,7 @@
     }
 }
 
+#pragma mark STPickerSingleDelegate
 - (void)pickerSingle:(STPickerSingle *)pickerSingle selectedTitle:(NSString *)selectedTitle
 {
     NSString *text = [NSString stringWithFormat:@"%@", selectedTitle];
