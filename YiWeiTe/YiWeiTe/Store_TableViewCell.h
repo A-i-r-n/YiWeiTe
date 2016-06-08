@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface Store_TableViewCell : UITableViewCell
+- (IBAction)knockdownClick:(id)sender;
+- (IBAction)visitorClick:(id)sender;
+- (IBAction)orderClick:(id)sender;
 
 @end

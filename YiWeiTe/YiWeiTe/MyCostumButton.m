@@ -25,7 +25,7 @@
         _imgView = [[UIImageView alloc]init];
         [self addSubview:_imgView];
         _lab = [[UILabel alloc]init];
-        _lab.font = [UIFont systemFontOfSize:15];
+        _lab.font = [UIFont systemFontOfSize:14];
         _lab.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_lab];
         [_imgView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -37,7 +37,7 @@
         [_lab mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_imgView.mas_bottom).offset(10);
             make.centerX.equalTo(_imgView.mas_centerX);
-            make.width.equalTo(self.mas_width);
+            make.width.equalTo(self.mas_width).offset(10);
             make.height.offset(20);
         }];
     }

@@ -7,7 +7,7 @@
 //
 
 #import "Store_TableViewCell.h"
-
+#import "ReleaseGoodsViewController.h"
 @implementation Store_TableViewCell
 
 - (void)awakeFromNib {
@@ -20,4 +20,21 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)knockdownClick:(id)sender
+{
+    NSLog(@"成交额");
+    ReleaseGoodsViewController *release = [[ReleaseGoodsViewController alloc]init];
+    UIWindow *window = [UIApplication sharedApplication].delegate.window;
+    [window.rootViewController presentViewController:release animated:YES completion:nil];
+}
+
+- (IBAction)visitorClick:(id)sender
+{
+    NSLog(@"访客");
+}
+
+- (IBAction)orderClick:(id)sender
+{
+    NSLog(@"订单");
+}
 @end

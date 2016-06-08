@@ -13,7 +13,13 @@
 #import "Store_BtnTableViewCell.h"
 #import "Store_TableViewCell.h"
 
+
 #import "MyCostumButton.h"
+#import "RDVTabBarController.h"
+
+
+#import "ReleaseGoodsViewController.h"
+#import "Store_GoodsViewController.h"
 
 @interface MyStoreViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -25,6 +31,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"我的店铺";
+
+    //隐藏tabBar
+//    [[self rdv_tabBarController] setTabBarHidden:NO animated:YES];
     [self createNavigation];
     [self registCell];
 }
@@ -116,11 +125,15 @@
         case 10:
         {
             NSLog(@"发布宝贝");
+            ReleaseGoodsViewController *release = [[ReleaseGoodsViewController alloc]init];
+            [self presentViewController:release animated:YES completion:nil];   
         }
             break;
         case 11:
         {
             NSLog(@"管理");
+            Store_GoodsViewController *goods = [[Store_GoodsViewController alloc]init];
+            [self.navigationController pushViewController:goods animated:YES];
         }
             break;
         case 12:
