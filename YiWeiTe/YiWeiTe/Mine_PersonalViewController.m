@@ -20,8 +20,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"个人资料";
+    [self createNavigation];
     _titleArray = [NSMutableArray arrayWithObjects:@"我的头像",@"会员名",@"我的昵称",@"性别",@"我的二维码名片",@"我的收货地址", nil];
     
+}
+- (void)createNavigation
+{
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStylePlain target:self action:@selector(backClick)];
+    self.navigationItem.leftBarButtonItem = leftItem;
+    
+}
+
+//返回
+- (void)backClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 //- (NSMutableArray *)titleArray

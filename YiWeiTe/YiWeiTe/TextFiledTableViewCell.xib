@@ -28,7 +28,10 @@
                     <constraint firstItem="SQ8-kZ-eUr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="ny6-Xy-0zN"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="241" y="175"/>
+            <connections>
+                <outlet property="Tf" destination="SQ8-kZ-eUr" id="vwx-Ma-Z55"/>
+            </connections>
+            <point key="canvasLocation" x="300" y="159"/>
         </tableViewCell>
     </objects>
 </document>

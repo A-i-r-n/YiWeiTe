@@ -42,21 +42,17 @@
 
      _titleArray = [NSMutableArray arrayWithObjects:@"美食",@"酒店",@"休闲娱乐",@"丽人",@"母婴",@"超市",@"穿搭",@"一元夺宝",@"购物车",@"生活服务", nil];
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        for (int i = 0 ; i<10; i++) {
-            _button = [[ImageCenterButton alloc]initWithImage:_imgArray[i] withTitle:_titleArray[i] withTitleColor:SELECT_TEXTCOLOR withTitleFont:15.0];
-            //button.backgroundColor = [UIColor redColor];
-            CGFloat space = 10.0;
-            CGFloat leftSpace = 15;
-            CGFloat width = (ScreenWidth - leftSpace * 2 - space * 4)/5.0;
-            CGFloat height = 80.0 * ScreenWidth / 375.0;
-            _button.imageViewMaxSize = CGSizeMake(30, 30);
-            _button.frame = CGRectMake(15 + i % 5 * (width + space)  , i / 5 * (space + width), width, height);
-            _button.tag = 10 + i ;
-            //_button.backgroundColor = [UIColor redColor];
-            [self addSubview:_button];
-        }
-
+    CGFloat leftSpace = 15;
+    CGFloat space = 25;
+    CGFloat width = (ScreenWidth - leftSpace * 2 - space * 4) / 5.0;
+    for (int i = 0; i<10; i++) {
+        _button = [[MyCostumButton alloc]init];
+        _button.tag = 10+i;
+        _button.frame = CGRectMake(leftSpace + i % 5 * (width + space), leftSpace  + i / 5 * (width + space + 25), width, width + 25);
+        _button.lab.font = [UIFont systemFontOfSize:12];
+        _button.imgView.image = [UIImage imageNamed:_imgArray[i]];
+        _button.lab.text = _titleArray[i];
+        [self addSubview:_button];
     }
     return self;
 }

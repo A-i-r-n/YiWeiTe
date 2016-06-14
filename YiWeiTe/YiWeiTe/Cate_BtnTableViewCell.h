@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ImageCenterButton+MyImageCenterButton.h"
+//#import "ImageCenterButton+MyImageCenterButton.h"
+#import "MyCostumButton.h"
+
 @interface Cate_BtnTableViewCell : UITableViewCell
 
 @property(nonatomic,strong)NSMutableArray *imgArray;
 @property(nonatomic,strong)NSMutableArray *titleArray;
-@property(nonatomic,strong)ImageCenterButton *button;
+//@property(nonatomic,strong)ImageCenterButton *button;
+@property(nonatomic,strong)MyCostumButton *button;
 @end

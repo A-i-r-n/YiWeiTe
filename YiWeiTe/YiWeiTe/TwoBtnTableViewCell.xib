@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -12,16 +13,18 @@
             <rect key="frame" x="0.0" y="0.0" width="368" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="368" height="100"/>
+                <rect key="frame" x="0.0" y="0.0" width="368" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LT-UE-uRx">
-                        <rect key="frame" x="0.0" y="0.0" width="184" height="100"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LT-UE-uRx">
+                        <rect key="frame" x="0.0" y="0.0" width="184" height="99.5"/>
                         <color key="backgroundColor" white="0.818359375" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" image="爆品"/>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5N-I8-0yx">
-                        <rect key="frame" x="184" y="0.0" width="184" height="100"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5N-I8-0yx">
+                        <rect key="frame" x="184" y="0.0" width="184" height="99.5"/>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="年中"/>
                     </button>
                 </subviews>
                 <constraints>
@@ -43,7 +46,11 @@
                 <outlet property="leftBtn" destination="8LT-UE-uRx" id="tVk-gh-eBd"/>
                 <outlet property="rightBtn" destination="l5N-I8-0yx" id="6MF-a4-Rs4"/>
             </connections>
-            <point key="canvasLocation" x="327" y="284"/>
+            <point key="canvasLocation" x="234" y="230"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="年中" width="310" height="168"/>
+        <image name="爆品" width="300" height="170"/>
+    </resources>
 </document>

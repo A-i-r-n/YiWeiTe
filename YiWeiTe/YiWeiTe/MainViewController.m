@@ -42,6 +42,8 @@
 #import "LikeViewController.h"
 #import "TrackViewController.h"
 
+#import "NewNoticeView.h"
+
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate,DLTabedSlideViewDelegate>
 {
@@ -122,16 +124,10 @@
         //imgView.backgroundColor = [UIColor orangeColor];
         imgView.image = [UIImage imageNamed:@"首页_11"];
         [view addSubview:imgView];
-        
-        UILabel *titleLab = [[UILabel alloc]initWithFrame:CGRectMake(50, 5, 80, 30)];
-        titleLab.font = [UIFont systemFontOfSize:15];
-        titleLab.text = @"夺宝通知:";
-        [view addSubview:titleLab];
-        
-        UILabel *subTitleLab = [[UILabel alloc]initWithFrame:CGRectMake(130, 5, ScreenWidth - 150, 30)];
-        subTitleLab.text = @"xxx成功夺得iPhone6s一部!";
-        subTitleLab.font = [UIFont systemFontOfSize:12];
-        [view addSubview:subTitleLab];
+        NewNoticeView *notice = [[NewNoticeView alloc]initWithFrame:CGRectMake(50, 0, ScreenWidth - 50, 40)];
+        notice.backgroundColor = [UIColor clearColor];
+                notice.noticeList = [NSMutableArray arrayWithObjects:@"小美眉抢到了一部iPhone8s!",@"小美眉又抢到了一部iPhone8s!",@"小美眉再次抢到了一部iPhone8s!",@"小美眉真幸运再次抢到了一部iPhone8s!",@"小美眉抢到了一部iPhone8s!", nil];
+        [view addSubview:notice];
         return view;
     }
     return 0;
@@ -158,7 +154,7 @@
 {
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            return 150 * ScreenWidth / 375.0;
+            return 210 * ScreenWidth / 375.0;
         }
         if (indexPath.row == 1) {
             return 100 * ScreenWidth / 375.0;

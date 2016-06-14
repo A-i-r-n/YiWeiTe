@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Mine_HeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jL-jK-4vb">
+                        <rect key="frame" x="8" y="27" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Oc1-Yc-3d0"/>
+                            <constraint firstAttribute="width" constant="80" id="eNm-xA-if8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bh-Di-VFf">
+                        <rect key="frame" x="252" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="fRc-vF-Qmw"/>
+                            <constraint firstAttribute="height" constant="60" id="oK0-lN-Dwe"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="camera"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1jL-jK-4vb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EPb-za-dIq"/>
+                    <constraint firstItem="1jL-jK-4vb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Eqf-92-pzL"/>
+                    <constraint firstAttribute="trailing" secondItem="2bh-Di-VFf" secondAttribute="trailing" constant="8" id="NIf-Qo-GCq"/>
+                    <constraint firstItem="2bh-Di-VFf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Y1h-lZ-f7h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headerBtn" destination="2bh-Di-VFf" id="ZGb-hQ-azx"/>
+                <outlet property="titleLab" destination="1jL-jK-4vb" id="Ops-fI-Eki"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="182.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="camera" width="106" height="106"/>
+    </resources>
+</document>

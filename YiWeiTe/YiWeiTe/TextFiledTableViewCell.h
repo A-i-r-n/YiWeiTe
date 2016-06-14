@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TextFiledTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UITextField *Tf;
 
 @end

@@ -15,6 +15,31 @@
 		BC022EEB1D05559C0025C23E /* STPickerSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = BC022EEA1D05559C0025C23E /* STPickerSingle.m */; };
 		BC2D7F201D0661D200370CE1 /* Store_BtnTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2D7F1E1D0661D200370CE1 /* Store_BtnTableViewCell.m */; };
 		BC2D7F211D0661D200370CE1 /* Store_BtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2D7F1F1D0661D200370CE1 /* Store_BtnTableViewCell.xib */; };
+		BC420D131D0CF61B005B7772 /* Store_OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D111D0CF61B005B7772 /* Store_OrderViewController.m */; };
+		BC420D141D0CF61B005B7772 /* Store_OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D121D0CF61B005B7772 /* Store_OrderViewController.xib */; };
+		BC420D191D0CF69D005B7772 /* Store_DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D171D0CF69D005B7772 /* Store_DelegateViewController.m */; };
+		BC420D1A1D0CF69D005B7772 /* Store_DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D181D0CF69D005B7772 /* Store_DelegateViewController.xib */; };
+		BC420D1E1D0CF6BC005B7772 /* Store_CaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D1C1D0CF6BC005B7772 /* Store_CaseViewController.m */; };
+		BC420D1F1D0CF6BC005B7772 /* Store_CaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D1D1D0CF6BC005B7772 /* Store_CaseViewController.xib */; };
+		BC420D231D0CF6D1005B7772 /* Store_SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D211D0CF6D1005B7772 /* Store_SettingViewController.m */; };
+		BC420D241D0CF6D1005B7772 /* Store_SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D221D0CF6D1005B7772 /* Store_SettingViewController.xib */; };
+		BC420D2C1D0D0AA7005B7772 /* Store_ImgTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D2A1D0D0AA7005B7772 /* Store_ImgTableViewCell.m */; };
+		BC420D2D1D0D0AA7005B7772 /* Store_ImgTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D2B1D0D0AA7005B7772 /* Store_ImgTableViewCell.xib */; };
+		BC420D311D0D0D09005B7772 /* Store_ImgBtnTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D2F1D0D0D09005B7772 /* Store_ImgBtnTableViewCell.m */; };
+		BC420D321D0D0D09005B7772 /* Store_ImgBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D301D0D0D09005B7772 /* Store_ImgBtnTableViewCell.xib */; };
+		BC420D371D0D4391005B7772 /* Mine_HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D351D0D4391005B7772 /* Mine_HeaderTableViewCell.m */; };
+		BC420D381D0D4391005B7772 /* Mine_HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D361D0D4391005B7772 /* Mine_HeaderTableViewCell.xib */; };
+		BC420D461D0E4873005B7772 /* Store_AllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D441D0E4873005B7772 /* Store_AllViewController.m */; };
+		BC420D471D0E4873005B7772 /* Store_AllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D451D0E4873005B7772 /* Store_AllViewController.xib */; };
+		BC420D4B1D0E4882005B7772 /* Store_PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D491D0E4882005B7772 /* Store_PayViewController.m */; };
+		BC420D4C1D0E4882005B7772 /* Store_PayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D4A1D0E4882005B7772 /* Store_PayViewController.xib */; };
+		BC420D501D0E48D5005B7772 /* Store_ShipmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D4E1D0E48D5005B7772 /* Store_ShipmentsViewController.m */; };
+		BC420D511D0E48D5005B7772 /* Store_ShipmentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D4F1D0E48D5005B7772 /* Store_ShipmentsViewController.xib */; };
+		BC420D551D0E4919005B7772 /* Store_TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D531D0E4919005B7772 /* Store_TViewController.m */; };
+		BC420D561D0E4919005B7772 /* Store_TViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D541D0E4919005B7772 /* Store_TViewController.xib */; };
+		BC420D5E1D0E4DDD005B7772 /* Store_OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D5C1D0E4DDD005B7772 /* Store_OrderTableViewCell.m */; };
+		BC420D5F1D0E4DDD005B7772 /* Store_OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D5D1D0E4DDD005B7772 /* Store_OrderTableViewCell.xib */; };
+		BC420D8E1D0E7B9B005B7772 /* NewNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D8D1D0E7B9B005B7772 /* NewNoticeView.m */; };
 		BC4B0CEF1CF68B0E00B53927 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CEE1CF68B0E00B53927 /* MyButton.m */; };
 		BC4B0CF21CF68B3700B53927 /* MessageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CF11CF68B3700B53927 /* MessageButton.m */; };
 		BC4B0CF71CF6DA2200B53927 /* Cate_ScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CF51CF6DA2200B53927 /* Cate_ScrollTableViewCell.m */; };
@@ -311,6 +336,44 @@
 		BC2D7F1D1D0661D200370CE1 /* Store_BtnTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_BtnTableViewCell.h; sourceTree = "<group>"; };
 		BC2D7F1E1D0661D200370CE1 /* Store_BtnTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_BtnTableViewCell.m; sourceTree = "<group>"; };
 		BC2D7F1F1D0661D200370CE1 /* Store_BtnTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_BtnTableViewCell.xib; sourceTree = "<group>"; };
+		BC420D101D0CF61B005B7772 /* Store_OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_OrderViewController.h; sourceTree = "<group>"; };
+		BC420D111D0CF61B005B7772 /* Store_OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_OrderViewController.m; sourceTree = "<group>"; };
+		BC420D121D0CF61B005B7772 /* Store_OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_OrderViewController.xib; sourceTree = "<group>"; };
+		BC420D161D0CF69D005B7772 /* Store_DelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_DelegateViewController.h; sourceTree = "<group>"; };
+		BC420D171D0CF69D005B7772 /* Store_DelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_DelegateViewController.m; sourceTree = "<group>"; };
+		BC420D181D0CF69D005B7772 /* Store_DelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_DelegateViewController.xib; sourceTree = "<group>"; };
+		BC420D1B1D0CF6BC005B7772 /* Store_CaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_CaseViewController.h; sourceTree = "<group>"; };
+		BC420D1C1D0CF6BC005B7772 /* Store_CaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_CaseViewController.m; sourceTree = "<group>"; };
+		BC420D1D1D0CF6BC005B7772 /* Store_CaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_CaseViewController.xib; sourceTree = "<group>"; };
+		BC420D201D0CF6D1005B7772 /* Store_SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_SettingViewController.h; sourceTree = "<group>"; };
+		BC420D211D0CF6D1005B7772 /* Store_SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_SettingViewController.m; sourceTree = "<group>"; };
+		BC420D221D0CF6D1005B7772 /* Store_SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_SettingViewController.xib; sourceTree = "<group>"; };
+		BC420D291D0D0AA7005B7772 /* Store_ImgTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_ImgTableViewCell.h; sourceTree = "<group>"; };
+		BC420D2A1D0D0AA7005B7772 /* Store_ImgTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_ImgTableViewCell.m; sourceTree = "<group>"; };
+		BC420D2B1D0D0AA7005B7772 /* Store_ImgTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_ImgTableViewCell.xib; sourceTree = "<group>"; };
+		BC420D2E1D0D0D09005B7772 /* Store_ImgBtnTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_ImgBtnTableViewCell.h; sourceTree = "<group>"; };
+		BC420D2F1D0D0D09005B7772 /* Store_ImgBtnTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_ImgBtnTableViewCell.m; sourceTree = "<group>"; };
+		BC420D301D0D0D09005B7772 /* Store_ImgBtnTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_ImgBtnTableViewCell.xib; sourceTree = "<group>"; };
+		BC420D341D0D4391005B7772 /* Mine_HeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mine_HeaderTableViewCell.h; sourceTree = "<group>"; };
+		BC420D351D0D4391005B7772 /* Mine_HeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mine_HeaderTableViewCell.m; sourceTree = "<group>"; };
+		BC420D361D0D4391005B7772 /* Mine_HeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mine_HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		BC420D431D0E4873005B7772 /* Store_AllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_AllViewController.h; sourceTree = "<group>"; };
+		BC420D441D0E4873005B7772 /* Store_AllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_AllViewController.m; sourceTree = "<group>"; };
+		BC420D451D0E4873005B7772 /* Store_AllViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_AllViewController.xib; sourceTree = "<group>"; };
+		BC420D481D0E4882005B7772 /* Store_PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_PayViewController.h; sourceTree = "<group>"; };
+		BC420D491D0E4882005B7772 /* Store_PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_PayViewController.m; sourceTree = "<group>"; };
+		BC420D4A1D0E4882005B7772 /* Store_PayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_PayViewController.xib; sourceTree = "<group>"; };
+		BC420D4D1D0E48D5005B7772 /* Store_ShipmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_ShipmentsViewController.h; sourceTree = "<group>"; };
+		BC420D4E1D0E48D5005B7772 /* Store_ShipmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_ShipmentsViewController.m; sourceTree = "<group>"; };
+		BC420D4F1D0E48D5005B7772 /* Store_ShipmentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_ShipmentsViewController.xib; sourceTree = "<group>"; };
+		BC420D521D0E4919005B7772 /* Store_TViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_TViewController.h; sourceTree = "<group>"; };
+		BC420D531D0E4919005B7772 /* Store_TViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_TViewController.m; sourceTree = "<group>"; };
+		BC420D541D0E4919005B7772 /* Store_TViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_TViewController.xib; sourceTree = "<group>"; };
+		BC420D5B1D0E4DDD005B7772 /* Store_OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_OrderTableViewCell.h; sourceTree = "<group>"; };
+		BC420D5C1D0E4DDD005B7772 /* Store_OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_OrderTableViewCell.m; sourceTree = "<group>"; };
+		BC420D5D1D0E4DDD005B7772 /* Store_OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_OrderTableViewCell.xib; sourceTree = "<group>"; };
+		BC420D8C1D0E7B9B005B7772 /* NewNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewNoticeView.h; sourceTree = "<group>"; };
+		BC420D8D1D0E7B9B005B7772 /* NewNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewNoticeView.m; sourceTree = "<group>"; };
 		BC4B0CED1CF68B0E00B53927 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
 		BC4B0CEE1CF68B0E00B53927 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		BC4B0CF01CF68B3700B53927 /* MessageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageButton.h; sourceTree = "<group>"; };
@@ -790,6 +853,114 @@
 			name = Single;
 			sourceTree = "<group>";
 		};
+		BC420D151D0CF626005B7772 /* 订单管理 */ = {
+			isa = PBXGroup;
+			children = (
+				BC420D101D0CF61B005B7772 /* Store_OrderViewController.h */,
+				BC420D111D0CF61B005B7772 /* Store_OrderViewController.m */,
+				BC420D121D0CF61B005B7772 /* Store_OrderViewController.xib */,
+				BC420D571D0E492E005B7772 /* 全部订单 */,
+				BC420D581D0E494D005B7772 /* 待付款 */,
+				BC420D591D0E4966005B7772 /* 待发货 */,
+				BC420D5A1D0E4978005B7772 /* 退款中 */,
+			);
+			name = "订单管理";
+			sourceTree = "<group>";
+		};
+		BC420D251D0CF6D9005B7772 /* 我要代理 */ = {
+			isa = PBXGroup;
+			children = (
+				BC420D161D0CF69D005B7772 /* Store_DelegateViewController.h */,
+				BC420D171D0CF69D005B7772 /* Store_DelegateViewController.m */,
+				BC420D181D0CF69D005B7772 /* Store_DelegateViewController.xib */,
+			);
+			name = "我要代理";
+			sourceTree = "<group>";
+		};
+		BC420D261D0CF6E5005B7772 /* 店铺装修 */ = {
+			isa = PBXGroup;
+			children = (
+				BC420D1B1D0CF6BC005B7772 /* Store_CaseViewController.h */,
+				BC420D1C1D0CF6BC005B7772 /* Store_CaseViewController.m */,
+				BC420D1D1D0CF6BC005B7772 /* Store_CaseViewController.xib */,
+			);
+			name = "店铺装修";
+			sourceTree = "<group>";
+		};
+		BC420D271D0CF6F1005B7772 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				BC420D201D0CF6D1005B7772 /* Store_SettingViewController.h */,
+				BC420D211D0CF6D1005B7772 /* Store_SettingViewController.m */,
+				BC420D221D0CF6D1005B7772 /* Store_SettingViewController.xib */,
+			);
+			name = "设置";
+			sourceTree = "<group>";
+		};
+		BC420D281D0D0126005B7772 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCA0B3B31CE1A517004AEC11 /* MineViewController.h */,
+				BCA0B3B41CE1A517004AEC11 /* MineViewController.m */,
+				BCA0B3B51CE1A517004AEC11 /* MineViewController.xib */,
+				BC7AF2061CFD6C1900F01C06 /* 个人资料 */,
+				BC7AF1FE1CFD251F00F01C06 /* 余额 */,
+				BC7AF1FF1CFD253800F01C06 /* 优惠券 */,
+				BC7AF2001CFD254A00F01C06 /* 积分 */,
+				BC78449A1CEAA9380017C25D /* MyOrder(我的订单) */,
+				BC78449B1CEAA9F50017C25D /* Mine_Treasure(宝贝收藏) */,
+				BC78449C1CEAAA4E0017C25D /* Mine_Shop(店铺收藏) */,
+				BC78449D1CEAAAE00017C25D /* Mine_Wallet(我的钱包) */,
+				BC78449E1CEAAB190017C25D /* Mine_Footprint(足迹) */,
+				BC7844B31CEAB4180017C25D /* Mine_Integral(积分商城) */,
+				BC7844B41CEAB4460017C25D /* Mine_Share(我的分享) */,
+				BC7844B51CEAB4690017C25D /* Mine_Vip(会员中心) */,
+				BC7844B61CEAB4800017C25D /* Mine_Openshop(我要开店) */,
+				BC7845221CEB17B20017C25D /* Mine_Join(品牌加入) */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BC420D571D0E492E005B7772 /* 全部订单 */ = {
+			isa = PBXGroup;
+			children = (
+				BC420D431D0E4873005B7772 /* Store_AllViewController.h */,
+				BC420D441D0E4873005B7772 /* Store_AllViewController.m */,
+				BC420D451D0E4873005B7772 /* Store_AllViewController.xib */,
+			);
+			name = "全部订单";
+			sourceTree = "<group>";
+		};
+		BC420D581D0E494D005B7772 /* 待付款 */ = {
+			isa = PBXGroup;
+			children = (
+				BC420D481D0E4882005B7772 /* Store_PayViewController.h */,
+				BC420D491D0E4882005B7772 /* Store_PayViewController.m */,
+				BC420D4A1D0E4882005B7772 /* Store_PayViewController.xib */,
+			);
+			name = "待付款";
+			sourceTree = "<group>";
+		};
+		BC420D591D0E4966005B7772 /* 待发货 */ = {
+			isa = PBXGroup;
+			children = (
+				BC420D4D1D0E48D5005B7772 /* Store_ShipmentsViewController.h */,
+				BC420D4E1D0E48D5005B7772 /* Store_ShipmentsViewController.m */,
+				BC420D4F1D0E48D5005B7772 /* Store_ShipmentsViewController.xib */,
+			);
+			name = "待发货";
+			sourceTree = "<group>";
+		};
+		BC420D5A1D0E4978005B7772 /* 退款中 */ = {
+			isa = PBXGroup;
+			children = (
+				BC420D521D0E4919005B7772 /* Store_TViewController.h */,
+				BC420D531D0E4919005B7772 /* Store_TViewController.m */,
+				BC420D541D0E4919005B7772 /* Store_TViewController.xib */,
+			);
+			name = "退款中";
+			sourceTree = "<group>";
+		};
 		BC4B0CEA1CF688EB00B53927 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -964,23 +1135,9 @@
 		BC7844991CEAA9210017C25D /* Mine(个人) */ = {
 			isa = PBXGroup;
 			children = (
-				BCA0B3B31CE1A517004AEC11 /* MineViewController.h */,
-				BCA0B3B41CE1A517004AEC11 /* MineViewController.m */,
-				BCA0B3B51CE1A517004AEC11 /* MineViewController.xib */,
-				BC7AF2061CFD6C1900F01C06 /* 个人资料 */,
-				BC7AF1FE1CFD251F00F01C06 /* 余额 */,
-				BC7AF1FF1CFD253800F01C06 /* 优惠券 */,
-				BC7AF2001CFD254A00F01C06 /* 积分 */,
-				BC78449A1CEAA9380017C25D /* MyOrder(我的订单) */,
-				BC78449B1CEAA9F50017C25D /* Mine_Treasure(宝贝收藏) */,
-				BC78449C1CEAAA4E0017C25D /* Mine_Shop(店铺收藏) */,
-				BC78449D1CEAAAE00017C25D /* Mine_Wallet(我的钱包) */,
-				BC78449E1CEAAB190017C25D /* Mine_Footprint(足迹) */,
-				BC7844B31CEAB4180017C25D /* Mine_Integral(积分商城) */,
-				BC7844B41CEAB4460017C25D /* Mine_Share(我的分享) */,
-				BC7844B51CEAB4690017C25D /* Mine_Vip(会员中心) */,
-				BC7844B61CEAB4800017C25D /* Mine_Openshop(我要开店) */,
-				BC7845221CEB17B20017C25D /* Mine_Join(品牌加入) */,
+				BC7A6C711CE5878A0065E59B /* Models */,
+				BC7A6C721CE587950065E59B /* Views */,
+				BC420D281D0D0126005B7772 /* Controllers */,
 			);
 			name = "Mine(个人)";
 			sourceTree = "<group>";
@@ -1313,15 +1470,6 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		BC7A6C701CE587700065E59B /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				BC9E315A1D0563D600A73531 /* Mine(店铺) */,
-				BC7844991CEAA9210017C25D /* Mine(个人) */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
 		BC7A6C711CE5878A0065E59B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -1332,6 +1480,11 @@
 		BC7A6C721CE587950065E59B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC6DD2F81CFEBDA400FF6297 /* Menubar.h */,
+				BC6DD2F91CFEBDA400FF6297 /* Menubar.m */,
+				BC7046901CFED9FF00D5104C /* TicketTableViewCell.h */,
+				BC7046911CFED9FF00D5104C /* TicketTableViewCell.m */,
+				BC7046921CFED9FF00D5104C /* TicketTableViewCell.xib */,
 				BC7A6C9C1CE5CA6B0065E59B /* Mine_MineTableViewCell.h */,
 				BC7A6C9D1CE5CA6B0065E59B /* Mine_MineTableViewCell.m */,
 				BC7A6C9E1CE5CA6B0065E59B /* Mine_MineTableViewCell.xib */,
@@ -1414,11 +1567,6 @@
 		BC7AF1FF1CFD253800F01C06 /* 优惠券 */ = {
 			isa = PBXGroup;
 			children = (
-				BC6DD2F81CFEBDA400FF6297 /* Menubar.h */,
-				BC6DD2F91CFEBDA400FF6297 /* Menubar.m */,
-				BC7046901CFED9FF00D5104C /* TicketTableViewCell.h */,
-				BC7046911CFED9FF00D5104C /* TicketTableViewCell.m */,
-				BC7046921CFED9FF00D5104C /* TicketTableViewCell.xib */,
 				BC7AF1F41CFD249200F01C06 /* Mine_ticketViewController.h */,
 				BC7AF1F51CFD249200F01C06 /* Mine_ticketViewController.m */,
 				BC7AF1F61CFD249200F01C06 /* Mine_ticketViewController.xib */,
@@ -1481,6 +1629,8 @@
 		BC7DC4DF1CE2DAB000F3BF27 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC420D8C1D0E7B9B005B7772 /* NewNoticeView.h */,
+				BC420D8D1D0E7B9B005B7772 /* NewNoticeView.m */,
 				BC7DC4D81CE2C32500F3BF27 /* NavigationView.h */,
 				BC7DC4D91CE2C32500F3BF27 /* NavigationView.m */,
 				BC7DC4E11CE2FC7900F3BF27 /* BtnTableViewCell.h */,
@@ -1588,14 +1738,6 @@
 			name = "添加地址";
 			sourceTree = "<group>";
 		};
-		BC9E315A1D0563D600A73531 /* Mine(店铺) */ = {
-			isa = PBXGroup;
-			children = (
-				BC9E315B1D05641900A73531 /* 我的店铺 */,
-			);
-			name = "Mine(店铺)";
-			sourceTree = "<group>";
-		};
 		BC9E315B1D05641900A73531 /* 我的店铺 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1614,6 +1756,10 @@
 				BC9E315E1D05643400A73531 /* MyStoreViewController.xib */,
 				BC52A6A41D07FD3C003DEACD /* 发布宝贝 */,
 				BC52A6A51D07FD60003DEACD /* 宝贝管理 */,
+				BC420D151D0CF626005B7772 /* 订单管理 */,
+				BC420D251D0CF6D9005B7772 /* 我要代理 */,
+				BC420D261D0CF6E5005B7772 /* 店铺装修 */,
+				BC420D271D0CF6F1005B7772 /* 设置 */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1635,6 +1781,18 @@
 				BC52A6A81D080B22003DEACD /* Store_GoodsTableViewCell.h */,
 				BC52A6A91D080B22003DEACD /* Store_GoodsTableViewCell.m */,
 				BC52A6AA1D080B22003DEACD /* Store_GoodsTableViewCell.xib */,
+				BC420D291D0D0AA7005B7772 /* Store_ImgTableViewCell.h */,
+				BC420D2A1D0D0AA7005B7772 /* Store_ImgTableViewCell.m */,
+				BC420D2B1D0D0AA7005B7772 /* Store_ImgTableViewCell.xib */,
+				BC420D2E1D0D0D09005B7772 /* Store_ImgBtnTableViewCell.h */,
+				BC420D2F1D0D0D09005B7772 /* Store_ImgBtnTableViewCell.m */,
+				BC420D301D0D0D09005B7772 /* Store_ImgBtnTableViewCell.xib */,
+				BC420D341D0D4391005B7772 /* Mine_HeaderTableViewCell.h */,
+				BC420D351D0D4391005B7772 /* Mine_HeaderTableViewCell.m */,
+				BC420D361D0D4391005B7772 /* Mine_HeaderTableViewCell.xib */,
+				BC420D5B1D0E4DDD005B7772 /* Store_OrderTableViewCell.h */,
+				BC420D5C1D0E4DDD005B7772 /* Store_OrderTableViewCell.m */,
+				BC420D5D1D0E4DDD005B7772 /* Store_OrderTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1761,9 +1919,8 @@
 		BCA0B3BC1CE1A5B4004AEC11 /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
-				BC7A6C711CE5878A0065E59B /* Models */,
-				BC7A6C721CE587950065E59B /* Views */,
-				BC7A6C701CE587700065E59B /* Controllers */,
+				BC7844991CEAA9210017C25D /* Mine(个人) */,
+				BC9E315B1D05641900A73531 /* 我的店铺 */,
 			);
 			name = "Mine(我的)";
 			sourceTree = "<group>";
@@ -2196,8 +2353,11 @@
 				BC906E031D01383D006072E1 /* NewAddressViewController.xib in Resources */,
 				BC7AF1F81CFD249200F01C06 /* Mine_ticketViewController.xib in Resources */,
 				BC7844FA1CEAF3F80017C25D /* RevokeViewController.xib in Resources */,
+				BC420D4C1D0E4882005B7772 /* Store_PayViewController.xib in Resources */,
 				BC7A6CD11CE99F830065E59B /* MyOrder_ShipmentViewController.xib in Resources */,
+				BC420D5F1D0E4DDD005B7772 /* Store_OrderTableViewCell.xib in Resources */,
 				BC7844FF1CEAF50A0017C25D /* TreasureTableViewCell.xib in Resources */,
+				BC420D511D0E48D5005B7772 /* Store_ShipmentsViewController.xib in Resources */,
 				BC4B0CFD1CF6DA3600B53927 /* Cate_BtnTableViewCell.xib in Resources */,
 				BC7844E21CEACEAE0017C25D /* TreasureViewController.xib in Resources */,
 				BCA0B3751CE190FC004AEC11 /* LaunchScreen.storyboard in Resources */,
@@ -2222,12 +2382,14 @@
 				BC7A6C041CE40EC60065E59B /* Main_ListTableViewCell.xib in Resources */,
 				BC906E0D1D0151DD006072E1 /* Address_LabTableViewCell.xib in Resources */,
 				BCC1E1AA1CF8078C00C4261F /* cart_cutBtn_highlight@2x.png in Resources */,
+				BC420D561D0E4919005B7772 /* Store_TViewController.xib in Resources */,
 				BC7210F51CEC53AC00A43681 /* MineCollectionViewCell.xib in Resources */,
 				BC906E121D015937006072E1 /* TextFiledTableViewCell.xib in Resources */,
 				BC7046A71D0009C900D5104C /* Two_LabTableViewCell.xib in Resources */,
 				BC7DC4F41CE2FCDD00F3BF27 /* FourBtnTableViewCell.xib in Resources */,
 				BC7A6C771CE587C40065E59B /* MineTableViewCell.xib in Resources */,
 				BCD4FEA81CF54939001B9121 /* Three_RBViewController.xib in Resources */,
+				BC420D141D0CF61B005B7772 /* Store_OrderViewController.xib in Resources */,
 				BC7844C11CEAB5260017C25D /* Mine_ShareViewController.xib in Resources */,
 				BCA0B3A31CE1A3D8004AEC11 /* MainViewController.xib in Resources */,
 				BC78451C1CEB07430017C25D /* Shop_TicketViewController.xib in Resources */,
@@ -2237,6 +2399,7 @@
 				BCC1E1AB1CF8078C00C4261F /* cart_cutBtn_nomal@2x.png in Resources */,
 				BC52A69E1D07FC52003DEACD /* Store_WarehouseViewController.xib in Resources */,
 				BC7A6CBD1CE99E9C0065E59B /* MyOrder_PayViewController.xib in Resources */,
+				BC420D471D0E4873005B7772 /* Store_AllViewController.xib in Resources */,
 				BCD4FE441CF2F7ED001B9121 /* Bankcard_DetailViewController.xib in Resources */,
 				BCD4FE621CF4094E001B9121 /* MarketViewController.xib in Resources */,
 				BC7A6C061CE415FE0065E59B /* 1.png in Resources */,
@@ -2251,10 +2414,12 @@
 				BCD4FEAE1CF54939001B9121 /* Four_RTViewController.xib in Resources */,
 				BCD4FEAA1CF54939001B9121 /* Four_LTViewController.xib in Resources */,
 				BCD4FE3E1CF2ED35001B9121 /* AddCardViewController.xib in Resources */,
+				BC420D381D0D4391005B7772 /* Mine_HeaderTableViewCell.xib in Resources */,
 				BC906E2C1D017123006072E1 /* ZongJiaTableViewCell.xib in Resources */,
 				BCD4FE711CF40A32001B9121 /* LifeSeviceViewController.xib in Resources */,
 				BCA0B3A81CE1A443004AEC11 /* StoreViewController.xib in Resources */,
 				BC7AF1FD1CFD250A00F01C06 /* Mine_JFViewController.xib in Resources */,
+				BC420D2D1D0D0AA7005B7772 /* Store_ImgTableViewCell.xib in Resources */,
 				BC7844A31CEAABC40017C25D /* Mine_TreasureViewController.xib in Resources */,
 				BC9E31681D0564AF00A73531 /* MyStoreTableViewCell.xib in Resources */,
 				BC7A6C911CE5C18A0065E59B /* Mine_StoreTableViewCell.xib in Resources */,
@@ -2262,6 +2427,7 @@
 				BC7844BB1CEAB5060017C25D /* Mine_IntegralViewController.xib in Resources */,
 				BC906E1C1D016816006072E1 /* DesignPayViewController.xib in Resources */,
 				BC7AF1F31CFD247A00F01C06 /* Mine_balanceViewController.xib in Resources */,
+				BC420D1F1D0CF6BC005B7772 /* Store_CaseViewController.xib in Resources */,
 				BC7845271CEB18060017C25D /* Mine_JoinViewController.xib in Resources */,
 				BC7844F51CEAF3C30017C25D /* SalesViewController.xib in Resources */,
 				BC906E081D014F36006072E1 /* Address_TFTableViewCell.xib in Resources */,
@@ -2296,6 +2462,7 @@
 				BC7046A21D00099100D5104C /* Cart_AddressTableViewCell.xib in Resources */,
 				BCD4FE4E1CF408C1001B9121 /* HotelViewController.xib in Resources */,
 				BC70469D1CFFC62000D5104C /* Cart_OrderViewController.xib in Resources */,
+				BC420D321D0D0D09005B7772 /* Store_ImgBtnTableViewCell.xib in Resources */,
 				BCD4FE531CF40901001B9121 /* RelaxationViewController.xib in Resources */,
 				BCC25AB41CF8343600B5DAF9 /* Integral_ScrollTableViewCell.xib in Resources */,
 				BC7844A81CEAABE20017C25D /* Mine_ShopViewController.xib in Resources */,
@@ -2305,8 +2472,10 @@
 				BCD4FEA41CF54939001B9121 /* Three_LeftViewController.xib in Resources */,
 				BC86CA3B1CFBD31300FAE2F8 /* Personal_OpenViewController.xib in Resources */,
 				BC7A6CA01CE5CA6B0065E59B /* Mine_MineTableViewCell.xib in Resources */,
+				BC420D241D0CF6D1005B7772 /* Store_SettingViewController.xib in Resources */,
 				BC906E171D015F91006072E1 /* SubmitViewController.xib in Resources */,
 				BC7046AC1D000A0F00D5104C /* Cart_TFTableViewCell.xib in Resources */,
+				BC420D1A1D0CF69D005B7772 /* Store_DelegateViewController.xib in Resources */,
 				BC52A68F1D06BEAD003DEACD /* Store_TableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2384,6 +2553,7 @@
 				BC7A6CB11CE977CB0065E59B /* ViewFilterDouble.m in Sources */,
 				BC7A6CB31CE977CB0065E59B /* FilterViewTool.m in Sources */,
 				BCD4FEA11CF54939001B9121 /* Two_RightViewController.m in Sources */,
+				BC420D1E1D0CF6BC005B7772 /* Store_CaseViewController.m in Sources */,
 				BCA0B3701CE190FC004AEC11 /* YiWeiTe.xcdatamodeld in Sources */,
 				BC906E111D015937006072E1 /* TextFiledTableViewCell.m in Sources */,
 				BCA0B3AC1CE1A4C7004AEC11 /* MyTreasureViewController.m in Sources */,
@@ -2404,6 +2574,7 @@
 				BCA0B3A21CE1A3D8004AEC11 /* MainViewController.m in Sources */,
 				BCD4FEA91CF54939001B9121 /* Four_LTViewController.m in Sources */,
 				BC7A6C1B1CE422970065E59B /* DLLRUCache.m in Sources */,
+				BC420D551D0E4919005B7772 /* Store_TViewController.m in Sources */,
 				BC52A68A1D066D82003DEACD /* MyCostumButton.m in Sources */,
 				BC7A6C031CE40EC60065E59B /* Main_ListTableViewCell.m in Sources */,
 				BCD4FE481CF4088D001B9121 /* CateViewController.m in Sources */,
@@ -2413,6 +2584,7 @@
 				BC7046C21D0118C300D5104C /* AddressTableViewCell.m in Sources */,
 				BC7A6C1D1CE422970065E59B /* DLSlideView.m in Sources */,
 				BC7844FE1CEAF50A0017C25D /* TreasureTableViewCell.m in Sources */,
+				BC420D501D0E48D5005B7772 /* Store_ShipmentsViewController.m in Sources */,
 				BC7A6C901CE5C18A0065E59B /* Mine_StoreTableViewCell.m in Sources */,
 				BC7A6CD01CE99F830065E59B /* MyOrder_ShipmentViewController.m in Sources */,
 				BC7844A71CEAABE20017C25D /* Mine_ShopViewController.m in Sources */,
@@ -2424,6 +2596,7 @@
 				BC906E261D0170CD006072E1 /* PayedTableViewCell.m in Sources */,
 				BC86CA3F1CFBD32700FAE2F8 /* Company_OpenViewController.m in Sources */,
 				BCD4FEC71CF552B5001B9121 /* Two_LeftViewController.m in Sources */,
+				BC420D231D0CF6D1005B7772 /* Store_SettingViewController.m in Sources */,
 				BC906E021D01383D006072E1 /* NewAddressViewController.m in Sources */,
 				BC7DC4E91CE2FCA700F3BF27 /* TwoBtnTableViewCell.m in Sources */,
 				BC7046A11D00099100D5104C /* Cart_AddressTableViewCell.m in Sources */,
@@ -2438,6 +2611,7 @@
 				BC906E071D014F36006072E1 /* Address_TFTableViewCell.m in Sources */,
 				BCC25AB91CF8343600B5DAF9 /* Integral_ChoujiangTableViewCell.m in Sources */,
 				BC7845071CEB068F0017C25D /* Shop_DefaultViewController.m in Sources */,
+				BC420D4B1D0E4882005B7772 /* Store_PayViewController.m in Sources */,
 				BC7046A61D0009C900D5104C /* Two_LabTableViewCell.m in Sources */,
 				BC7DC4DA1CE2C32500F3BF27 /* NavigationView.m in Sources */,
 				BC7844F91CEAF3F80017C25D /* RevokeViewController.m in Sources */,
@@ -2457,6 +2631,7 @@
 				BC7A6C1E1CE422970065E59B /* DLFixedTabbarView.m in Sources */,
 				BC9E315F1D05643400A73531 /* MyStoreViewController.m in Sources */,
 				BCD4FE6B1CF409D4001B9121 /* YiYuanViewController.m in Sources */,
+				BC420D131D0CF61B005B7772 /* Store_OrderViewController.m in Sources */,
 				BCD4FEA51CF54939001B9121 /* Three_RTViewController.m in Sources */,
 				BCD4FEA71CF54939001B9121 /* Three_RBViewController.m in Sources */,
 				BC7AF1FC1CFD250A00F01C06 /* Mine_JFViewController.m in Sources */,
@@ -2483,6 +2658,7 @@
 				BC52A68E1D06BEAD003DEACD /* Store_TableViewCell.m in Sources */,
 				BCC1E16B1CF7FE2300C4261F /* TwoTextCenterButton.m in Sources */,
 				BCC25AB51CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.m in Sources */,
+				BC420D371D0D4391005B7772 /* Mine_HeaderTableViewCell.m in Sources */,
 				BC4B0CFC1CF6DA3600B53927 /* Cate_BtnTableViewCell.m in Sources */,
 				BC7210F41CEC53AC00A43681 /* MineCollectionViewCell.m in Sources */,
 				BC7046BD1D00326E00D5104C /* AddressViewController.m in Sources */,
@@ -2507,13 +2683,18 @@
 				BC7A6C761CE587C40065E59B /* MineTableViewCell.m in Sources */,
 				BC78451B1CEB07430017C25D /* Shop_TicketViewController.m in Sources */,
 				BC7DC4EE1CE2FCC800F3BF27 /* ThreeBtnTableViewCell.m in Sources */,
+				BC420D2C1D0D0AA7005B7772 /* Store_ImgTableViewCell.m in Sources */,
 				BCC1E16A1CF7FE2300C4261F /* ImageCenterButton.m in Sources */,
 				BC52A6AB1D080B22003DEACD /* Store_GoodsTableViewCell.m in Sources */,
 				BC7A6C341CE433270065E59B /* TrackViewController.m in Sources */,
+				BC420D311D0D0D09005B7772 /* Store_ImgBtnTableViewCell.m in Sources */,
+				BC420D461D0E4873005B7772 /* Store_AllViewController.m in Sources */,
+				BC420D5E1D0E4DDD005B7772 /* Store_OrderTableViewCell.m in Sources */,
 				BC4B0D061CF6DBD700B53927 /* Cate_SliderTableViewCell.m in Sources */,
 				BC52A6931D07BFF3003DEACD /* ReleaseGoodsViewController.m in Sources */,
 				BC7844C01CEAB5260017C25D /* Mine_ShareViewController.m in Sources */,
 				BC7A6C9A1CE5C1FE0065E59B /* Mine_BrandTableViewCell.m in Sources */,
+				BC420D191D0CF69D005B7772 /* Store_DelegateViewController.m in Sources */,
 				BC7A6CBC1CE99E9C0065E59B /* MyOrder_PayViewController.m in Sources */,
 				BC022EEB1D05559C0025C23E /* STPickerSingle.m in Sources */,
 				BCD4FEAB1CF54939001B9121 /* Four_LBViewController.m in Sources */,
@@ -2523,6 +2704,7 @@
 				BC2D7F201D0661D200370CE1 /* Store_BtnTableViewCell.m in Sources */,
 				BC7A6CD51CE9A7740065E59B /* MyOrderTableViewCell.m in Sources */,
 				BC7A6C9F1CE5CA6B0065E59B /* Mine_MineTableViewCell.m in Sources */,
+				BC420D8E1D0E7B9B005B7772 /* NewNoticeView.m in Sources */,
 				BC4B0CF71CF6DA2200B53927 /* Cate_ScrollTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

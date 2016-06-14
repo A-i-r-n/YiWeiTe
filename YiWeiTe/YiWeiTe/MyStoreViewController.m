@@ -20,6 +20,10 @@
 
 #import "ReleaseGoodsViewController.h"
 #import "Store_GoodsViewController.h"
+#import "Store_OrderViewController.h"
+#import "Store_DelegateViewController.h"
+#import "Store_CaseViewController.h"
+#import "Store_SettingViewController.h"
 
 @interface MyStoreViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -124,36 +128,44 @@
     switch (button.tag) {
         case 10:
         {
-            NSLog(@"发布宝贝");
+            
             ReleaseGoodsViewController *release = [[ReleaseGoodsViewController alloc]init];
             [self presentViewController:release animated:YES completion:nil];   
         }
             break;
         case 11:
         {
-            NSLog(@"管理");
+            
             Store_GoodsViewController *goods = [[Store_GoodsViewController alloc]init];
             [self.navigationController pushViewController:goods animated:YES];
         }
             break;
         case 12:
         {
-            NSLog(@"订单");
+            
+            Store_OrderViewController *order = [[Store_OrderViewController alloc]init];
+            [self.navigationController pushViewController:order animated:YES];
         }
             break;
         case 13:
         {
-            NSLog(@"代理");
+            
+            Store_DelegateViewController *delegate = [[Store_DelegateViewController alloc]init];
+            [self.navigationController pushViewController:delegate animated:YES];
         }
             break;
         case 14:
         {
-            NSLog(@"装修");
+            
+            Store_CaseViewController *storeCase = [[Store_CaseViewController alloc]init];
+            [self.navigationController pushViewController:storeCase animated:YES];
         }
             break;
         case 15:
         {
-            NSLog(@"设置");
+            
+            Store_SettingViewController *setting = [[Store_SettingViewController alloc]init];
+            [self.navigationController pushViewController:setting animated:YES];
         }
             break;
         default:

@@ -22,7 +22,7 @@
                             <constraint firstAttribute="width" constant="25" id="okQ-RP-8uU"/>
                             <constraint firstAttribute="height" constant="25" id="tts-vh-A51"/>
                         </constraints>
-                        <state key="normal" title="Button" image="设置"/>
+                        <state key="normal" title="Button" image="我的_16"/>
                         <connections>
                             <action selector="settingClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Q0H-kg-gxd"/>
                         </connections>
@@ -33,7 +33,7 @@
                             <constraint firstAttribute="height" constant="25" id="JB2-gs-A4V"/>
                             <constraint firstAttribute="width" constant="25" id="ZTe-kF-jRd"/>
                         </constraints>
-                        <state key="normal" title="Button" image="消息"/>
+                        <state key="normal" title="Button" image="我的_15"/>
                         <connections>
                             <action selector="messageClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wwx-16-XNp"/>
                         </connections>
@@ -264,7 +264,7 @@
     </objects>
     <resources>
         <image name="图标" width="50" height="50"/>
-        <image name="消息" width="48" height="50"/>
-        <image name="设置" width="40" height="40"/>
+        <image name="我的_15" width="40" height="36"/>
+        <image name="我的_16" width="46" height="42"/>
     </resources>
 </document>

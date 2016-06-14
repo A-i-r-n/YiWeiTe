@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Store_ImgBtnTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OB4-27-2bR">
+                        <rect key="frame" x="130" y="19.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OB4-27-2bR" secondAttribute="height" multiplier="1:1" id="ehF-4S-lhg"/>
+                        </constraints>
+                        <state key="normal" image="camera"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.91367701479999996" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="OB4-27-2bR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="61r-bz-yWg"/>
+                    <constraint firstItem="OB4-27-2bR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="UI8-88-Rkp"/>
+                    <constraint firstItem="OB4-27-2bR" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.6" id="vRK-1L-D36"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgBtn" destination="OB4-27-2bR" id="Djk-xv-Aiw"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="camera" width="106" height="106"/>
+    </resources>
+</document>
