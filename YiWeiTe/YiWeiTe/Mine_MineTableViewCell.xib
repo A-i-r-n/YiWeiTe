@@ -38,13 +38,14 @@
                             <action selector="messageClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wwx-16-XNp"/>
                         </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0m-ga-0d6">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0m-ga-0d6">
                         <rect key="frame" x="27" y="40" width="60" height="60"/>
                         <color key="backgroundColor" red="0.70588235290000001" green="0.56862745100000001" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="Boc-Ak-eZQ"/>
                             <constraint firstAttribute="width" constant="60" id="UjR-0U-80L"/>
                         </constraints>
+                        <state key="normal" image="camera"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
@@ -263,6 +264,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="camera" width="106" height="106"/>
         <image name="图标" width="50" height="50"/>
         <image name="我的_15" width="40" height="36"/>
         <image name="我的_16" width="46" height="42"/>

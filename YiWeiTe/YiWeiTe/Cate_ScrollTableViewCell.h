@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SDCycleScrollView.h"
 @interface Cate_ScrollTableViewCell : UITableViewCell
-
+{
+    NSMutableArray *_imgArray;
+}
 @end

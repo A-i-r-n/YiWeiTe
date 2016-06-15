@@ -37,9 +37,9 @@
 
 - (void)registCell
 {
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    [_tableView registerNib:[UINib nibWithNibName:@"Cate_ScrollTableViewCell" bundle:nil] forCellReuseIdentifier:@"scrollCell"];
+    
+    //[_tableView registerNib:[UINib nibWithNibName:@"Cate_ScrollTableViewCell" bundle:nil] forCellReuseIdentifier:@"scrollCell"];
+    [_tableView registerClass:[Cate_ScrollTableViewCell class] forCellReuseIdentifier:@"scrollCell"];
     [_tableView registerClass:[Cate_BtnTableViewCell class] forCellReuseIdentifier:@"btnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"Cate_TwoBtnTableViewCell" bundle:nil] forCellReuseIdentifier:@"twoCell"];
     [_tableView registerClass:[Cate_SliderTableViewCell class] forCellReuseIdentifier:@"sliderCell"];
@@ -105,7 +105,7 @@
              return 140 * ScreenWidth / 375.0;
         }
         if (indexPath.row == 1) {
-             return 150 * ScreenWidth / 375.0;
+             return 185 * ScreenWidth / 375.0;
         }
        
     }
@@ -125,6 +125,7 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             Cate_ScrollTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"scrollCell"];
+            
             return cell;
         }
         if (indexPath.row == 1) {

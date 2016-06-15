@@ -42,14 +42,13 @@
 
      _titleArray = [NSMutableArray arrayWithObjects:@"美食",@"酒店",@"休闲娱乐",@"丽人",@"母婴",@"超市",@"穿搭",@"一元夺宝",@"购物车",@"生活服务", nil];
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    CGFloat leftSpace = 15;
+    CGFloat leftSpace = 20;
     CGFloat space = 25;
     CGFloat width = (ScreenWidth - leftSpace * 2 - space * 4) / 5.0;
     for (int i = 0; i<10; i++) {
         _button = [[MyCostumButton alloc]init];
         _button.tag = 10+i;
-        _button.frame = CGRectMake(leftSpace + i % 5 * (width + space), leftSpace  + i / 5 * (width + space + 25), width, width + 25);
-        _button.lab.font = [UIFont systemFontOfSize:12];
+        _button.frame = CGRectMake(leftSpace + i % 5 * (width + space), 10  + i / 5 * (width + space + 25), width, width + 25);
         _button.imgView.image = [UIImage imageNamed:_imgArray[i]];
         _button.lab.text = _titleArray[i];
         [self addSubview:_button];

@@ -16,28 +16,27 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    _imgArray = [NSMutableArray arrayWithObjects:@"我的_1",
-                 @"我的_2",
-                 @"我的_3",
-                 @"我的_4",
-                 @"我的_5",
-                 @"我的_6",
-                 @"我的_7",
-                 @"我的_8",
+    _imgArray = [NSMutableArray arrayWithObjects:@"首页_1",
+                 @"首页_2",
+                 @"首页_3",
+                 @"首页_4",
+                 @"首页_5",
+                 @"首页_6",
+                 @"首页_7",
+                 @"首页_8",
                   nil];
     
     _titleArray = [NSMutableArray arrayWithObjects:@"自助餐",@"中餐",@"西餐",@"火锅",@"日韩料理",@"小吃快餐",@"甜点饮品",@"烧烤",nil];
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         
-        CGFloat leftSpace = 15;
-        CGFloat space = 25;
+        CGFloat leftSpace = 30;
+        CGFloat space = 45;
         CGFloat width = (ScreenWidth - leftSpace * 2 - space * 3) / 4.0;
         for (int i = 0; i<8; i++) {
             _button = [[MyCostumButton alloc]init];
-            _button.backgroundColor = [UIColor redColor];
             _button.tag = 10+i;
-            _button.frame = CGRectMake(leftSpace + i % 4 * (width + space), leftSpace  + i / 4 * (width + space + 25), width, width + 25);
+            _button.frame = CGRectMake(leftSpace + i % 4 * (width + space), 10  + i / 4 * (width + space), width, width + 25);
             _button.imgView.image = [UIImage imageNamed:_imgArray[i]];
             _button.lab.text = _titleArray[i];
             [self addSubview:_button];

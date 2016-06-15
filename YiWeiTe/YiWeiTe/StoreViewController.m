@@ -14,12 +14,15 @@
 #import "ViewFilterDouble.h"
 #import "FilterViewTool.h"
 
+#import "SDCycleScrollView.h"
+
 
 
 
 @interface StoreViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) FilterViewTool *viewFilter;
+@property (nonatomic, strong) NSMutableArray *imgArray;
 
 @end
 
@@ -30,6 +33,7 @@
     // Do any additional setup after loading the view from its nib.
     self.navigationController.navigationBar.translucent = NO;
     [self.view setBackgroundColor:DSBackColor];
+      _imgArray = [NSMutableArray arrayWithObjects:@"banner1",@"banner2",@"banner3", nil];
 
     [self initUI];
 
@@ -78,23 +82,8 @@
     [control addTarget:self action:@selector(controlPressed:) forControlEvents:UIControlEventValueChanged];
     [view addSubview:control];
     [self.navigationController.view addSubview:view];
-    
-//    UIView *filtrateView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, ScreenWidth, 54)];
-//    filtrateView.backgroundColor = [UIColor orangeColor];
-//    [self.view addSubview:filtrateView];
-    
 
     [_tableView registerNib:[UINib nibWithNibName:@"Main_ListTableViewCell" bundle:nil] forCellReuseIdentifier:@"listCell"];
-    
-    
-    
-//    CGFloat width = ScreenWidth;
-//    CGFloat height = ScreenWidth * 142 / 414.0;
-//    UIView *scrollView = [[UIView alloc]initWithFrame:CGRectMake(0,64 + 54, width, height)];
-//    scrollView.backgroundColor = [UIColor grayColor];
-//    [self.view addSubview:scrollView];
-    
-    
 }
 
 
@@ -160,13 +149,15 @@
         if (!cell) {
             cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
         }
-        UIView *scrollView = [[UIView alloc]initWithFrame:CGRectMake(0,0, ScreenWidth, 140 * ScreenWidth / 375.0)];
-        scrollView.backgroundColor = [UIColor redColor];
-        [cell addSubview:scrollView];
+
+        SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, ScreenWidth, 140 * ScreenWidth / 375.0) imageURLStringsGroup:_imgArray];
+        cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
+        [cell addSubview:cycleScrollView];
         return cell;
     }
     
     Main_ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"listCell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

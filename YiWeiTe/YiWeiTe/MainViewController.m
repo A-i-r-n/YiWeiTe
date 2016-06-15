@@ -10,6 +10,8 @@
 #import "UIButton+LXMImagePosition.h"
 #import "NavigationView.h"
 
+#import "SDCycleScrollView.h"
+
 #import "BtnTableViewCell.h"
 #import "TwoBtnTableViewCell.h"
 #import "ThreeBtnTableViewCell.h"
@@ -48,6 +50,7 @@
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate,DLTabedSlideViewDelegate>
 {
     NSMutableArray *_itemArray;
+    NSMutableArray *_imgArray;
 }
 
 @end
@@ -57,6 +60,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _imgArray = [NSMutableArray arrayWithObjects:@"banner1",@"banner2",@"banner3", nil];
     [self registTableView];
 }
 
@@ -100,7 +104,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
-        return 140;
+        return 140 *ScreenWidth/375.0;
     }
     if (section == 1) {
         return 40;
@@ -113,10 +117,11 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
-        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 120)];
-        view.backgroundColor = [UIColor orangeColor];
-         return view;
-        
+    
+        SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, ScreenWidth, 140 *ScreenWidth/375.0) imageURLStringsGroup:_imgArray];
+        cycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
+        //cycleScrollView.delegate = self;
+         return cycleScrollView;
     }
     if (section == 1) {
         UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
@@ -126,7 +131,12 @@
         [view addSubview:imgView];
         NewNoticeView *notice = [[NewNoticeView alloc]initWithFrame:CGRectMake(50, 0, ScreenWidth - 50, 40)];
         notice.backgroundColor = [UIColor clearColor];
-                notice.noticeList = [NSMutableArray arrayWithObjects:@"小美眉抢到了一部iPhone8s!",@"小美眉又抢到了一部iPhone8s!",@"小美眉再次抢到了一部iPhone8s!",@"小美眉真幸运再次抢到了一部iPhone8s!",@"小美眉抢到了一部iPhone8s!", nil];
+        notice.noticeList = [NSMutableArray arrayWithObjects:
+                                     @"小美眉抢到了一部iPhone8s!",
+                                     @"小美眉又抢到了一部iPhone8s!",
+                                     @"小美眉再次抢到了一部iPhone8s!",
+                                     @"小美眉真幸运再次抢到了一部iPhone8s!",
+                                     @"小美眉抢到了一部iPhone8s!", nil];
         [view addSubview:notice];
         return view;
     }

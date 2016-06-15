@@ -49,10 +49,10 @@
                     <constraint firstItem="m1B-QB-JAG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="xmD-Rf-8OX"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="232.5" y="321"/>
+            <point key="canvasLocation" x="267.5" y="246"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="我的_13" width="68" height="68"/>
+        <image name="我的_13" width="34" height="34"/>
     </resources>
 </document>

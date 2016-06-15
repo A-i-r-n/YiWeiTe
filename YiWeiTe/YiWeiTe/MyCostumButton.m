@@ -37,7 +37,7 @@
         [_lab mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_imgView.mas_bottom).offset(10);
             make.centerX.equalTo(_imgView.mas_centerX);
-            make.width.equalTo(self.mas_width).offset(10);
+            make.width.equalTo(self.mas_width).offset(25);
             make.height.offset(20);
         }];
     }

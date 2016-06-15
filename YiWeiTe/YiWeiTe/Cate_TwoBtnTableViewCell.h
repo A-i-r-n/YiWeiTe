@@ -10,4 +10,5 @@
 
 @interface Cate_TwoBtnTableViewCell : UITableViewCell
 
+
 @end

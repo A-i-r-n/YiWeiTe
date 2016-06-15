@@ -24,8 +24,8 @@
     if (self) {
         
         _img = [[UIImageView alloc]init];
-        //_img.image = [UIImage imageNamed:@"消息"];
-        _img.backgroundColor = [UIColor orangeColor];
+        _img.image = [UIImage imageNamed:@"我的_15"];
+        //_img.backgroundColor = [UIColor orangeColor];
         [self addSubview:_img];
         
         _numLab = [[UILabel alloc]init];
