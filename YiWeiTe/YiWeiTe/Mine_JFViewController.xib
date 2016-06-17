@@ -19,10 +19,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hel-TK-C8N">
-                            <rect key="frame" x="15" y="20" width="25" height="25"/>
+                            <rect key="frame" x="15" y="30" width="25" height="25"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="25" id="Ei1-yD-l0s"/>
-                                <constraint firstAttribute="width" constant="25" id="guI-Sq-xHp"/>
+                                <constraint firstAttribute="height" constant="25" id="7ZD-0X-gdF"/>
+                                <constraint firstAttribute="width" constant="25" id="MdP-N0-0Zd"/>
                             </constraints>
                             <state key="normal" title="Button" image="back"/>
                             <connections>
@@ -30,37 +30,37 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwl-bg-lVA">
-                            <rect key="frame" x="112" y="20" width="150" height="25"/>
+                            <rect key="frame" x="112" y="30" width="150" height="25"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="25" id="D24-ea-8ni"/>
-                                <constraint firstAttribute="width" constant="150" id="v5T-sb-2Oq"/>
+                                <constraint firstAttribute="height" constant="25" id="Qc8-UG-ILM"/>
+                                <constraint firstAttribute="width" constant="150" id="xz6-X8-Eub"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="mwl-bg-lVA" firstAttribute="centerX" secondItem="M1O-6v-zNo" secondAttribute="centerX" id="61C-Ai-j4P"/>
-                        <constraint firstItem="mwl-bg-lVA" firstAttribute="centerY" secondItem="M1O-6v-zNo" secondAttribute="centerY" id="Obe-3Q-pJ6"/>
-                        <constraint firstItem="Hel-TK-C8N" firstAttribute="top" secondItem="M1O-6v-zNo" secondAttribute="top" constant="20" id="aru-Fr-y3t"/>
-                        <constraint firstItem="Hel-TK-C8N" firstAttribute="centerY" secondItem="mwl-bg-lVA" secondAttribute="centerY" id="iR3-IN-hcU"/>
-                        <constraint firstItem="Hel-TK-C8N" firstAttribute="leading" secondItem="M1O-6v-zNo" secondAttribute="leading" constant="15" id="qol-Qi-Zdh"/>
+                        <constraint firstItem="Hel-TK-C8N" firstAttribute="centerY" secondItem="mwl-bg-lVA" secondAttribute="centerY" id="2qg-zz-Wpb"/>
+                        <constraint firstItem="Hel-TK-C8N" firstAttribute="top" secondItem="M1O-6v-zNo" secondAttribute="top" constant="30" id="5Gt-Fc-okF"/>
+                        <constraint firstItem="Hel-TK-C8N" firstAttribute="leading" secondItem="M1O-6v-zNo" secondAttribute="leading" constant="15" id="e6g-2k-295"/>
+                        <constraint firstItem="mwl-bg-lVA" firstAttribute="centerX" secondItem="M1O-6v-zNo" secondAttribute="centerX" id="t37-B1-jUQ"/>
+                        <constraint firstAttribute="height" constant="64" id="uqo-Cm-Iuj"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="M1O-6v-zNo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3ea-GT-wir"/>
-                <constraint firstItem="M1O-6v-zNo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ejx-qm-3QZ"/>
-                <constraint firstAttribute="trailing" secondItem="M1O-6v-zNo" secondAttribute="trailing" id="b7w-sq-hb3"/>
+                <constraint firstAttribute="trailing" secondItem="M1O-6v-zNo" secondAttribute="trailing" id="Cdh-ZI-Vah"/>
+                <constraint firstItem="M1O-6v-zNo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Kt5-Wg-bcp"/>
+                <constraint firstItem="M1O-6v-zNo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yuV-Pw-AiV"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="266.5" y="258.5"/>
         </view>
     </objects>
     <resources>
-        <image name="back" width="21" height="20"/>
+        <image name="back" width="26" height="26"/>
     </resources>
 </document>

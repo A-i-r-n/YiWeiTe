@@ -14,7 +14,7 @@
 #import "DLSlideView/DLCache/DLLRUCache.h"
 #import "DLScrollTabbarView.h"
 #import "ARSegmentView.h"
-
+#import "MJRefresh.h"
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
@@ -24,5 +24,7 @@
 #define ScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
 
 #define ScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
+#define CellWidth (80 * ScreenWidth / 375.0)
+
 
 #endif /* PrefixHeader_pch */

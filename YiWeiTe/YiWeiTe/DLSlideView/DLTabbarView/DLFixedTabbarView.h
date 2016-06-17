@@ -23,6 +23,9 @@
 @property(nonatomic, strong) NSArray *tabbarItems;
 //- (void)addBarItemWithTitle:(NSString *)title titleColor:(UIColor *)titleColor image:(UIImage *)image selectedImage:(UIImage *)selectedImage;
 
+@property(nonatomic, strong)UIImageView *trackView_;
+
+
 @property(nonatomic, assign) NSInteger selectedIndex;
 @property(nonatomic, readonly) NSInteger tabbarCount;
 @property(nonatomic, weak) id<DLSlideTabbarDelegate> delegate;

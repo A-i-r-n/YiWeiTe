@@ -24,7 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [_tableView registerNib:[UINib nibWithNibName:@"TicketTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    _dataArray = [NSMutableArray arrayWithObjects:@"精选",@"食品饮料",@"家用电器",@"运动户外",@"服饰内衣",@"家居家纺",@"电脑办公",@"图书影音",@"个护化妆",@"鞋靴箱包",@"手机数码",@"母婴用品",@"承认保健",@"汽车用品",@"珠宝钟表",@"其他", nil];
+    _dataArray = [NSMutableArray arrayWithObjects:@"精选",@"食品饮料",@"家用电器",@"运动户外",@"服饰内衣",@"家居家纺",@"电脑办公",@"图书影音",@"个护化妆",@"鞋靴箱包",@"手机数码",@"母婴用品",@"成人保健",@"汽车用品",@"珠宝钟表",@"其他", nil];
     [self onInitMenu];
     
     
@@ -71,6 +71,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TicketTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

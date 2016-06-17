@@ -36,7 +36,34 @@
       _imgArray = [NSMutableArray arrayWithObjects:@"banner1",@"banner2",@"banner3", nil];
 
     [self initUI];
+    [self refresh];
+    [self createNavigation];
 
+}
+
+//刷新
+-(void)refresh
+{
+    // 下拉刷新
+    _tableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        // 模拟延迟加载数据，因此2秒后才调用（真实开发中，可以移除这段gcd代码）
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 结束刷新
+            [_tableView.mj_header endRefreshing];
+        });
+    }];
+    
+    // 设置自动切换透明度(在导航栏下面自动隐藏)
+    _tableView.mj_header.automaticallyChangeAlpha = YES;
+    
+    // 上拉刷新
+    _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        // 模拟延迟加载数据，因此2秒后才调用（真实开发中，可以移除这段gcd代码）
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 结束刷新
+            [_tableView.mj_footer endRefreshing];
+        });
+    }];
 }
 
 - (void)initUI {
@@ -47,7 +74,6 @@
 - (FilterViewTool *)viewFilter {
     if (_viewFilter == nil) {
         _viewFilter = [[FilterViewTool alloc] init];
-        //        _viewFilter.backgroundColor = DSColor;
     }
     return _viewFilter;
 }
@@ -64,13 +90,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillLayoutSubviews
-{
-    [super viewWillLayoutSubviews];
-    [self createNavigation];
-    
-}
-
 - (void)createNavigation
 {
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 64)];
@@ -82,7 +101,6 @@
     [control addTarget:self action:@selector(controlPressed:) forControlEvents:UIControlEventValueChanged];
     [view addSubview:control];
     [self.navigationController.view addSubview:view];
-
     [_tableView registerNib:[UINib nibWithNibName:@"Main_ListTableViewCell" bundle:nil] forCellReuseIdentifier:@"listCell"];
 }
 
@@ -110,6 +128,8 @@
     }
 }
 
+
+#pragma mark tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 10;

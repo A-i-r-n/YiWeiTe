@@ -19,11 +19,13 @@
 @implementation DLFixedTabbarViewTabItem
 @end
 
-@implementation DLFixedTabbarView{
+@implementation DLFixedTabbarView
+{
     UIScrollView *scrollView_;
     UIImageView *backgroudView_;
-    UIImageView *trackView_;
+    //UIImageView *trackView_;
 }
+
 
 - (void)commonInit{
     _selectedIndex = -1;
@@ -34,9 +36,9 @@
     scrollView_ = [[UIScrollView alloc] initWithFrame:self.bounds];
     [self addSubview:scrollView_];
     
-    trackView_ = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.bounds.size.height-kTrackViewHeight-1, self.bounds.size.width, kTrackViewHeight)];
-    [self addSubview:trackView_];
-    trackView_.layer.cornerRadius = 2.0f;
+    _trackView_ = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.bounds.size.height-kTrackViewHeight-1, self.bounds.size.width, kTrackViewHeight)];
+    [self addSubview:_trackView_];
+    _trackView_.layer.cornerRadius = 2.0f;
 
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
     [scrollView_ addGestureRecognizer:tap];
@@ -61,7 +63,7 @@
 }
 
 - (void)setTrackColor:(UIColor *)trackColor{
-    trackView_.backgroundColor = trackColor;
+    _trackView_.backgroundColor = trackColor;
 }
 
 - (void)setTabbarItems:(NSArray *)tabbarItems{
@@ -125,7 +127,7 @@
     }
     
     float trackX = width*self.selectedIndex;
-    trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, width, kTrackViewHeight);
+    _trackView_.frame = CGRectMake(trackX, _trackView_.frame.origin.y, width, kTrackViewHeight);
 }
 
 - (NSInteger)tabbarCount{
@@ -160,7 +162,7 @@
         trackX = width*fromIndex - width*percent;
     }
 
-    trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, CGRectGetWidth(trackView_.bounds), CGRectGetHeight(trackView_.bounds));
+    _trackView_.frame = CGRectMake(trackX, _trackView_.frame.origin.y, CGRectGetWidth(_trackView_.bounds), CGRectGetHeight(_trackView_.bounds));
 }
 
 - (void)setSelectedIndex:(NSInteger)selectedIndex{
@@ -187,7 +189,7 @@
         
         float width = self.bounds.size.width/self.tabbarItems.count;
         float trackX = width*selectedIndex;
-        trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, CGRectGetWidth(trackView_.bounds), CGRectGetHeight(trackView_.bounds));
+        _trackView_.frame = CGRectMake(trackX, _trackView_.frame.origin.y, CGRectGetWidth(_trackView_.bounds), CGRectGetHeight(_trackView_.bounds));
 
         _selectedIndex = selectedIndex;
     }

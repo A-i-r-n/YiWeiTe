@@ -19,7 +19,7 @@
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="KfF-to-7uS">
                     <rect key="frame" x="0.0" y="94" width="375" height="573"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="4GJ-6E-aha"/>
                         <outlet property="delegate" destination="-1" id="LrE-bi-qnw"/>
@@ -29,7 +29,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zG-2a-Gg0">
-                            <rect key="frame" x="15" y="20" width="25" height="25"/>
+                            <rect key="frame" x="15" y="30" width="25" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="cQB-VX-Nlg"/>
                                 <constraint firstAttribute="width" constant="25" id="cZ1-oA-RLe"/>
@@ -40,13 +40,13 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠券" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h1-S3-5Oo">
-                            <rect key="frame" x="112" y="20" width="150" height="25"/>
+                            <rect key="frame" x="112" y="30" width="150" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="MOJ-X9-R9n"/>
                                 <constraint firstAttribute="width" constant="150" id="XGp-vp-VU0"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -54,14 +54,14 @@
                     <constraints>
                         <constraint firstItem="7zG-2a-Gg0" firstAttribute="centerY" secondItem="3h1-S3-5Oo" secondAttribute="centerY" id="CaD-Pw-haI"/>
                         <constraint firstAttribute="height" constant="64" id="IIk-6S-dEm"/>
-                        <constraint firstItem="7zG-2a-Gg0" firstAttribute="top" secondItem="mKk-wi-MOr" secondAttribute="top" constant="20" id="JfM-4z-Xwe"/>
+                        <constraint firstItem="7zG-2a-Gg0" firstAttribute="top" secondItem="mKk-wi-MOr" secondAttribute="top" constant="30" id="JfM-4z-Xwe"/>
                         <constraint firstItem="7zG-2a-Gg0" firstAttribute="leading" secondItem="mKk-wi-MOr" secondAttribute="leading" constant="15" id="O56-MI-PSD"/>
                         <constraint firstItem="3h1-S3-5Oo" firstAttribute="centerX" secondItem="mKk-wi-MOr" secondAttribute="centerX" id="Yel-oy-xvg"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-wa-TsA">
                     <rect key="frame" x="0.0" y="64" width="375" height="30"/>
-                    <color key="backgroundColor" patternImage="ACFD96D4-8930-4079-83C5-2A1B1EC20E73" colorSpace="pattern"/>
+                    <color key="backgroundColor" patternImage="D6BD1227-7420-4C13-8FBC-DB2C23F95DD8" colorSpace="pattern"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="VHi-5E-mzI"/>
                     </constraints>
@@ -85,7 +85,7 @@
         </view>
     </objects>
     <resources>
-        <image name="ACFD96D4-8930-4079-83C5-2A1B1EC20E73" width="512" height="512">
+        <image name="D6BD1227-7420-4C13-8FBC-DB2C23F95DD8" width="512" height="512">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

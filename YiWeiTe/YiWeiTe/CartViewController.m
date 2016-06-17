@@ -38,6 +38,48 @@
 
 @implementation CartViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    
+    self.view.backgroundColor = RGBCOLOR(245, 246, 248);
+    
+    dataArray = [[NSMutableArray alloc]init];
+    selectGoods = [[NSMutableArray alloc]init];
+    [self setupMainView];
+    [self creatData];
+    [self refresh];
+    self.title = @"购物车";
+}
+
+
+//刷新
+-(void)refresh
+{
+    // 下拉刷新
+    myTableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        // 模拟延迟加载数据，因此2秒后才调用（真实开发中，可以移除这段gcd代码）
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 结束刷新
+            [myTableView.mj_header endRefreshing];
+        });
+    }];
+    
+    // 设置自动切换透明度(在导航栏下面自动隐藏)
+    myTableView.mj_header.automaticallyChangeAlpha = YES;
+    
+    // 上拉刷新
+    myTableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        // 模拟延迟加载数据，因此2秒后才调用（真实开发中，可以移除这段gcd代码）
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 结束刷新
+            [myTableView.mj_footer endRefreshing];
+        });
+    }];
+}
+
+
 -(void)viewWillAppear:(BOOL)animated {
     
     //设置tabbar不隐藏
@@ -93,19 +135,6 @@
     } else {
         [self setupMainView];
     }
-}
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    
-    self.view.backgroundColor = RGBCOLOR(245, 246, 248);
-    
-    dataArray = [[NSMutableArray alloc]init];
-    selectGoods = [[NSMutableArray alloc]init];
-    [self setupMainView];
-    [self creatData];
-    self.title = @"购物车";
 }
 
 #pragma mark - 设置底部视图

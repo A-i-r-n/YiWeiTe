@@ -19,7 +19,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOX-dM-EsE">
-                            <rect key="frame" x="15" y="20" width="25" height="25"/>
+                            <rect key="frame" x="15" y="30" width="25" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="1ON-CV-jAn"/>
                                 <constraint firstAttribute="width" constant="25" id="IFi-FX-oI4"/>
@@ -30,13 +30,13 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="余额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeW-SR-Hf7">
-                            <rect key="frame" x="113" y="20" width="150" height="25"/>
+                            <rect key="frame" x="113" y="30" width="150" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="150" id="Gte-DM-05D"/>
                                 <constraint firstAttribute="height" constant="25" id="VT4-6v-aCD"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -44,7 +44,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="64" id="9CZ-zF-Jb1"/>
                         <constraint firstItem="EeW-SR-Hf7" firstAttribute="centerX" secondItem="Cwm-gj-Wqm" secondAttribute="centerX" id="Q91-I1-oHd"/>
-                        <constraint firstItem="tOX-dM-EsE" firstAttribute="top" secondItem="Cwm-gj-Wqm" secondAttribute="top" constant="20" id="jR0-rF-GNd"/>
+                        <constraint firstItem="tOX-dM-EsE" firstAttribute="top" secondItem="Cwm-gj-Wqm" secondAttribute="top" constant="30" id="jR0-rF-GNd"/>
                         <constraint firstItem="tOX-dM-EsE" firstAttribute="centerY" secondItem="EeW-SR-Hf7" secondAttribute="centerY" id="l2O-Gb-OVi"/>
                         <constraint firstItem="tOX-dM-EsE" firstAttribute="leading" secondItem="Cwm-gj-Wqm" secondAttribute="leading" constant="15" id="taI-VF-nIx"/>
                     </constraints>
@@ -62,6 +62,6 @@
         </view>
     </objects>
     <resources>
-        <image name="back" width="21" height="20"/>
+        <image name="back" width="26" height="26"/>
     </resources>
 </document>

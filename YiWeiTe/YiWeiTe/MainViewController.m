@@ -46,6 +46,8 @@
 
 #import "NewNoticeView.h"
 
+#import "MJRefresh.h"
+
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate,DLTabedSlideViewDelegate>
 {
@@ -75,6 +77,27 @@
 
 - (void)registTableView
 {
+    // 下拉刷新
+    _tableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        // 模拟延迟加载数据，因此2秒后才调用（真实开发中，可以移除这段gcd代码）
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 结束刷新
+            [_tableView.mj_header endRefreshing];
+        });
+    }];
+    
+    // 设置自动切换透明度(在导航栏下面自动隐藏)
+    _tableView.mj_header.automaticallyChangeAlpha = YES;
+    
+    // 上拉刷新
+    _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        // 模拟延迟加载数据，因此2秒后才调用（真实开发中，可以移除这段gcd代码）
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 结束刷新
+            [_tableView.mj_footer endRefreshing];
+        });
+    }];
+
     _tableView.allowsSelection = NO;
     [_tableView registerClass:[BtnTableViewCell class] forCellReuseIdentifier:@"btnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"TwoBtnTableViewCell" bundle:nil] forCellReuseIdentifier:@"twoBtnCell"];
@@ -227,25 +250,24 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        self.tabedSlideView = [[DLTabedSlideView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 500)];
+        self.tabedSlideView.delegate=self;
+        self.tabedSlideView.baseViewController = self;
+        self.tabedSlideView.tabItemNormalColor = [UIColor blackColor];
+        self.tabedSlideView.tabItemSelectedColor = SELECT_TEXTCOLOR;
+        self.tabedSlideView.tabbarTrackColor = SELECT_TEXTCOLOR;
+        self.tabedSlideView.tabbarBottomSpacing = 3.0;
+        DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"附近商家" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
+        DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"全国商家" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
+        DLTabedbarItem *item3 = [DLTabedbarItem itemWithTitle:@"猜你喜欢" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
+        DLTabedbarItem *item4 = [DLTabedbarItem itemWithTitle:@"足迹" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
+        self.tabedSlideView.tabbarItems = @[item1, item2, item3,item4];
+        [self.tabedSlideView buildTabbar];
+        
+        self.tabedSlideView.selectedIndex = 0;
+        [cell.contentView addSubview:_tabedSlideView];
     }
-    self.tabedSlideView = [[DLTabedSlideView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 500)];
-    self.tabedSlideView.delegate=self;
-    self.tabedSlideView.baseViewController = self;
-    self.tabedSlideView.tabItemNormalColor = [UIColor blackColor];
-    self.tabedSlideView.tabItemSelectedColor = SELECT_TEXTCOLOR;
-    self.tabedSlideView.tabbarTrackColor = SELECT_TEXTCOLOR;
-    self.tabedSlideView.tabbarBackgroundImage = [UIImage imageNamed:@"tabbarBk"];
-    self.tabedSlideView.tabbarBottomSpacing = 3.0;
     
-    DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"附近商家" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-    DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"全国商家" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-    DLTabedbarItem *item3 = [DLTabedbarItem itemWithTitle:@"猜你喜欢" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-    DLTabedbarItem *item4 = [DLTabedbarItem itemWithTitle:@"足迹" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-    self.tabedSlideView.tabbarItems = @[item1, item2, item3,item4];
-    [self.tabedSlideView buildTabbar];
-    
-    self.tabedSlideView.selectedIndex = 0;
-    [cell.contentView addSubview:_tabedSlideView];
     return cell;
 }
 
