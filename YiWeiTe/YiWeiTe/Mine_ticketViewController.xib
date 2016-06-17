@@ -61,7 +61,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-wa-TsA">
                     <rect key="frame" x="0.0" y="64" width="375" height="30"/>
-                    <color key="backgroundColor" patternImage="D6BD1227-7420-4C13-8FBC-DB2C23F95DD8" colorSpace="pattern"/>
+                    <color key="backgroundColor" patternImage="67DB9088-C20E-4636-86D5-3F0686DF364D" colorSpace="pattern"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="VHi-5E-mzI"/>
                     </constraints>
@@ -85,7 +85,7 @@
         </view>
     </objects>
     <resources>
-        <image name="D6BD1227-7420-4C13-8FBC-DB2C23F95DD8" width="512" height="512">
+        <image name="67DB9088-C20E-4636-86D5-3F0686DF364D" width="512" height="512">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

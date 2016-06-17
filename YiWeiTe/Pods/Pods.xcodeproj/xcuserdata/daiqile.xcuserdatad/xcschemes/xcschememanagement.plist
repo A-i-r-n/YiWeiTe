@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HMSegmentedControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>LXMButtonImagePosition.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,7 +57,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C5A1D5CAFAC7925BB146C248967E943</key>
+		<key>2AB49797D14D57FA43A345254AFB9F18</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4CD6FBCDCDF15A4B775E7A4652A7AE91</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>66149F596361ED216A5AEB543AE060BB</key>
+		<key>62C53918DD951FB3DE1E155007FDE1BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +87,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D661661156A7498DC4B7F49E0C72761E</key>
+		<key>AC42977078844EB365C3752C8C0B073B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBD1A964D0387511E061345680FEB543</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCF66185A69F8059D9AB937A9682CF2D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

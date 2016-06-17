@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8B1D296B5C896557227010C5'
+               BlueprintIdentifier = '9FECA5712E19F1A0351F3B50'
                BlueprintName = 'ARSegmentPager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libARSegmentPager.a'>

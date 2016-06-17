@@ -48,12 +48,20 @@
 
 #import "MJRefresh.h"
 
+#import "Main_ListTableViewCell.h"
+#import "DetailViewController.h"
+
+#import "HMSegmentedControl.h"
+
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate,DLTabedSlideViewDelegate>
 {
+    
     NSMutableArray *_itemArray;
     NSMutableArray *_imgArray;
 }
+
+@property(nonatomic,assign)NSInteger SelectedIndex;
 
 @end
 
@@ -104,6 +112,7 @@
     [_tableView registerNib:[UINib nibWithNibName:@"ThreeBtnTableViewCell" bundle:nil] forCellReuseIdentifier:@"threeBtnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"FourBtnTableViewCell" bundle:nil] forCellReuseIdentifier:@"fourBtnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"Main_ListTableViewCell" bundle:nil] forCellReuseIdentifier:@"listCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"Main_ListTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     
 }
 
@@ -132,7 +141,7 @@
     if (section == 1) {
         return 40;
     }
-    return 0.01;
+    return 50;
     
     
 }
@@ -163,8 +172,29 @@
         [view addSubview:notice];
         return view;
     }
-    return 0;
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 50)];
+    
+    HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"附近商家", @"全国商家", @"猜你喜欢",@"我的足迹"]];
+    segmentedControl.frame = CGRectMake(0, 10, ScreenWidth, 40);
+    segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
+    segmentedControl.selectedSegmentIndex = _SelectedIndex;
+    segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+    segmentedControl.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor]};
+    segmentedControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName : SELECT_TEXTCOLOR};
+    segmentedControl.selectionIndicatorColor = SELECT_TEXTCOLOR;
+    //segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleBox;
+
+    [segmentedControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
+    [view addSubview:segmentedControl];
+    return view;
    
+}
+
+//分类
+- (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
+    NSLog(@"选中%ld", (long)segmentedControl.selectedSegmentIndex);
+    _SelectedIndex = segmentedControl.selectedSegmentIndex;
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -180,7 +210,7 @@
     if (section == 1) {
         return 2;
     }
-    return 1;
+    return 10;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -202,7 +232,7 @@
             return 150 * ScreenWidth / 375.0;
         }
     }
-    return 500 * ScreenWidth / 375.0;
+    return 80 * ScreenWidth / 375.0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -243,32 +273,21 @@
         }
         
     }
- 
+
+    
+    Main_ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
     
 
-    static NSString *cellID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-        self.tabedSlideView = [[DLTabedSlideView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 500)];
-        self.tabedSlideView.delegate=self;
-        self.tabedSlideView.baseViewController = self;
-        self.tabedSlideView.tabItemNormalColor = [UIColor blackColor];
-        self.tabedSlideView.tabItemSelectedColor = SELECT_TEXTCOLOR;
-        self.tabedSlideView.tabbarTrackColor = SELECT_TEXTCOLOR;
-        self.tabedSlideView.tabbarBottomSpacing = 3.0;
-        DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"附近商家" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-        DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"全国商家" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-        DLTabedbarItem *item3 = [DLTabedbarItem itemWithTitle:@"猜你喜欢" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-        DLTabedbarItem *item4 = [DLTabedbarItem itemWithTitle:@"足迹" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-        self.tabedSlideView.tabbarItems = @[item1, item2, item3,item4];
-        [self.tabedSlideView buildTabbar];
-        
-        self.tabedSlideView.selectedIndex = 0;
-        [cell.contentView addSubview:_tabedSlideView];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 2) {
+        DetailViewController *detail = [[DetailViewController alloc]init];
+        [self.navigationController pushViewController:detail animated:YES];
     }
-    
-    return cell;
 }
 
 
