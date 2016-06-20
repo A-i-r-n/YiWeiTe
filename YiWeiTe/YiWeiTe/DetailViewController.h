@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QXActionSheet.h"
 
 @interface DetailViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic,strong) QXActionSheet *ActionSheet;
 @end

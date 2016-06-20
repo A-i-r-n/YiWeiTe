@@ -13,6 +13,8 @@
 
 #import "Cart_OrderViewController.h"
 
+#import "DetailViewController.h"
+
 #define  TAG_BACKGROUNDVIEW 100
 
 #define SCREEN_HEIGHT [[UIScreen mainScreen]bounds].size.height
@@ -357,6 +359,14 @@
     
     [cell reloadDataWith:[dataArray objectAtIndex:indexPath.row]];
     return cell;
+}
+
+
+#pragma mark  被选中的cell
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailViewController *detail = [[DetailViewController alloc]init];
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {

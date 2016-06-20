@@ -61,6 +61,7 @@
 
 - (void)registCell
 {
+    _tableView.showsVerticalScrollIndicator = NO;
     [_tableView registerNib:[UINib nibWithNibName:@"Mine_MineTableViewCell" bundle:nil] forCellReuseIdentifier:@"mine_mineCell"];
     [_tableView registerClass:[MineTableViewCell class] forCellReuseIdentifier:@"mineCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"Mine_OrderTableViewCell" bundle:nil] forCellReuseIdentifier:@"orderCell"];

@@ -26,5 +26,7 @@
 #define ScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
 #define CellWidth (80 * ScreenWidth / 375.0)
 
+#define Ratio(height) (height * ScreenWidth / 375.0);
+
 
 #endif /* PrefixHeader_pch */

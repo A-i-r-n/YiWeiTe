@@ -46,7 +46,7 @@
                 <outlet property="addressLab" destination="vcZ-NE-rxR" id="B2i-IR-cGd"/>
                 <outlet property="titleLab" destination="iO2-uu-o6I" id="Mjo-89-6YW"/>
             </connections>
-            <point key="canvasLocation" x="263" y="204"/>
+            <point key="canvasLocation" x="312" y="197"/>
         </tableViewCell>
     </objects>
 </document>

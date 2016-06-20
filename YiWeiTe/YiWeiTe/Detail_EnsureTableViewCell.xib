@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="34" id="KGk-i7-Jjw" customClass="Detail_EnsureTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="33.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7天退货" translatesAutoresizingMaskIntoConstraints="NO" id="YvV-BB-4lW">
+                        <rect key="frame" x="91.5" y="10" width="53.5" height="15"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="货到付款" translatesAutoresizingMaskIntoConstraints="NO" id="Tlh-iZ-GO8">
+                        <rect key="frame" x="175" y="10" width="53.5" height="15"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7天退货" translatesAutoresizingMaskIntoConstraints="NO" id="4tQ-Wy-UHs">
+                        <rect key="frame" x="258.5" y="10" width="53.5" height="15"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="货到付款" translatesAutoresizingMaskIntoConstraints="NO" id="lOy-pM-Byh">
+                        <rect key="frame" x="8" y="10" width="53.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="p5F-yZ-K7s"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.91367701479999996" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="4tQ-Wy-UHs" firstAttribute="height" secondItem="Tlh-iZ-GO8" secondAttribute="height" id="83X-Vn-zjD"/>
+                    <constraint firstItem="Tlh-iZ-GO8" firstAttribute="centerY" secondItem="YvV-BB-4lW" secondAttribute="centerY" id="EBj-5C-Msu"/>
+                    <constraint firstAttribute="trailing" secondItem="4tQ-Wy-UHs" secondAttribute="trailing" constant="8" id="JVF-1r-dQ6"/>
+                    <constraint firstItem="4tQ-Wy-UHs" firstAttribute="centerY" secondItem="Tlh-iZ-GO8" secondAttribute="centerY" id="PuH-Hh-Hut"/>
+                    <constraint firstItem="YvV-BB-4lW" firstAttribute="leading" secondItem="lOy-pM-Byh" secondAttribute="trailing" constant="30" id="Uh0-ID-RLr"/>
+                    <constraint firstItem="Tlh-iZ-GO8" firstAttribute="width" secondItem="YvV-BB-4lW" secondAttribute="width" id="ZtR-xc-H4B"/>
+                    <constraint firstItem="Tlh-iZ-GO8" firstAttribute="height" secondItem="YvV-BB-4lW" secondAttribute="height" id="atB-iy-nSl"/>
+                    <constraint firstItem="Tlh-iZ-GO8" firstAttribute="leading" secondItem="YvV-BB-4lW" secondAttribute="trailing" constant="30" id="b7T-Y1-kI1"/>
+                    <constraint firstItem="YvV-BB-4lW" firstAttribute="width" secondItem="lOy-pM-Byh" secondAttribute="width" id="d3F-kN-3QS"/>
+                    <constraint firstItem="lOy-pM-Byh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="dpu-wq-yVL"/>
+                    <constraint firstItem="lOy-pM-Byh" firstAttribute="centerY" secondItem="YvV-BB-4lW" secondAttribute="centerY" id="jok-cn-Tim"/>
+                    <constraint firstItem="lOy-pM-Byh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mVM-Fd-2P2"/>
+                    <constraint firstItem="4tQ-Wy-UHs" firstAttribute="leading" secondItem="Tlh-iZ-GO8" secondAttribute="trailing" constant="30" id="oDj-zD-fTV"/>
+                    <constraint firstItem="4tQ-Wy-UHs" firstAttribute="width" secondItem="Tlh-iZ-GO8" secondAttribute="width" id="q56-Gn-O8t"/>
+                    <constraint firstItem="YvV-BB-4lW" firstAttribute="height" secondItem="lOy-pM-Byh" secondAttribute="height" id="vEQ-mF-9TS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="217" y="256"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="7天退货" width="110" height="30"/>
+        <image name="货到付款" width="108" height="28"/>
+    </resources>
+</document>

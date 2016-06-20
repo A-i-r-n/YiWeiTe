@@ -16,6 +16,8 @@
 
 #import "SDCycleScrollView.h"
 
+#import "DetailViewController.h"
+
 
 
 
@@ -101,7 +103,9 @@
     [control addTarget:self action:@selector(controlPressed:) forControlEvents:UIControlEventValueChanged];
     [view addSubview:control];
     [self.navigationController.view addSubview:view];
+    
     [_tableView registerNib:[UINib nibWithNibName:@"Main_ListTableViewCell" bundle:nil] forCellReuseIdentifier:@"listCell"];
+    _tableView.showsVerticalScrollIndicator = NO;
 }
 
 
@@ -179,6 +183,12 @@
     Main_ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"listCell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailViewController *detail = [[DetailViewController alloc]init];
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 /*

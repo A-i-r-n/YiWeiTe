@@ -106,7 +106,7 @@
         });
     }];
 
-    _tableView.allowsSelection = NO;
+    _tableView.showsVerticalScrollIndicator = NO;
     [_tableView registerClass:[BtnTableViewCell class] forCellReuseIdentifier:@"btnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"TwoBtnTableViewCell" bundle:nil] forCellReuseIdentifier:@"twoBtnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"ThreeBtnTableViewCell" bundle:nil] forCellReuseIdentifier:@"threeBtnCell"];
@@ -217,22 +217,22 @@
 {
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            return 210 * ScreenWidth / 375.0;
+            return Ratio(210);
         }
         if (indexPath.row == 1) {
-            return 100 * ScreenWidth / 375.0;
+            return Ratio(100);
         }
 
     }
     if (indexPath.section == 1) {
         if (indexPath.row == 0) {
-            return 120 * ScreenWidth / 375.0;
+            return Ratio(120);
         }
         if (indexPath.row == 1) {
-            return 150 * ScreenWidth / 375.0;
+            return Ratio(150);
         }
     }
-    return 80 * ScreenWidth / 375.0;
+    return Ratio(80);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -285,8 +285,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 2) {
-        DetailViewController *detail = [[DetailViewController alloc]init];
-        [self.navigationController pushViewController:detail animated:YES];
+
+            DetailViewController *detail = [[DetailViewController alloc]init];
+            [self.navigationController pushViewController:detail animated:YES];
+    
+       
     }
 }
 
