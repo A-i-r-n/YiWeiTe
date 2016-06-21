@@ -94,15 +94,16 @@
 
 - (void)createNavigation
 {
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 64)];
+    //UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 64)];
     UISegmentedControl *control = [[UISegmentedControl alloc]initWithItems:[NSArray arrayWithObjects:@"附近商家",@"全国商家",@"我要发布", nil]];
     control.bounds = CGRectMake(0, 0, 270 * ScreenWidth / 375.0, 34);
-    control.center = CGPointMake(view.center.x, view.center.y +5);
+    control.center = self.navigationController.view.center;
     control.tintColor = SELECT_TEXTCOLOR;
     control.selectedSegmentIndex = 0;
     [control addTarget:self action:@selector(controlPressed:) forControlEvents:UIControlEventValueChanged];
-    [view addSubview:control];
-    [self.navigationController.view addSubview:view];
+    //[view addSubview:control];
+    self.navigationItem.titleView = control;
+    //[self.navigationController.view addSubview:view];
     
     [_tableView registerNib:[UINib nibWithNibName:@"Main_ListTableViewCell" bundle:nil] forCellReuseIdentifier:@"listCell"];
     _tableView.showsVerticalScrollIndicator = NO;

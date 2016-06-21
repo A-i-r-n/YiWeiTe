@@ -47,24 +47,24 @@
 
 - (void)createNavigation
 {
-    UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(15, 0, 30, 30)];
+    UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(15, 0, 32, 20)];
     [backBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:backBtn];
-    MyButton *button = [[MyButton alloc]initWithFrame:CGRectMake(50, 10, 45, 44)];
+    MyButton *button = [[MyButton alloc]initWithFrame:CGRectMake(44, 10, 45, 44)];
     [button addTarget:self action:@selector(addressClick) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *addItem = [[UIBarButtonItem alloc]initWithCustomView:button];
     self.navigationItem.leftBarButtonItems = @[backItem,addItem];
     MessageButton *messBtn = [[MessageButton alloc]initWithFrame:CGRectMake(ScreenWidth - 15 - 40, 0, 30,30)];
-    //messBtn.backgroundColor = [UIColor redColor];
     [messBtn addTarget:self action:@selector(messageClick) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:messBtn];
     self.navigationItem.rightBarButtonItem = rightItem;
     UISearchBar *searchBar = [[UISearchBar alloc]initWithFrame:CGRectMake(15 + 30 + 10 + 45 + 10, 20, ScreenWidth - 15 - 30 - 10 - 45 - 10 * 2 - 30 -15, 44)];
     searchBar.searchBarStyle = UISearchBarStyleMinimal;
     searchBar.placeholder = @"搜索商品/店铺";
+    self.navigationItem.titleView = searchBar;
     //self.navigationController.view = searchBar;
-    [self.navigationController.view addSubview:searchBar];
+    //[self.navigationController.view addSubview:searchBar];
 }
 
 //地址

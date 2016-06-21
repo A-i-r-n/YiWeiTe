@@ -23,7 +23,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         _img = [[UIImageView alloc]init];
-        _img.image = [UIImage imageNamed:@"down"];
+        _img.image = [UIImage imageNamed:@"arrow_down"];
         [self addSubview:_img];
         
         _titleLab = [[UILabel alloc]init];
@@ -42,7 +42,7 @@
             make.centerY.equalTo(self.mas_centerY);
             make.left.equalTo(_titleLab.mas_right).offset(5);
             make.width.offset(10);
-            make.height.offset(10);
+            make.height.offset(6);
         }];
         
     }

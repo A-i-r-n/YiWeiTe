@@ -41,7 +41,6 @@
 		BC420D561D0E4919005B7772 /* Store_TViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D541D0E4919005B7772 /* Store_TViewController.xib */; };
 		BC420D5E1D0E4DDD005B7772 /* Store_OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D5C1D0E4DDD005B7772 /* Store_OrderTableViewCell.m */; };
 		BC420D5F1D0E4DDD005B7772 /* Store_OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC420D5D1D0E4DDD005B7772 /* Store_OrderTableViewCell.xib */; };
-		BC420D8E1D0E7B9B005B7772 /* NewNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC420D8D1D0E7B9B005B7772 /* NewNoticeView.m */; };
 		BC4B0CEF1CF68B0E00B53927 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CEE1CF68B0E00B53927 /* MyButton.m */; };
 		BC4B0CF21CF68B3700B53927 /* MessageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CF11CF68B3700B53927 /* MessageButton.m */; };
 		BC4B0CF71CF6DA2200B53927 /* Cate_ScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B0CF51CF6DA2200B53927 /* Cate_ScrollTableViewCell.m */; };
@@ -208,7 +207,6 @@
 		BC7AF1FD1CFD250A00F01C06 /* Mine_JFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7AF1FB1CFD250A00F01C06 /* Mine_JFViewController.xib */; };
 		BC7AF2041CFD6C0300F01C06 /* Mine_PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7AF2021CFD6C0300F01C06 /* Mine_PersonalViewController.m */; };
 		BC7AF2051CFD6C0300F01C06 /* Mine_PersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7AF2031CFD6C0300F01C06 /* Mine_PersonalViewController.xib */; };
-		BC7DC4DA1CE2C32500F3BF27 /* NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7DC4D91CE2C32500F3BF27 /* NavigationView.m */; };
 		BC7DC4E41CE2FC7900F3BF27 /* BtnTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7DC4E21CE2FC7900F3BF27 /* BtnTableViewCell.m */; };
 		BC7DC4E51CE2FC7900F3BF27 /* BtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7DC4E31CE2FC7900F3BF27 /* BtnTableViewCell.xib */; };
 		BC7DC4E91CE2FCA700F3BF27 /* TwoBtnTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7DC4E71CE2FCA600F3BF27 /* TwoBtnTableViewCell.m */; };
@@ -331,6 +329,15 @@
 		BCD4FEC71CF552B5001B9121 /* Two_LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD4FEC51CF552B5001B9121 /* Two_LeftViewController.m */; };
 		BCD4FEC81CF552B5001B9121 /* Two_LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD4FEC61CF552B5001B9121 /* Two_LeftViewController.xib */; };
 		BCD4FECB1CF55A56001B9121 /* CustomTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD4FEC91CF55A56001B9121 /* CustomTypeButton.m */; };
+		BCE210A61D18D2F900A8D428 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210A51D18D2F900A8D428 /* UIBarButtonItem+Extension.m */; };
+		BCE210A91D18DA3400A8D428 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210A81D18DA3400A8D428 /* UIImage+Extension.m */; };
+		BCE210AC1D18DA7900A8D428 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210AB1D18DA7900A8D428 /* UIButton+Extension.m */; };
+		BCE210B41D18DAB300A8D428 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210AD1D18DAB300A8D428 /* Foundation+Log.m */; };
+		BCE210B51D18DAB300A8D428 /* NSDate+Estension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210AF1D18DAB300A8D428 /* NSDate+Estension.m */; };
+		BCE210B61D18DAB300A8D428 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210B11D18DAB300A8D428 /* NSString+Extension.m */; };
+		BCE210B71D18DAB300A8D428 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210B31D18DAB300A8D428 /* UIView+Extension.m */; };
+		BCE210BC1D18E9E700A8D428 /* SearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210BA1D18E9E700A8D428 /* SearchBarView.m */; };
+		BCE210C01D19284400A8D428 /* NewNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210BF1D19284400A8D428 /* NewNoticeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -407,7 +414,6 @@
 		BC420D5C1D0E4DDD005B7772 /* Store_OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_OrderTableViewCell.m; sourceTree = "<group>"; };
 		BC420D5D1D0E4DDD005B7772 /* Store_OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_OrderTableViewCell.xib; sourceTree = "<group>"; };
 		BC420D8C1D0E7B9B005B7772 /* NewNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewNoticeView.h; sourceTree = "<group>"; };
-		BC420D8D1D0E7B9B005B7772 /* NewNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewNoticeView.m; sourceTree = "<group>"; };
 		BC4B0CED1CF68B0E00B53927 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
 		BC4B0CEE1CF68B0E00B53927 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		BC4B0CF01CF68B3700B53927 /* MessageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageButton.h; sourceTree = "<group>"; };
@@ -671,8 +677,6 @@
 		BC7AF2011CFD6C0300F01C06 /* Mine_PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mine_PersonalViewController.h; sourceTree = "<group>"; };
 		BC7AF2021CFD6C0300F01C06 /* Mine_PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mine_PersonalViewController.m; sourceTree = "<group>"; };
 		BC7AF2031CFD6C0300F01C06 /* Mine_PersonalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mine_PersonalViewController.xib; sourceTree = "<group>"; };
-		BC7DC4D81CE2C32500F3BF27 /* NavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationView.h; sourceTree = "<group>"; };
-		BC7DC4D91CE2C32500F3BF27 /* NavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationView.m; sourceTree = "<group>"; };
 		BC7DC4E11CE2FC7900F3BF27 /* BtnTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtnTableViewCell.h; sourceTree = "<group>"; };
 		BC7DC4E21CE2FC7900F3BF27 /* BtnTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BtnTableViewCell.m; sourceTree = "<group>"; };
 		BC7DC4E31CE2FC7900F3BF27 /* BtnTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BtnTableViewCell.xib; sourceTree = "<group>"; };
@@ -862,6 +866,23 @@
 		BCD4FEC61CF552B5001B9121 /* Two_LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Two_LeftViewController.xib; sourceTree = "<group>"; };
 		BCD4FEC91CF55A56001B9121 /* CustomTypeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTypeButton.m; sourceTree = "<group>"; };
 		BCD4FECA1CF55A56001B9121 /* CustomTypeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTypeButton.h; sourceTree = "<group>"; };
+		BCE210A41D18D2F900A8D428 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		BCE210A51D18D2F900A8D428 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		BCE210A71D18DA3400A8D428 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		BCE210A81D18DA3400A8D428 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		BCE210AA1D18DA7900A8D428 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		BCE210AB1D18DA7900A8D428 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		BCE210AD1D18DAB300A8D428 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		BCE210AE1D18DAB300A8D428 /* NSDate+Estension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Estension.h"; sourceTree = "<group>"; };
+		BCE210AF1D18DAB300A8D428 /* NSDate+Estension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Estension.m"; sourceTree = "<group>"; };
+		BCE210B01D18DAB300A8D428 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		BCE210B11D18DAB300A8D428 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		BCE210B21D18DAB300A8D428 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		BCE210B31D18DAB300A8D428 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		BCE210B91D18E9E700A8D428 /* SearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarView.h; sourceTree = "<group>"; };
+		BCE210BA1D18E9E700A8D428 /* SearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarView.m; sourceTree = "<group>"; };
+		BCE210BD1D190F4500A8D428 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BCE210BF1D19284400A8D428 /* NewNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewNoticeView.m; sourceTree = "<group>"; };
 		FBDBA1A8499CC0BFDE01D13E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -894,6 +915,7 @@
 		3F1B7992B7F0CC1F36A2DEDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCE210BD1D190F4500A8D428 /* AVFoundation.framework */,
 				B3124C9CABFF9D76AD554826 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -1096,6 +1118,19 @@
 			children = (
 				BC4F57D51CE1C59500237FEC /* UIView+AirExtension.h */,
 				BC4F57D61CE1C59500237FEC /* UIView+AirExtension.m */,
+				BCE210A41D18D2F900A8D428 /* UIBarButtonItem+Extension.h */,
+				BCE210A51D18D2F900A8D428 /* UIBarButtonItem+Extension.m */,
+				BCE210A71D18DA3400A8D428 /* UIImage+Extension.h */,
+				BCE210A81D18DA3400A8D428 /* UIImage+Extension.m */,
+				BCE210AA1D18DA7900A8D428 /* UIButton+Extension.h */,
+				BCE210AB1D18DA7900A8D428 /* UIButton+Extension.m */,
+				BCE210AD1D18DAB300A8D428 /* Foundation+Log.m */,
+				BCE210AE1D18DAB300A8D428 /* NSDate+Estension.h */,
+				BCE210AF1D18DAB300A8D428 /* NSDate+Estension.m */,
+				BCE210B01D18DAB300A8D428 /* NSString+Extension.h */,
+				BCE210B11D18DAB300A8D428 /* NSString+Extension.m */,
+				BCE210B21D18DAB300A8D428 /* UIView+Extension.h */,
+				BCE210B31D18DAB300A8D428 /* UIView+Extension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -1762,10 +1797,10 @@
 		BC7DC4DF1CE2DAB000F3BF27 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BCE210B91D18E9E700A8D428 /* SearchBarView.h */,
+				BCE210BA1D18E9E700A8D428 /* SearchBarView.m */,
 				BC420D8C1D0E7B9B005B7772 /* NewNoticeView.h */,
-				BC420D8D1D0E7B9B005B7772 /* NewNoticeView.m */,
-				BC7DC4D81CE2C32500F3BF27 /* NavigationView.h */,
-				BC7DC4D91CE2C32500F3BF27 /* NavigationView.m */,
+				BCE210BF1D19284400A8D428 /* NewNoticeView.m */,
 				BC7DC4E11CE2FC7900F3BF27 /* BtnTableViewCell.h */,
 				BC7DC4E21CE2FC7900F3BF27 /* BtnTableViewCell.m */,
 				BC7DC4E31CE2FC7900F3BF27 /* BtnTableViewCell.xib */,
@@ -2735,6 +2770,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC52A69D1D07FC52003DEACD /* Store_WarehouseViewController.m in Sources */,
+				BCE210AC1D18DA7900A8D428 /* UIButton+Extension.m in Sources */,
 				BC7A6CB11CE977CB0065E59B /* ViewFilterDouble.m in Sources */,
 				BC7A6CB31CE977CB0065E59B /* FilterViewTool.m in Sources */,
 				BC6E09D51D17C395000CB93B /* Detail_StoreTableViewCell.m in Sources */,
@@ -2745,6 +2781,7 @@
 				BCA0B3AC1CE1A4C7004AEC11 /* MyTreasureViewController.m in Sources */,
 				BCD4FE571CF40912001B9121 /* BeautyViewController.m in Sources */,
 				BC7844CA1CEAB5570017C25D /* Mine_OpenshopViewController.m in Sources */,
+				BCE210B71D18DAB300A8D428 /* UIView+Extension.m in Sources */,
 				BCD4FE5C1CF40922001B9121 /* BabyViewController.m in Sources */,
 				BC7844C51CEAB5410017C25D /* Mine_VipViewController.m in Sources */,
 				BC7A6C8B1CE5C16E0065E59B /* Mine_LikeTableViewCell.m in Sources */,
@@ -2761,6 +2798,7 @@
 				BCA0B3A21CE1A3D8004AEC11 /* MainViewController.m in Sources */,
 				BCD4FEA91CF54939001B9121 /* Four_LTViewController.m in Sources */,
 				BC7A6C1B1CE422970065E59B /* DLLRUCache.m in Sources */,
+				BCE210BC1D18E9E700A8D428 /* SearchBarView.m in Sources */,
 				BC420D551D0E4919005B7772 /* Store_TViewController.m in Sources */,
 				BC52A68A1D066D82003DEACD /* MyCostumButton.m in Sources */,
 				BC7A6C031CE40EC60065E59B /* Main_ListTableViewCell.m in Sources */,
@@ -2788,6 +2826,7 @@
 				BC86CA3F1CFBD32700FAE2F8 /* Company_OpenViewController.m in Sources */,
 				BCD4FEC71CF552B5001B9121 /* Two_LeftViewController.m in Sources */,
 				BC420D231D0CF6D1005B7772 /* Store_SettingViewController.m in Sources */,
+				BCE210C01D19284400A8D428 /* NewNoticeView.m in Sources */,
 				BC906E021D01383D006072E1 /* NewAddressViewController.m in Sources */,
 				BC7DC4E91CE2FCA700F3BF27 /* TwoBtnTableViewCell.m in Sources */,
 				BC7046A11D00099100D5104C /* Cart_AddressTableViewCell.m in Sources */,
@@ -2806,7 +2845,6 @@
 				BC6E09FA1D17ECF1000CB93B /* AreaPickerCover.m in Sources */,
 				BC420D4B1D0E4882005B7772 /* Store_PayViewController.m in Sources */,
 				BC7046A61D0009C900D5104C /* Two_LabTableViewCell.m in Sources */,
-				BC7DC4DA1CE2C32500F3BF27 /* NavigationView.m in Sources */,
 				BC7844F91CEAF3F80017C25D /* RevokeViewController.m in Sources */,
 				BC7DC4E41CE2FC7900F3BF27 /* BtnTableViewCell.m in Sources */,
 				BC78450C1CEB06BD0017C25D /* Shop_SalesViewController.m in Sources */,
@@ -2830,6 +2868,7 @@
 				BC420D131D0CF61B005B7772 /* Store_OrderViewController.m in Sources */,
 				BCD4FEA51CF54939001B9121 /* Three_RTViewController.m in Sources */,
 				BCD4FEA71CF54939001B9121 /* Three_RBViewController.m in Sources */,
+				BCE210B61D18DAB300A8D428 /* NSString+Extension.m in Sources */,
 				BC7AF1FC1CFD250A00F01C06 /* Mine_JFViewController.m in Sources */,
 				BC6E0A021D17ECF1000CB93B /* ZWSViewController.m in Sources */,
 				BCA0B3B61CE1A517004AEC11 /* MineViewController.m in Sources */,
@@ -2857,12 +2896,14 @@
 				BCC1E16B1CF7FE2300C4261F /* TwoTextCenterButton.m in Sources */,
 				BCC25AB51CF8343600B5DAF9 /* Integral_ThreeBtnTableViewCell.m in Sources */,
 				BC420D371D0D4391005B7772 /* Mine_HeaderTableViewCell.m in Sources */,
+				BCE210A61D18D2F900A8D428 /* UIBarButtonItem+Extension.m in Sources */,
 				BC4B0CFC1CF6DA3600B53927 /* Cate_BtnTableViewCell.m in Sources */,
 				BC7210F41CEC53AC00A43681 /* MineCollectionViewCell.m in Sources */,
 				BC7046BD1D00326E00D5104C /* AddressViewController.m in Sources */,
 				BCA0B3671CE190FC004AEC11 /* AppDelegate.m in Sources */,
 				BCD4FE611CF4094E001B9121 /* MarketViewController.m in Sources */,
 				BCD4FECB1CF55A56001B9121 /* CustomTypeButton.m in Sources */,
+				BCE210B41D18DAB300A8D428 /* Foundation+Log.m in Sources */,
 				BC7A6C951CE5C1B00065E59B /* Mine_OrderTableViewCell.m in Sources */,
 				BC7046931CFED9FF00D5104C /* TicketTableViewCell.m in Sources */,
 				BC6E09FE1D17ECF1000CB93B /* ZWSFlowMenu.m in Sources */,
@@ -2892,6 +2933,7 @@
 				BC420D311D0D0D09005B7772 /* Store_ImgBtnTableViewCell.m in Sources */,
 				BC420D461D0E4873005B7772 /* Store_AllViewController.m in Sources */,
 				BC420D5E1D0E4DDD005B7772 /* Store_OrderTableViewCell.m in Sources */,
+				BCE210A91D18DA3400A8D428 /* UIImage+Extension.m in Sources */,
 				BC4B0D061CF6DBD700B53927 /* Cate_SliderTableViewCell.m in Sources */,
 				BC52A6931D07BFF3003DEACD /* ReleaseGoodsViewController.m in Sources */,
 				BC7844C01CEAB5260017C25D /* Mine_ShareViewController.m in Sources */,
@@ -2907,8 +2949,8 @@
 				BC2D7F201D0661D200370CE1 /* Store_BtnTableViewCell.m in Sources */,
 				BC6E0A001D17ECF1000CB93B /* ZWSPagingView.m in Sources */,
 				BC7A6CD51CE9A7740065E59B /* MyOrderTableViewCell.m in Sources */,
+				BCE210B51D18DAB300A8D428 /* NSDate+Estension.m in Sources */,
 				BC7A6C9F1CE5CA6B0065E59B /* Mine_MineTableViewCell.m in Sources */,
-				BC420D8E1D0E7B9B005B7772 /* NewNoticeView.m in Sources */,
 				BC4B0CF71CF6DA2200B53927 /* Cate_ScrollTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

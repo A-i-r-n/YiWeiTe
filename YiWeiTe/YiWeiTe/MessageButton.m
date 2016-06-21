@@ -39,14 +39,21 @@
         [self addSubview:_numLab];
         
         _titleLab = [[UILabel alloc]init];
-        _titleLab.text = @"消息";
+        _titleLab.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_titleLab];
         
         [_img mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.offset(5);
             make.right.offset(0);
-            make.height.offset(25);
-            make.width.offset(25);
+            make.height.offset(20);
+            make.width.offset(20);
+        }];
+        
+        [_titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(_img.mas_bottom);
+            make.centerX.equalTo(_img.mas_centerX);
+            make.bottom.offset(0);
+            
         }];
         
         [_numLab mas_makeConstraints:^(MASConstraintMaker *make) {

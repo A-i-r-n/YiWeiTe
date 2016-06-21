@@ -11,4 +11,6 @@
 @interface MyButton : UIButton
 @property(nonatomic,strong)UILabel *titleLab;
 @property(nonatomic,strong)UIImageView *img;
+
+
 @end

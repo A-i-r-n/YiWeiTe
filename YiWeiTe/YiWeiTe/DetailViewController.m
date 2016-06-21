@@ -46,6 +46,7 @@
     [_tableView registerClass:[Detail_BtnTableViewCell class] forCellReuseIdentifier:@"btnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"Detail_DImgTableViewCell" bundle:nil] forCellReuseIdentifier:@"dImgCell"];
     
+    
 }
 
 - (void)createNavigation

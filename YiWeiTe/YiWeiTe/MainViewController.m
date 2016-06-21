@@ -8,8 +8,6 @@
 
 #import "MainViewController.h"
 #import "UIButton+LXMImagePosition.h"
-#import "NavigationView.h"
-
 #import "SDCycleScrollView.h"
 
 #import "BtnTableViewCell.h"
@@ -52,9 +50,13 @@
 #import "DetailViewController.h"
 
 #import "HMSegmentedControl.h"
+#import "SearchBarView.h"
+
+#import "MyButton.h"
+#import "MessageButton.h"
 
 
-@interface MainViewController ()<UITableViewDataSource,UITableViewDelegate,DLTabedSlideViewDelegate>
+@interface MainViewController ()<UITableViewDataSource,UITableViewDelegate,DLTabedSlideViewDelegate,SearchBarViewDelegate,SDCycleScrollViewDelegate>
 {
     
     NSMutableArray *_itemArray;
@@ -77,8 +79,8 @@
 - (void)viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];
-    //[self setupNavigationBar];
-    self.title = @"主页";
+    [self setupNavigationBar];
+    //self.title = @"主页";
     
     
 }
@@ -118,11 +120,42 @@
 
 - (void)setupNavigationBar
 {
-    
-    NavigationView *navView = [[NavigationView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
-    [self.navigationController.view addSubview:navView];
-    
+    self.navigationController.navigationBar.barTintColor = SELECT_TEXTCOLOR;
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem BarButtonItemWithTitle:@"地区" withFont:15 withImageName:@"arrow_down" withHightImageName:@"" withTarget:self withAction:@selector(addressClick) withFrame:CGRectMake(44, 10, 45, 44)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem BarButtonItemWithTitle:@"消息中心" withFont:11 withImageName:@"my_message_btn_n" withHightImageName:@"" withTarget:self withAction:@selector(messageClick) withFrame:CGRectMake(ScreenWidth - 15 - 40, 0, 30,40) withNumber:@"12"];
+    UISearchBar *searchBar = [[UISearchBar alloc]init];
+    //searchBar.searchBarStyle = UISearchBarStyleMinimal;
+    searchBar.placeholder = @"搜索商品/店铺";
+    self.navigationItem.titleView = searchBar;
 }
+
+
+- (void)addressClick
+{
+    NSLog(@"地址");
+}
+
+- (void)messageClick
+{
+    NSLog(@"消息");
+}
+
+#pragma mark - SearchBarViewDelegate Method
+- (void)searchBarSearchButtonClicked:(SearchBarView *)searchBarView {
+    NSLog(@"11111");
+}
+
+- (void)searchBarAudioButtonClicked:(SearchBarView *)searchBarView {
+    NSLog(@"11111");
+}
+
+#pragma mark - SDCycleScrollViewDelegate
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
+{
+    NSLog(@"---点击了第%ld张图片", index);
+}
+
+
 
 
 
