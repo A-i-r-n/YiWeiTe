@@ -277,13 +277,14 @@
                 ImageCenterButton *button = (ImageCenterButton *)[cell viewWithTag:10 + i];
                 [button addTarget:self action:@selector(categoryClick:) forControlEvents:UIControlEventTouchUpInside];
             }
-            
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
         if (indexPath.row == 1) {
             TwoBtnTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"twoBtnCell" forIndexPath:indexPath];
             [cell.leftBtn addTarget:self action:@selector(leftBtnClick:) forControlEvents:UIControlEventTouchUpInside];
             [cell.rightBtn addTarget:self action:@selector(rightBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
         
@@ -294,6 +295,7 @@
             [cell.leftBtn addTarget:self action:@selector(threeLeftClick:) forControlEvents:UIControlEventTouchUpInside];
             [cell.rightTopBtn addTarget:self action:@selector(threeRightTopClick:) forControlEvents:UIControlEventTouchUpInside];
             [cell.rightBottomBtn addTarget:self action:@selector(threeRightBottomClick:) forControlEvents:UIControlEventTouchUpInside];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
         if (indexPath.row == 1) {
@@ -302,6 +304,7 @@
             [cell.leftBottomBtn addTarget:self action:@selector(leftBottomClick:) forControlEvents:UIControlEventTouchUpInside];
             [cell.rightTopBtn addTarget:self action:@selector(rightTopClick:) forControlEvents:UIControlEventTouchUpInside];
             [cell.rightBottomBtn addTarget:self action:@selector(rightBottomClick:) forControlEvents:UIControlEventTouchUpInside];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
         

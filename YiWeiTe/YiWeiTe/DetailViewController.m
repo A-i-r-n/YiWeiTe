@@ -18,6 +18,11 @@
 #import "Detail_BtnTableViewCell.h"
 #import "Detail_DImgTableViewCell.h"
 
+#import "AddrListViewController.h"
+#import "Detai_Addresslview.h"
+
+#import "AddrDataModel.h"
+
 @interface DetailViewController ()<UITableViewDataSource,UITableViewDelegate,QXActionSheetDelegate>
 
 @end
@@ -60,6 +65,12 @@
 - (void)backClick
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    [_tableView reloadData];
 }
 
 #pragma mark tableViewDelegate
@@ -187,26 +198,22 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 1) {
+        self.ActionSheet = [[QXActionSheet alloc] initWithHeight:ScreenHeight*0.75 isNeedPerspective:YES];
+        self.ActionSheet.delegate = self;
+        [self.view addSubview:self.ActionSheet];
         
+        //[self.ActionSheet.contentView addSubview:showView];
+        
+        self.navigationController.navigationBarHidden = YES;
     }
     
     if (indexPath.section == 2) {
         if (indexPath.row == 0) {
+
+           AddrListViewController *addrList = [[AddrListViewController alloc]init];
+            [self.navigationController pushViewController:addrList animated:YES];
             
-            UIImageView *showView = [[UIImageView alloc] init];
-            showView.userInteractionEnabled = YES;
-            showView.backgroundColor = [UIColor whiteColor];
-            //showView.image = [UIImage imageNamed:@"sheet.jpg"];
-            showView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 420);
             
-            self.ActionSheet = [[QXActionSheet alloc] initWithHeight:420
-                                          isNeedPerspective:YES];
-            self.ActionSheet.delegate = self;
-            [self.view addSubview:self.ActionSheet];
-            
-            [self.ActionSheet.contentView addSubview:showView];
-            
-            self.navigationController.navigationBarHidden = YES;
         }
     }
 }

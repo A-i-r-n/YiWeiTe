@@ -40,7 +40,7 @@
     self.navigationItem.leftBarButtonItem = leftItem;
     
     UIBarButtonItem *searchItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"second_selected"] style:UIBarButtonItemStyleDone target:self action:@selector(searchClick)];
-    UIBarButtonItem *messageItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"third_selected"] style:UIBarButtonItemStylePlain target:self action:@selector(messageClick)];
+    UIBarButtonItem *messageItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"my_message_btn_n"] style:UIBarButtonItemStylePlain target:self action:@selector(messageClick)];
     self.navigationItem.rightBarButtonItems = @[messageItem,searchItem];
    
 }

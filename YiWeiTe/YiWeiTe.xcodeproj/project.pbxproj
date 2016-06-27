@@ -65,6 +65,19 @@
 		BC52A6A31D07FD07003DEACD /* Store_SalesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC52A6A11D07FD07003DEACD /* Store_SalesViewController.xib */; };
 		BC52A6AB1D080B22003DEACD /* Store_GoodsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC52A6A91D080B22003DEACD /* Store_GoodsTableViewCell.m */; };
 		BC52A6AC1D080B22003DEACD /* Store_GoodsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC52A6AA1D080B22003DEACD /* Store_GoodsTableViewCell.xib */; };
+		BC65113D1D1B8CE40029E88C /* AddrDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC65112C1D1B8CE40029E88C /* AddrDetailViewController.m */; };
+		BC65113E1D1B8CE40029E88C /* AddrDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC65112D1D1B8CE40029E88C /* AddrDetailViewController.xib */; };
+		BC65113F1D1B8CE40029E88C /* AddrListEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC65112F1D1B8CE40029E88C /* AddrListEditTableViewCell.m */; };
+		BC6511401D1B8CE40029E88C /* AddrListEditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6511301D1B8CE40029E88C /* AddrListEditTableViewCell.xib */; };
+		BC6511411D1B8CE40029E88C /* AddrListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6511321D1B8CE40029E88C /* AddrListTableViewCell.m */; };
+		BC6511421D1B8CE40029E88C /* AddrListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6511331D1B8CE40029E88C /* AddrListTableViewCell.xib */; };
+		BC6511431D1B8CE40029E88C /* AddrListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6511351D1B8CE40029E88C /* AddrListViewController.m */; };
+		BC6511441D1B8CE40029E88C /* AddrListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6511361D1B8CE40029E88C /* AddrListViewController.xib */; };
+		BC6511451D1B8CE40029E88C /* LblLblTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6511381D1B8CE40029E88C /* LblLblTableViewCell.m */; };
+		BC6511461D1B8CE40029E88C /* LblLblTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6511391D1B8CE40029E88C /* LblLblTableViewCell.xib */; };
+		BC6511471D1B8CE40029E88C /* LblTxtTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC65113B1D1B8CE40029E88C /* LblTxtTableViewCell.m */; };
+		BC6511481D1B8CE40029E88C /* LblTxtTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC65113C1D1B8CE40029E88C /* LblTxtTableViewCell.xib */; };
+		BC65114C1D1B8CED0029E88C /* AddrDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC65114B1D1B8CED0029E88C /* AddrDataModel.m */; };
 		BC6DD2FA1CFEBDA400FF6297 /* Menubar.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6DD2F91CFEBDA400FF6297 /* Menubar.m */; };
 		BC6E09C61D178384000CB93B /* Detail_AddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6E09C41D178384000CB93B /* Detail_AddressTableViewCell.m */; };
 		BC6E09C71D178384000CB93B /* Detail_AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6E09C51D178384000CB93B /* Detail_AddressTableViewCell.xib */; };
@@ -338,6 +351,7 @@
 		BCE210B71D18DAB300A8D428 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210B31D18DAB300A8D428 /* UIView+Extension.m */; };
 		BCE210BC1D18E9E700A8D428 /* SearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210BA1D18E9E700A8D428 /* SearchBarView.m */; };
 		BCE210C01D19284400A8D428 /* NewNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210BF1D19284400A8D428 /* NewNoticeView.m */; };
+		BCE210C31D1A3A1700A8D428 /* Detai_Addresslview.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE210C21D1A3A1700A8D428 /* Detai_Addresslview.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -452,6 +466,26 @@
 		BC52A6A81D080B22003DEACD /* Store_GoodsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store_GoodsTableViewCell.h; sourceTree = "<group>"; };
 		BC52A6A91D080B22003DEACD /* Store_GoodsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store_GoodsTableViewCell.m; sourceTree = "<group>"; };
 		BC52A6AA1D080B22003DEACD /* Store_GoodsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Store_GoodsTableViewCell.xib; sourceTree = "<group>"; };
+		BC65112B1D1B8CE40029E88C /* AddrDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddrDetailViewController.h; sourceTree = "<group>"; };
+		BC65112C1D1B8CE40029E88C /* AddrDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddrDetailViewController.m; sourceTree = "<group>"; };
+		BC65112D1D1B8CE40029E88C /* AddrDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddrDetailViewController.xib; sourceTree = "<group>"; };
+		BC65112E1D1B8CE40029E88C /* AddrListEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddrListEditTableViewCell.h; sourceTree = "<group>"; };
+		BC65112F1D1B8CE40029E88C /* AddrListEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddrListEditTableViewCell.m; sourceTree = "<group>"; };
+		BC6511301D1B8CE40029E88C /* AddrListEditTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddrListEditTableViewCell.xib; sourceTree = "<group>"; };
+		BC6511311D1B8CE40029E88C /* AddrListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddrListTableViewCell.h; sourceTree = "<group>"; };
+		BC6511321D1B8CE40029E88C /* AddrListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddrListTableViewCell.m; sourceTree = "<group>"; };
+		BC6511331D1B8CE40029E88C /* AddrListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddrListTableViewCell.xib; sourceTree = "<group>"; };
+		BC6511341D1B8CE40029E88C /* AddrListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddrListViewController.h; sourceTree = "<group>"; };
+		BC6511351D1B8CE40029E88C /* AddrListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddrListViewController.m; sourceTree = "<group>"; };
+		BC6511361D1B8CE40029E88C /* AddrListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddrListViewController.xib; sourceTree = "<group>"; };
+		BC6511371D1B8CE40029E88C /* LblLblTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LblLblTableViewCell.h; sourceTree = "<group>"; };
+		BC6511381D1B8CE40029E88C /* LblLblTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LblLblTableViewCell.m; sourceTree = "<group>"; };
+		BC6511391D1B8CE40029E88C /* LblLblTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LblLblTableViewCell.xib; sourceTree = "<group>"; };
+		BC65113A1D1B8CE40029E88C /* LblTxtTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LblTxtTableViewCell.h; sourceTree = "<group>"; };
+		BC65113B1D1B8CE40029E88C /* LblTxtTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LblTxtTableViewCell.m; sourceTree = "<group>"; };
+		BC65113C1D1B8CE40029E88C /* LblTxtTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LblTxtTableViewCell.xib; sourceTree = "<group>"; };
+		BC65114A1D1B8CED0029E88C /* AddrDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddrDataModel.h; sourceTree = "<group>"; };
+		BC65114B1D1B8CED0029E88C /* AddrDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddrDataModel.m; sourceTree = "<group>"; };
 		BC6DD2F81CFEBDA400FF6297 /* Menubar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menubar.h; sourceTree = "<group>"; };
 		BC6DD2F91CFEBDA400FF6297 /* Menubar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menubar.m; sourceTree = "<group>"; };
 		BC6E09C31D178384000CB93B /* Detail_AddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail_AddressTableViewCell.h; sourceTree = "<group>"; };
@@ -883,6 +917,8 @@
 		BCE210BA1D18E9E700A8D428 /* SearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarView.m; sourceTree = "<group>"; };
 		BCE210BD1D190F4500A8D428 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BCE210BF1D19284400A8D428 /* NewNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewNoticeView.m; sourceTree = "<group>"; };
+		BCE210C11D1A3A1700A8D428 /* Detai_Addresslview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detai_Addresslview.h; sourceTree = "<group>"; };
+		BCE210C21D1A3A1700A8D428 /* Detai_Addresslview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detai_Addresslview.m; sourceTree = "<group>"; };
 		FBDBA1A8499CC0BFDE01D13E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1175,6 +1211,41 @@
 				BC52A69C1D07FC52003DEACD /* Store_WarehouseViewController.xib */,
 			);
 			name = "仓库中";
+			sourceTree = "<group>";
+		};
+		BC65112A1D1B8CE40029E88C /* AddrTableView */ = {
+			isa = PBXGroup;
+			children = (
+				BC6511491D1B8CED0029E88C /* AddrDataModel */,
+				BC65112B1D1B8CE40029E88C /* AddrDetailViewController.h */,
+				BC65112C1D1B8CE40029E88C /* AddrDetailViewController.m */,
+				BC65112D1D1B8CE40029E88C /* AddrDetailViewController.xib */,
+				BC65112E1D1B8CE40029E88C /* AddrListEditTableViewCell.h */,
+				BC65112F1D1B8CE40029E88C /* AddrListEditTableViewCell.m */,
+				BC6511301D1B8CE40029E88C /* AddrListEditTableViewCell.xib */,
+				BC6511311D1B8CE40029E88C /* AddrListTableViewCell.h */,
+				BC6511321D1B8CE40029E88C /* AddrListTableViewCell.m */,
+				BC6511331D1B8CE40029E88C /* AddrListTableViewCell.xib */,
+				BC6511341D1B8CE40029E88C /* AddrListViewController.h */,
+				BC6511351D1B8CE40029E88C /* AddrListViewController.m */,
+				BC6511361D1B8CE40029E88C /* AddrListViewController.xib */,
+				BC6511371D1B8CE40029E88C /* LblLblTableViewCell.h */,
+				BC6511381D1B8CE40029E88C /* LblLblTableViewCell.m */,
+				BC6511391D1B8CE40029E88C /* LblLblTableViewCell.xib */,
+				BC65113A1D1B8CE40029E88C /* LblTxtTableViewCell.h */,
+				BC65113B1D1B8CE40029E88C /* LblTxtTableViewCell.m */,
+				BC65113C1D1B8CE40029E88C /* LblTxtTableViewCell.xib */,
+			);
+			path = AddrTableView;
+			sourceTree = "<group>";
+		};
+		BC6511491D1B8CED0029E88C /* AddrDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC65114A1D1B8CED0029E88C /* AddrDataModel.h */,
+				BC65114B1D1B8CED0029E88C /* AddrDataModel.m */,
+			);
+			path = AddrDataModel;
 			sourceTree = "<group>";
 		};
 		BC6E09E11D17EAAF000CB93B /* ActionSheet */ = {
@@ -1912,6 +1983,7 @@
 		BC94C8E81D13F64000F52EFB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC65112A1D1B8CE40029E88C /* AddrTableView */,
 				BC6E09E51D17ECA8000CB93B /* AreaPicker */,
 				BC6E09E11D17EAAF000CB93B /* ActionSheet */,
 				BC94C8EA1D13F67700F52EFB /* Detail_ImgTableViewCell.h */,
@@ -1938,6 +2010,8 @@
 				BC6E09DC1D17D246000CB93B /* Detail_DImgTableViewCell.h */,
 				BC6E09DD1D17D246000CB93B /* Detail_DImgTableViewCell.m */,
 				BC6E09DE1D17D246000CB93B /* Detail_DImgTableViewCell.xib */,
+				BCE210C11D1A3A1700A8D428 /* Detai_Addresslview.h */,
+				BCE210C21D1A3A1700A8D428 /* Detai_Addresslview.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -2571,6 +2645,8 @@
 				BC7844E21CEACEAE0017C25D /* TreasureViewController.xib in Resources */,
 				BCA0B3751CE190FC004AEC11 /* LaunchScreen.storyboard in Resources */,
 				BC52A6941D07BFF3003DEACD /* ReleaseGoodsViewController.xib in Resources */,
+				BC6511441D1B8CE40029E88C /* AddrListViewController.xib in Resources */,
+				BC6511481D1B8CE40029E88C /* LblTxtTableViewCell.xib in Resources */,
 				BC7A6C261CE432BC0065E59B /* NearbyViewController.xib in Resources */,
 				BCD4FE381CF2D4D5001B9121 /* BankcardViewController.xib in Resources */,
 				BC4B0D071CF6DBD700B53927 /* Cate_SliderTableViewCell.xib in Resources */,
@@ -2588,6 +2664,7 @@
 				BC7A6C351CE433270065E59B /* TrackViewController.xib in Resources */,
 				BCD4FEC81CF552B5001B9121 /* Two_LeftViewController.xib in Resources */,
 				BC7A6C301CE433050065E59B /* LikeViewController.xib in Resources */,
+				BC6511401D1B8CE40029E88C /* AddrListEditTableViewCell.xib in Resources */,
 				BCA0B3721CE190FC004AEC11 /* Assets.xcassets in Resources */,
 				BC7A6C961CE5C1B00065E59B /* Mine_OrderTableViewCell.xib in Resources */,
 				BC6E09C71D178384000CB93B /* Detail_AddressTableViewCell.xib in Resources */,
@@ -2595,6 +2672,7 @@
 				BC906E0D1D0151DD006072E1 /* Address_LabTableViewCell.xib in Resources */,
 				BC6E09FD1D17ECF1000CB93B /* Picture.bundle in Resources */,
 				BCC1E1AA1CF8078C00C4261F /* cart_cutBtn_highlight@2x.png in Resources */,
+				BC6511421D1B8CE40029E88C /* AddrListTableViewCell.xib in Resources */,
 				BC420D561D0E4919005B7772 /* Store_TViewController.xib in Resources */,
 				BC7210F51CEC53AC00A43681 /* MineCollectionViewCell.xib in Resources */,
 				BC906E121D015937006072E1 /* TextFiledTableViewCell.xib in Resources */,
@@ -2622,6 +2700,7 @@
 				BCD4FEA61CF54939001B9121 /* Three_RTViewController.xib in Resources */,
 				BCD4FE6C1CF409D4001B9121 /* YiYuanViewController.xib in Resources */,
 				BCD4FE5D1CF40922001B9121 /* BabyViewController.xib in Resources */,
+				BC65113E1D1B8CE40029E88C /* AddrDetailViewController.xib in Resources */,
 				BC7A6CC71CE99F120065E59B /* MyOrder_ShouHuoViewController.xib in Resources */,
 				BC7845171CEB07240017C25D /* Shop_ScreenViewController.xib in Resources */,
 				BC7844C61CEAB5410017C25D /* Mine_VipViewController.xib in Resources */,
@@ -2635,6 +2714,7 @@
 				BCA0B3A81CE1A443004AEC11 /* StoreViewController.xib in Resources */,
 				BC7AF1FD1CFD250A00F01C06 /* Mine_JFViewController.xib in Resources */,
 				BC420D2D1D0D0AA7005B7772 /* Store_ImgTableViewCell.xib in Resources */,
+				BC6511461D1B8CE40029E88C /* LblLblTableViewCell.xib in Resources */,
 				BC7844A31CEAABC40017C25D /* Mine_TreasureViewController.xib in Resources */,
 				BC9E31681D0564AF00A73531 /* MyStoreTableViewCell.xib in Resources */,
 				BC7A6C911CE5C18A0065E59B /* Mine_StoreTableViewCell.xib in Resources */,
@@ -2769,6 +2849,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6511451D1B8CE40029E88C /* LblLblTableViewCell.m in Sources */,
 				BC52A69D1D07FC52003DEACD /* Store_WarehouseViewController.m in Sources */,
 				BCE210AC1D18DA7900A8D428 /* UIButton+Extension.m in Sources */,
 				BC7A6CB11CE977CB0065E59B /* ViewFilterDouble.m in Sources */,
@@ -2803,6 +2884,7 @@
 				BC52A68A1D066D82003DEACD /* MyCostumButton.m in Sources */,
 				BC7A6C031CE40EC60065E59B /* Main_ListTableViewCell.m in Sources */,
 				BCD4FE481CF4088D001B9121 /* CateViewController.m in Sources */,
+				BC65113F1D1B8CE40029E88C /* AddrListEditTableViewCell.m in Sources */,
 				BC6E09C61D178384000CB93B /* Detail_AddressTableViewCell.m in Sources */,
 				BC6E09DA1D17CFD3000CB93B /* Detail_BtnTableViewCell.m in Sources */,
 				BC7DC4F31CE2FCDD00F3BF27 /* FourBtnTableViewCell.m in Sources */,
@@ -2834,8 +2916,10 @@
 				BCD4FE701CF40A32001B9121 /* LifeSeviceViewController.m in Sources */,
 				BC7A6C201CE422970065E59B /* DLTabedSlideView.m in Sources */,
 				BC4B0CEF1CF68B0E00B53927 /* MyButton.m in Sources */,
+				BC65113D1D1B8CE40029E88C /* AddrDetailViewController.m in Sources */,
 				BC7AF1F71CFD249200F01C06 /* Mine_ticketViewController.m in Sources */,
 				BC022EE31D05554D0025C23E /* UIView+ST.m in Sources */,
+				BC6511411D1B8CE40029E88C /* AddrListTableViewCell.m in Sources */,
 				BCD4FE661CF4097C001B9121 /* ClothesViewController.m in Sources */,
 				BC6E09FB1D17ECF1000CB93B /* AreaPickerMenu.m in Sources */,
 				BC52A6A21D07FD07003DEACD /* Store_SalesViewController.m in Sources */,
@@ -2891,6 +2975,7 @@
 				BCC1E1691CF7FE2300C4261F /* ImageCenterButton+MyImageCenterButton.m in Sources */,
 				BC7A6CC61CE99F120065E59B /* MyOrder_ShouHuoViewController.m in Sources */,
 				BCD4FE3D1CF2ED35001B9121 /* AddCardViewController.m in Sources */,
+				BC6511431D1B8CE40029E88C /* AddrListViewController.m in Sources */,
 				BC9E31671D0564AF00A73531 /* MyStoreTableViewCell.m in Sources */,
 				BC52A68E1D06BEAD003DEACD /* Store_TableViewCell.m in Sources */,
 				BCC1E16B1CF7FE2300C4261F /* TwoTextCenterButton.m in Sources */,
@@ -2939,6 +3024,7 @@
 				BC7844C01CEAB5260017C25D /* Mine_ShareViewController.m in Sources */,
 				BC7A6C9A1CE5C1FE0065E59B /* Mine_BrandTableViewCell.m in Sources */,
 				BC420D191D0CF69D005B7772 /* Store_DelegateViewController.m in Sources */,
+				BCE210C31D1A3A1700A8D428 /* Detai_Addresslview.m in Sources */,
 				BC7A6CBC1CE99E9C0065E59B /* MyOrder_PayViewController.m in Sources */,
 				BC022EEB1D05559C0025C23E /* STPickerSingle.m in Sources */,
 				BC6E0A011D17ECF1000CB93B /* ZWSSectionBar.m in Sources */,
@@ -2948,6 +3034,8 @@
 				BC7A6C211CE422970065E59B /* DLUtility.m in Sources */,
 				BC2D7F201D0661D200370CE1 /* Store_BtnTableViewCell.m in Sources */,
 				BC6E0A001D17ECF1000CB93B /* ZWSPagingView.m in Sources */,
+				BC65114C1D1B8CED0029E88C /* AddrDataModel.m in Sources */,
+				BC6511471D1B8CE40029E88C /* LblTxtTableViewCell.m in Sources */,
 				BC7A6CD51CE9A7740065E59B /* MyOrderTableViewCell.m in Sources */,
 				BCE210B51D18DAB300A8D428 /* NSDate+Estension.m in Sources */,
 				BC7A6C9F1CE5CA6B0065E59B /* Mine_MineTableViewCell.m in Sources */,

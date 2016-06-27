@@ -33,7 +33,7 @@
                             <constraint firstAttribute="height" constant="25" id="JB2-gs-A4V"/>
                             <constraint firstAttribute="width" constant="25" id="ZTe-kF-jRd"/>
                         </constraints>
-                        <state key="normal" title="Button" image="我的_15"/>
+                        <state key="normal" image="我的_15"/>
                         <connections>
                             <action selector="messageClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wwx-16-XNp"/>
                         </connections>
@@ -266,7 +266,7 @@
     <resources>
         <image name="camera" width="106" height="106"/>
         <image name="图标" width="50" height="50"/>
-        <image name="我的_15" width="40" height="36"/>
+        <image name="我的_15" width="20" height="18"/>
         <image name="我的_16" width="46" height="42"/>
     </resources>
 </document>
