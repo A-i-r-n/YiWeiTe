@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="MmH-ZE-xec">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="WjQ-64-J4t"/>
@@ -28,8 +28,8 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="MmH-ZE-xec" secondAttribute="trailing" id="C07-yX-2EZ"/>
+                <constraint firstAttribute="bottom" secondItem="MmH-ZE-xec" secondAttribute="bottom" constant="45" id="KRg-Tz-yyO"/>
                 <constraint firstItem="MmH-ZE-xec" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="L0e-2t-KTr"/>
-                <constraint firstAttribute="bottom" secondItem="MmH-ZE-xec" secondAttribute="bottom" id="LJm-K4-jEC"/>
                 <constraint firstItem="MmH-ZE-xec" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yTS-xq-0cj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

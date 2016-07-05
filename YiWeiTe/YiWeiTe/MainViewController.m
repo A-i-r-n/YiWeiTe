@@ -55,12 +55,15 @@
 #import "MyButton.h"
 #import "MessageButton.h"
 
+#import "HttpManager.h"
+
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate,DLTabedSlideViewDelegate,SearchBarViewDelegate,SDCycleScrollViewDelegate>
 {
     
     NSMutableArray *_itemArray;
     NSMutableArray *_imgArray;
+    UISearchBar *_searchBar;
 }
 
 @property(nonatomic,assign)NSInteger SelectedIndex;
@@ -74,12 +77,23 @@
     // Do any additional setup after loading the view from its nib.
     _imgArray = [NSMutableArray arrayWithObjects:@"banner1",@"banner2",@"banner3", nil];
     [self registTableView];
+    [self setupNavigationBar];
+    
+    [HttpManager sendNetworkingWithUrl:nil];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    [[self rdv_tabBarController] setTabBarHidden:NO animated:YES];
+    
 }
 
 - (void)viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];
-    [self setupNavigationBar];
+    
     //self.title = @"主页";
     
     
@@ -123,10 +137,12 @@
     self.navigationController.navigationBar.barTintColor = SELECT_TEXTCOLOR;
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem BarButtonItemWithTitle:@"地区" withFont:15 withImageName:@"arrow_down" withHightImageName:@"" withTarget:self withAction:@selector(addressClick) withFrame:CGRectMake(44, 10, 45, 44)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem BarButtonItemWithTitle:@"消息中心" withFont:11 withImageName:@"my_message_btn_n" withHightImageName:@"" withTarget:self withAction:@selector(messageClick) withFrame:CGRectMake(ScreenWidth - 15 - 40, 0, 30,40) withNumber:@"12"];
-    UISearchBar *searchBar = [[UISearchBar alloc]init];
+    if (!_searchBar) {
+         _searchBar = [[UISearchBar alloc]init];
+    }
     //searchBar.searchBarStyle = UISearchBarStyleMinimal;
-    searchBar.placeholder = @"搜索商品/店铺";
-    self.navigationItem.titleView = searchBar;
+    _searchBar.placeholder = @"搜索商品/店铺";
+    self.navigationItem.titleView = _searchBar;
 }
 
 
@@ -169,7 +185,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
-        return 140 *ScreenWidth/375.0;
+        return Ratio(140);
     }
     if (section == 1) {
         return 40;
@@ -250,7 +266,7 @@
 {
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            return Ratio(210);
+            return Ratio(200);
         }
         if (indexPath.row == 1) {
             return Ratio(100);

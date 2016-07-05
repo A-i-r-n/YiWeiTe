@@ -19,22 +19,60 @@
 #import "Detail_DImgTableViewCell.h"
 
 #import "AddrListViewController.h"
-#import "Detai_Addresslview.h"
 
 #import "AddrDataModel.h"
 
-@interface DetailViewController ()<UITableViewDataSource,UITableViewDelegate,QXActionSheetDelegate>
+#import "ChoseView.h"
+#import "Detail_PromisView.h"
 
+#import "HMSegmentedControl.h"
+#import "Detail_CartView.h"
+
+
+@interface DetailViewController ()<UITableViewDataSource,UITableViewDelegate,QXActionSheetDelegate>
+{
+    
+    ChoseView *choseView;
+    NSArray *sizearr;//型号数组
+    NSArray *colorarr;//分类数组
+    NSDictionary *stockdic;//商品库存量
+    HMSegmentedControl *_segmentedControl;
+    
+}
 @end
 
 @implementation DetailViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    //隐藏tabBar
+    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
+    Detail_CartView *view = [[Detail_CartView alloc]initWithFrame:CGRectMake(0, ScreenHeight - 45, ScreenWidth, 45)];
+    [self.view addSubview:view];
+
+    //[_tableView reloadData];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"商品详情";
+    sizearr = [[NSArray alloc] initWithObjects:@"S",@"M",@"L",nil];
+    colorarr = [[NSArray alloc] initWithObjects:@"蓝色",nil];
+    NSString *str = [[NSBundle mainBundle] pathForResource: @"stock" ofType:@"plist"];
+    stockdic = [[NSDictionary alloc] initWithContentsOfURL:[NSURL fileURLWithPath:str]];
+    //self.title = @"商品详情";
     [self createNavigation];
     [self registCell];
+}
+
+
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
 }
 
 - (void)registCell
@@ -50,14 +88,42 @@
     [_tableView registerNib:[UINib nibWithNibName:@"Detail_StoreTableViewCell" bundle:nil] forCellReuseIdentifier:@"storeCell"];
     [_tableView registerClass:[Detail_BtnTableViewCell class] forCellReuseIdentifier:@"btnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"Detail_DImgTableViewCell" bundle:nil] forCellReuseIdentifier:@"dImgCell"];
-    
-    
+
 }
+
+-(void)showAlert:(NSString *)message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    [alert show];
+}
+
 
 - (void)createNavigation
 {
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStylePlain target:self action:@selector(backClick)];
     self.navigationItem.leftBarButtonItem = leftItem;
+    
+    _segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"商品", @"详情", @"评价"]];
+    _segmentedControl.backgroundColor = [UIColor clearColor];
+    _segmentedControl.frame = CGRectMake(0, 10, 160, 40);
+    _segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
+    //segmentedControl.selectedSegmentIndex = _SelectedIndex;
+    _segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+    _segmentedControl.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor]};
+    _segmentedControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    _segmentedControl.selectionIndicatorColor = [UIColor whiteColor];
+    _segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleFullWidthStripe;
+    
+    [_segmentedControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
+    self.navigationItem.titleView = _segmentedControl;
+
+}
+
+
+//分类
+- (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
+    NSLog(@"选中%ld", (long)segmentedControl.selectedSegmentIndex);
+   //_SelectedIndex = segmentedControl.selectedSegmentIndex;
     
 }
 
@@ -67,11 +133,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:YES];
-    [_tableView reloadData];
-}
+
 
 #pragma mark tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -175,7 +237,7 @@
     if (indexPath.section == 3) {
         Detail_CommentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"comCell"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
+        [cell.checkBtn addTarget:self action:@selector(checkAll) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     if (indexPath.section == 4) {
@@ -201,8 +263,12 @@
         self.ActionSheet = [[QXActionSheet alloc] initWithHeight:ScreenHeight*0.75 isNeedPerspective:YES];
         self.ActionSheet.delegate = self;
         [self.view addSubview:self.ActionSheet];
-        
-        //[self.ActionSheet.contentView addSubview:showView];
+        choseView = [[ChoseView alloc] initWithFrame:CGRectMake(0,0, self.ActionSheet.contentView.frame.size.width, self.ActionSheet.contentView.frame.size.height)];
+        [self.view addSubview:choseView];
+        [choseView.bt_cancle addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+        [choseView.bt_sure addTarget:self action:@selector(sure) forControlEvents:UIControlEventTouchUpInside];
+        [choseView initTypeView:sizearr :colorarr :stockdic];
+        [self.ActionSheet.contentView addSubview:choseView];
         
         self.navigationController.navigationBarHidden = YES;
     }
@@ -212,10 +278,40 @@
 
            AddrListViewController *addrList = [[AddrListViewController alloc]init];
             [self.navigationController pushViewController:addrList animated:YES];
-            
-            
+ 
         }
+        if (indexPath.row == 1) {
+            self.ActionSheet = [[QXActionSheet alloc] initWithHeight:ScreenHeight*0.65 isNeedPerspective:YES];
+            self.ActionSheet.delegate = self;
+            [self.view addSubview:self.ActionSheet];
+            Detail_PromisView *promise = [[Detail_PromisView alloc]initWithFrame:self.ActionSheet.frame];
+            [promise.closeBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+            [promise.ensureBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+            [self.ActionSheet.contentView addSubview:promise];
+        }
+        
     }
+}
+
+//查看全部评论
+- (void)checkAll
+{
+    _segmentedControl.selectedSegmentIndex = 2;
+    
+    
+}
+
+//弹出的界面消失
+-(void)dismiss
+{
+    
+    [self.ActionSheet close];
+    
+}
+-(void)sure
+{
+    [self dismiss];
+    [self showAlert:@"已经加入购物车"];
 }
 
 #pragma mark - QXActionSheetDelegate

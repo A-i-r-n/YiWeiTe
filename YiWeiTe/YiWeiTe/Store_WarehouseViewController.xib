@@ -16,18 +16,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaA-dL-hqS">
-                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
-                    <color key="backgroundColor" red="0.50980392159999999" green="0.2156862745" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="45" id="Ira-yQ-oCN"/>
-                    </constraints>
-                    <state key="normal" title="发布宝贝">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="GOY-rj-5Bm">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="EJH-y5-EOp"/>
@@ -37,13 +27,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="BaA-dL-hqS" secondAttribute="trailing" id="BBH-rA-v8S"/>
-                <constraint firstAttribute="bottom" secondItem="BaA-dL-hqS" secondAttribute="bottom" id="Ivp-mE-jjk"/>
+                <constraint firstAttribute="bottom" secondItem="GOY-rj-5Bm" secondAttribute="bottom" id="Z7q-Ng-oh6"/>
                 <constraint firstItem="GOY-rj-5Bm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fki-hL-iLL"/>
                 <constraint firstAttribute="trailing" secondItem="GOY-rj-5Bm" secondAttribute="trailing" id="hjP-4P-gqe"/>
                 <constraint firstItem="GOY-rj-5Bm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ls6-ez-L4i"/>
-                <constraint firstItem="BaA-dL-hqS" firstAttribute="top" secondItem="GOY-rj-5Bm" secondAttribute="bottom" id="nMV-GN-Sn7"/>
-                <constraint firstItem="BaA-dL-hqS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yIk-YT-oBB"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>

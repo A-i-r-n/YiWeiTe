@@ -23,24 +23,24 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.tabedSlideView = [[DLTabedSlideView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 500)];
-        self.tabedSlideView.delegate=self;
-        self.tabedSlideView.baseViewController = self.viewController;
-        self.tabedSlideView.tabItemNormalColor = [UIColor blackColor];
-        self.tabedSlideView.tabItemSelectedColor = SELECT_TEXTCOLOR;
-        self.tabedSlideView.tabbarTrackColor = SELECT_TEXTCOLOR;
-        self.tabedSlideView.tabbarBackgroundImage = [UIImage imageNamed:@"tabbarBk"];
-        self.tabedSlideView.tabbarBottomSpacing = 3.0;
-        
-        DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"附近" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-        DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"全部" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-        DLTabedbarItem *item3 = [DLTabedbarItem itemWithTitle:@"最热" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-        DLTabedbarItem *item4 = [DLTabedbarItem itemWithTitle:@"价格" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
-        self.tabedSlideView.tabbarItems = @[item1, item2, item3,item4];
-        [self.tabedSlideView buildTabbar];
-        
-        self.tabedSlideView.selectedIndex = 0;
-        [self addSubview:self.tabedSlideView];
+//        self.tabedSlideView = [[DLTabedSlideView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 500)];
+//        self.tabedSlideView.delegate=self;
+//        self.tabedSlideView.baseViewController = self.viewController;
+//        self.tabedSlideView.tabItemNormalColor = [UIColor blackColor];
+//        self.tabedSlideView.tabItemSelectedColor = SELECT_TEXTCOLOR;
+//        self.tabedSlideView.tabbarTrackColor = SELECT_TEXTCOLOR;
+//        self.tabedSlideView.tabbarBackgroundImage = [UIImage imageNamed:@"tabbarBk"];
+//        self.tabedSlideView.tabbarBottomSpacing = 3.0;
+//        
+//        DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"附近" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
+//        DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"全部" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
+//        DLTabedbarItem *item3 = [DLTabedbarItem itemWithTitle:@"最热" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
+//        DLTabedbarItem *item4 = [DLTabedbarItem itemWithTitle:@"价格" image:[UIImage imageNamed:@"arrow_down"] selectedImage:[UIImage imageNamed:@"arrow_up"]];
+//        self.tabedSlideView.tabbarItems = @[item1, item2, item3,item4];
+//        [self.tabedSlideView buildTabbar];
+//        
+//        self.tabedSlideView.selectedIndex = 0;
+//        [self addSubview:self.tabedSlideView];
 
     }
     return self;

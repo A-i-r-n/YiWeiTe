@@ -21,8 +21,9 @@
 #import "UIImage+Extension.h"
 #import "NSString+Extension.h"
 #import "UIButton+Extension.h"
-
-
+#import "RDVTabBarController.h"
+#import "AFNetworking.h"
+#import "HttpManager.h"
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
@@ -34,7 +35,7 @@
 #define ScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
 #define CellWidth (80 * ScreenWidth / 375.0)
 
-#define Ratio(height) (height * ScreenWidth / 375.0);
+#define Ratio(height) height * ScreenWidth / 375.0;
 
 //是否为iOS7
 #define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)

@@ -12,5 +12,4 @@
 @interface MainViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,strong) DLTabedSlideView *tabedSlideView;
-
 @end

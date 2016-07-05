@@ -175,17 +175,17 @@
 {
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-            return 180 * ScreenWidth / 375.0;
+            return Ratio(180);
         }
         if (indexPath.row == 1) {
-            return 64 * ScreenWidth / 375.0;
+            return Ratio(64);
         }
-        return 80 * ScreenWidth / 375.0;
+        return Ratio(80);
     }
     if (indexPath.section == 1) {
-        return 80 * ScreenWidth / 375.0;
+        return Ratio(80);
     }
-    return 64 * ScreenWidth / 375.0;;
+    return Ratio(64);
 }
 
 

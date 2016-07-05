@@ -31,8 +31,8 @@
         _numLab = [[UILabel alloc]init];
         _numLab.backgroundColor = [UIColor redColor];
         _numLab.layer.cornerRadius = 7.5;
-        _numLab.text = @"3";
-        _numLab.font = [UIFont systemFontOfSize:13];
+        //_numLab.text = @"3";
+        _numLab.font = [UIFont systemFontOfSize:10];
         _numLab.textColor = [UIColor whiteColor];
         _numLab.textAlignment = NSTextAlignmentCenter;
         _numLab.clipsToBounds = YES;
@@ -40,17 +40,18 @@
         
         _titleLab = [[UILabel alloc]init];
         _titleLab.textAlignment = NSTextAlignmentCenter;
+        _titleLab.font = [UIFont systemFontOfSize:12];
         [self addSubview:_titleLab];
         
         [_img mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.offset(5);
-            make.right.offset(0);
+            //make.right.offset(0);
+            make.centerX.equalTo(self.mas_centerX);
             make.height.offset(20);
             make.width.offset(20);
         }];
         
         [_titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_img.mas_bottom);
             make.centerX.equalTo(_img.mas_centerX);
             make.bottom.offset(0);
             

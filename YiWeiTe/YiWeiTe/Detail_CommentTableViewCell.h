@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Detail_CommentTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIButton *checkBtn;
 
 @end

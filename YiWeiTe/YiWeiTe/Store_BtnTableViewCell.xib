@@ -14,6 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="219.5"/>
                 <autoresizingMask key="autoresizingMask"/>
             </tableViewCellContentView>
+            <point key="canvasLocation" x="277" y="236"/>
         </tableViewCell>
     </objects>
 </document>

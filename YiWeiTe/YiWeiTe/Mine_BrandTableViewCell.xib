@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -16,42 +17,37 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品牌加入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KC5-Ai-NkR">
-                        <rect key="frame" x="68" y="21" width="60" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="sFr-xD-AOT"/>
-                        </constraints>
+                        <rect key="frame" x="65" y="22" width="60" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Tf-gP-TzM">
-                        <rect key="frame" x="283" y="22" width="20" height="20"/>
+                        <rect key="frame" x="283" y="21" width="20" height="19.5"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="20" id="UA2-IT-Av7"/>
+                            <constraint firstAttribute="width" secondItem="9Tf-gP-TzM" secondAttribute="height" multiplier="1:1" priority="999" id="OWS-LN-Gh7"/>
+                            <constraint firstAttribute="width" constant="20" id="Uwe-yE-rF4"/>
                         </constraints>
                         <state key="normal" image="1.png"/>
                     </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我的_14" translatesAutoresizingMaskIntoConstraints="NO" id="RtN-x3-5TR">
-                        <rect key="frame" x="20" y="17" width="30" height="30"/>
+                        <rect key="frame" x="20" y="18.5" width="25" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="30" id="qeL-sZ-QRm"/>
+                            <constraint firstAttribute="height" constant="25" id="C1j-sR-7zK"/>
+                            <constraint firstAttribute="width" secondItem="RtN-x3-5TR" secondAttribute="height" multiplier="1:1" priority="999" id="hOG-yx-79p"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="RtN-x3-5TR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="11X-sv-elV"/>
-                    <constraint firstItem="9Tf-gP-TzM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14" id="136-Oh-uMP"/>
-                    <constraint firstItem="KC5-Ai-NkR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="6AI-xM-U7t"/>
-                    <constraint firstItem="KC5-Ai-NkR" firstAttribute="leading" secondItem="RtN-x3-5TR" secondAttribute="trailing" constant="18" id="E7b-vu-vRF"/>
-                    <constraint firstItem="RtN-x3-5TR" firstAttribute="centerY" secondItem="9Tf-gP-TzM" secondAttribute="centerY" id="Ubb-B5-dqe"/>
-                    <constraint firstAttribute="bottom" secondItem="KC5-Ai-NkR" secondAttribute="bottom" constant="21.5" id="WLT-u5-LSc"/>
-                    <constraint firstItem="RtN-x3-5TR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="jf6-Sc-I5Y"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="9Tf-gP-TzM" secondAttribute="trailing" constant="20" id="mCZ-Vc-P1C"/>
-                    <constraint firstItem="RtN-x3-5TR" firstAttribute="centerY" secondItem="KC5-Ai-NkR" secondAttribute="centerY" id="rT3-Hi-nvL"/>
-                    <constraint firstItem="RtN-x3-5TR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="yif-iY-Fb6"/>
+                    <constraint firstItem="RtN-x3-5TR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GTR-sB-gkh"/>
+                    <constraint firstItem="9Tf-gP-TzM" firstAttribute="centerY" secondItem="KC5-Ai-NkR" secondAttribute="centerY" id="JF9-dM-pCD"/>
+                    <constraint firstItem="KC5-Ai-NkR" firstAttribute="leading" secondItem="RtN-x3-5TR" secondAttribute="trailing" constant="20" id="SOX-af-bKz"/>
+                    <constraint firstItem="KC5-Ai-NkR" firstAttribute="centerY" secondItem="RtN-x3-5TR" secondAttribute="centerY" id="sQY-uN-ds2"/>
+                    <constraint firstItem="RtN-x3-5TR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="syn-Fq-Nre"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9Tf-gP-TzM" secondAttribute="trailing" constant="20" id="tZ1-W4-hZ3"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="232.5" y="220.5"/>
+            <point key="canvasLocation" x="267.5" y="219"/>
         </tableViewCell>
     </objects>
     <resources>

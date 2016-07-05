@@ -164,6 +164,9 @@
                     <constraint firstItem="yEF-J3-4PO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rR8-27-Vpv"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="checkBtn" destination="zwb-Sa-erH" id="E3D-vt-iuc"/>
+            </connections>
             <point key="canvasLocation" x="269.5" y="305"/>
         </tableViewCell>
     </objects>

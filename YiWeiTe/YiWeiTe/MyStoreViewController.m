@@ -31,13 +31,19 @@
 
 @implementation MyStoreViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //隐藏tabBar
+    [[self rdv_tabBarController] setTabBarHidden:NO animated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"我的店铺";
 
-    //隐藏tabBar
-//    [[self rdv_tabBarController] setTabBarHidden:NO animated:YES];
+    
     [self createNavigation];
     [self registCell];
 }

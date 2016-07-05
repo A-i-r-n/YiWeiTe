@@ -34,6 +34,7 @@
             <connections>
                 <outlet property="imgBtn" destination="OB4-27-2bR" id="Djk-xv-Aiw"/>
             </connections>
+            <point key="canvasLocation" x="246" y="238"/>
         </tableViewCell>
     </objects>
     <resources>

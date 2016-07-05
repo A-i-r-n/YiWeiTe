@@ -14,6 +14,11 @@
 
 @interface Mine_WalletViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
+{
+    NSMutableArray *_titleArray;
+    NSMutableArray *_imgArray;
+}
+
 @end
 
 @implementation Mine_WalletViewController
@@ -24,6 +29,9 @@
 //    self.title = @"我的钱包";
     self.navigationController.navigationBarHidden = YES;
     [_collectionView registerNib:[UINib nibWithNibName:@"MineCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"cell"];
+    
+    _titleArray = [NSMutableArray arrayWithObjects:@"付款码",@"代金券",@"一元夺宝",@"敬请期待", nil];
+    _imgArray = [NSMutableArray arrayWithObjects:@"钱包_付款码",@"钱包_代金券",@"钱包_一元夺宝",@"钱包_敬请期待", nil];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -39,6 +47,8 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     MineCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    cell.titleLab.text = _titleArray[indexPath.row];
+    cell.img.image = [UIImage imageNamed:_imgArray[indexPath.row]];
     return cell;
 }
 

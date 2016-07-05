@@ -80,11 +80,14 @@
     return _viewFilter;
 }
 
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
     self.viewFilter.frame = CGRectMake(0, 0, SCREENWIDTH , 54);
-
+    [[self rdv_tabBarController] setTabBarHidden:NO animated:YES];
+        
+ 
 }
 
 - (void)didReceiveMemoryWarning {

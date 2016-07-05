@@ -14,12 +14,20 @@
 #import "Cate_BtnTableViewCell.h"
 #import "Cate_TwoBtnTableViewCell.h"
 #import "Cate_SliderTableViewCell.h"
+#import "Main_ListTableViewCell.h"
+#import "DetailViewController.h"
 
+#import "HMSegmentedControl.h"
 
+//#import "Main_ListTableViewCell.h"
+//#import "DetailViewController.h"
 
 
 
 @interface CateViewController ()<UITableViewDataSource,UITableViewDelegate>
+{
+    NSInteger _SelectedIndex;
+}
 
 @end
 
@@ -35,10 +43,13 @@
     
 }
 
+
+
 - (void)registCell
 {
     
-    //[_tableView registerNib:[UINib nibWithNibName:@"Cate_ScrollTableViewCell" bundle:nil] forCellReuseIdentifier:@"scrollCell"];
+
+    [_tableView registerNib:[UINib nibWithNibName:@"Main_ListTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     [_tableView registerClass:[Cate_ScrollTableViewCell class] forCellReuseIdentifier:@"scrollCell"];
     [_tableView registerClass:[Cate_BtnTableViewCell class] forCellReuseIdentifier:@"btnCell"];
     [_tableView registerNib:[UINib nibWithNibName:@"Cate_TwoBtnTableViewCell" bundle:nil] forCellReuseIdentifier:@"twoCell"];
@@ -95,30 +106,70 @@
     if (section == 0) {
         return 2;
     }
-    return 1;
+    if (section == 1) {
+        return 1;
+    }
+    return 10;
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 2) {
+        return 50;
+    }
+    return 10;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
-             return 140 * ScreenWidth / 375.0;
+            return Ratio(140);
         }
         if (indexPath.row == 1) {
-             return 185 * ScreenWidth / 375.0;
+            return Ratio(185);
         }
        
     }
     if (indexPath.section == 1) {
-        return 150 * ScreenWidth / 375.0;;
+        return Ratio(150);//150 * ScreenWidth / 375.0;;
     }
-     return 500 * ScreenWidth / 375.0;
+    return Ratio(80);//500 * ScreenWidth / 375.0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     return 0.01;
 }
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 2) {
+
+        HMSegmentedControl *segmentedControl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"附近商家", @"全国商家", @"猜你喜欢",@"我的足迹"]];
+        segmentedControl.frame = CGRectMake(0, 10, ScreenWidth, 40);
+        segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth;
+        segmentedControl.selectedSegmentIndex = _SelectedIndex;
+        segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+        segmentedControl.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor]};
+        segmentedControl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName : SELECT_TEXTCOLOR};
+        segmentedControl.selectionIndicatorColor = SELECT_TEXTCOLOR;
+        //segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleBox;
+        
+        [segmentedControl addTarget:self action:@selector(segmentedControlChangedValue:) forControlEvents:UIControlEventValueChanged];
+        return segmentedControl;
+    }
+    return nil;
+}
+
+//分类
+- (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
+    NSLog(@"选中%ld", (long)segmentedControl.selectedSegmentIndex);
+    _SelectedIndex = segmentedControl.selectedSegmentIndex;
+    
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -138,11 +189,22 @@
         return cell;
     }
     
-        Cate_SliderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"sliderCell"];
-        return cell;
+
+    Main_ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    return cell;
+   
    
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 2) {
+        DetailViewController *detail = [[DetailViewController alloc]init];
+        [self.navigationController pushViewController:detail animated:YES];
+
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

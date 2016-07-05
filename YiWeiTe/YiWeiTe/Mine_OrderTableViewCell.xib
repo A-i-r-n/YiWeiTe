@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -16,37 +17,32 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我的_13" translatesAutoresizingMaskIntoConstraints="NO" id="scq-pQ-hUJ">
-                        <rect key="frame" x="20" y="12" width="40" height="40"/>
+                        <rect key="frame" x="20" y="19.5" width="25" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="UGe-y3-UKD"/>
+                            <constraint firstAttribute="width" constant="25" id="Whb-aa-N7c"/>
+                            <constraint firstAttribute="width" secondItem="scq-pQ-hUJ" secondAttribute="height" multiplier="1:1" id="fWb-Il-IX1"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看全部订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1B-QB-JAG">
-                        <rect key="frame" x="250" y="21" width="68" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="68" id="V8Z-gW-jWW"/>
-                        </constraints>
+                        <rect key="frame" x="252" y="25" width="66" height="13.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9c-3m-KJy">
-                        <rect key="frame" x="68" y="14" width="60" height="35"/>
+                        <rect key="frame" x="65" y="22.5" width="60" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="scq-pQ-hUJ" firstAttribute="centerY" secondItem="V9c-3m-KJy" secondAttribute="centerY" id="3u6-JG-ig8"/>
-                    <constraint firstItem="V9c-3m-KJy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="Si1-KH-ACH"/>
-                    <constraint firstItem="V9c-3m-KJy" firstAttribute="leading" secondItem="scq-pQ-hUJ" secondAttribute="trailing" constant="8" symbolic="YES" id="TNT-t0-yPw"/>
-                    <constraint firstItem="scq-pQ-hUJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="bz5-mC-Q8u"/>
-                    <constraint firstItem="scq-pQ-hUJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ccK-CW-aCI"/>
-                    <constraint firstItem="m1B-QB-JAG" firstAttribute="centerY" secondItem="V9c-3m-KJy" secondAttribute="centerY" id="fWA-Qb-2Ti"/>
-                    <constraint firstItem="scq-pQ-hUJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="j8l-FR-Vg3"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="m1B-QB-JAG" secondAttribute="trailing" constant="5" id="sqH-77-ikX"/>
-                    <constraint firstItem="m1B-QB-JAG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="xmD-Rf-8OX"/>
+                    <constraint firstItem="V9c-3m-KJy" firstAttribute="centerY" secondItem="scq-pQ-hUJ" secondAttribute="centerY" id="4rq-Hc-dqQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="m1B-QB-JAG" secondAttribute="trailing" constant="5" id="NHS-BT-CU3"/>
+                    <constraint firstItem="V9c-3m-KJy" firstAttribute="leading" secondItem="scq-pQ-hUJ" secondAttribute="trailing" constant="20" id="QUX-cp-eMp"/>
+                    <constraint firstItem="scq-pQ-hUJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="TCo-CH-cbD"/>
+                    <constraint firstItem="m1B-QB-JAG" firstAttribute="centerY" secondItem="V9c-3m-KJy" secondAttribute="centerY" id="i15-Ce-aes"/>
+                    <constraint firstItem="scq-pQ-hUJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nj9-xd-CeS"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="267.5" y="246"/>

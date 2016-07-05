@@ -99,17 +99,17 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
-        return 80 * ScreenWidth / 375.0;
+        return Ratio(80);
     }
     if (indexPath.section == 1) {
         if (indexPath.row == 0) {
-        return 130 * ScreenWidth / 375.0;
+        return Ratio(130);
         }
     }
     if (indexPath.section == 5) {
-        return 64 * ScreenWidth / 375.0;
+        return Ratio(64);
     }
-    return 44 * ScreenWidth / 375.0;
+    return Ratio(44);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

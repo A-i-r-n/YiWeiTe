@@ -31,6 +31,13 @@
     [self createSliderView];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //隐藏tabBar
+    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
+}
+
 - (void)createNavigation
 {
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"back"] style:UIBarButtonItemStylePlain target:self action:@selector(backClick)];
