@@ -59,11 +59,11 @@
     self.tabedSlideView.tabbarBackgroundImage = [UIImage imageNamed:@"tabbarBk"];
     self.tabedSlideView.tabbarBottomSpacing = 3.0;
     
-    DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"全部" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
-    DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"待付款" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
-    DLTabedbarItem *item3 = [DLTabedbarItem itemWithTitle:@"待发货" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
-    DLTabedbarItem *item4 = [DLTabedbarItem itemWithTitle:@"待收货" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
-    DLTabedbarItem *item5 = [DLTabedbarItem itemWithTitle:@"待评价" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
+    DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"全部" image:[UIImage imageNamed:@" "] selectedImage:[UIImage imageNamed:@" "]];
+    DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"待付款" image:[UIImage imageNamed:@" "] selectedImage:[UIImage imageNamed:@" "]];
+    DLTabedbarItem *item3 = [DLTabedbarItem itemWithTitle:@"待发货" image:[UIImage imageNamed:@" "] selectedImage:[UIImage imageNamed:@" "]];
+    DLTabedbarItem *item4 = [DLTabedbarItem itemWithTitle:@"待收货" image:[UIImage imageNamed:@" "] selectedImage:[UIImage imageNamed:@" "]];
+    DLTabedbarItem *item5 = [DLTabedbarItem itemWithTitle:@"待评价" image:[UIImage imageNamed:@" "] selectedImage:[UIImage imageNamed:@" "]];
 
     self.tabedSlideView.tabbarItems = @[item1, item2, item3,item4,item5];
     [self.tabedSlideView buildTabbar];

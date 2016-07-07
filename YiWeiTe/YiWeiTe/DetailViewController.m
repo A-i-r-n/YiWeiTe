@@ -27,6 +27,7 @@
 
 #import "HMSegmentedControl.h"
 #import "Detail_CartView.h"
+#import "Store_ViewController.h"
 
 
 @interface DetailViewController ()<UITableViewDataSource,UITableViewDelegate,QXActionSheetDelegate>
@@ -243,6 +244,8 @@
     if (indexPath.section == 4) {
         Detail_StoreTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"storeCell"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        [cell.connectBtn addTarget:self action:@selector(connect) forControlEvents:UIControlEventTouchUpInside];
+        [cell.storeBtn addTarget:self action:@selector(storeBtnClick) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
     if (indexPath.section == 5) {
@@ -291,7 +294,25 @@
         }
         
     }
+    
+    if (indexPath.section == 4) {
+        [self storeBtnClick];
+    }
 }
+
+//联系卖家
+- (void)connect
+{
+    NSLog(@"联系卖家");
+}
+
+//进入店铺
+- (void)storeBtnClick
+{
+    Store_ViewController *store = [[Store_ViewController alloc]init];
+    [self.navigationController pushViewController:store animated:YES];
+}
+
 
 //查看全部评论
 - (void)checkAll

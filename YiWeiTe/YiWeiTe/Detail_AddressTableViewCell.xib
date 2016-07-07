@@ -69,19 +69,16 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smp-Xv-bgc">
-                        <rect key="frame" x="0.0" y="63" width="320" height="27"/>
+                        <rect key="frame" x="0.0" y="61.5" width="320" height="28.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgM-pM-mTj">
-                                <rect key="frame" x="8" y="4" width="28" height="17"/>
+                                <rect key="frame" x="8" y="6" width="28" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="免运费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0E-Tq-koY">
-                                <rect key="frame" x="60" y="4" width="139" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="mEE-G9-LIg"/>
-                                </constraints>
+                                <rect key="frame" x="60" y="6" width="42" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -89,16 +86,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="f0E-Tq-koY" firstAttribute="leading" secondItem="sgM-pM-mTj" secondAttribute="trailing" constant="24" id="3r3-yp-YMl"/>
-                            <constraint firstItem="sgM-pM-mTj" firstAttribute="baseline" secondItem="f0E-Tq-koY" secondAttribute="baseline" id="4uL-iB-Vv8"/>
-                            <constraint firstItem="sgM-pM-mTj" firstAttribute="firstBaseline" secondItem="f0E-Tq-koY" secondAttribute="firstBaseline" id="Urz-9E-AuM"/>
-                            <constraint firstItem="sgM-pM-mTj" firstAttribute="leading" secondItem="smp-Xv-bgc" secondAttribute="leadingMargin" id="bhr-2R-VRt"/>
-                            <constraint firstAttribute="bottom" secondItem="sgM-pM-mTj" secondAttribute="bottom" constant="6" id="mJ7-Yk-Uh0"/>
-                            <constraint firstItem="sgM-pM-mTj" firstAttribute="top" secondItem="smp-Xv-bgc" secondAttribute="top" constant="4" id="xxN-eE-9Dr"/>
+                            <constraint firstItem="sgM-pM-mTj" firstAttribute="leading" secondItem="smp-Xv-bgc" secondAttribute="leading" constant="8" id="ENh-kz-eze"/>
+                            <constraint firstItem="f0E-Tq-koY" firstAttribute="centerY" secondItem="smp-Xv-bgc" secondAttribute="centerY" id="fef-n2-Wut"/>
+                            <constraint firstItem="f0E-Tq-koY" firstAttribute="centerY" secondItem="sgM-pM-mTj" secondAttribute="centerY" id="mZX-Ij-w0v"/>
+                            <constraint firstItem="f0E-Tq-koY" firstAttribute="leading" secondItem="sgM-pM-mTj" secondAttribute="trailing" constant="24" id="yme-vf-WZI"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现货" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGN-36-BEc">
-                        <rect key="frame" x="60" y="41" width="26" height="16"/>
+                        <rect key="frame" x="60" y="41" width="26" height="14.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="26" id="P5f-Yk-3dY"/>
                         </constraints>

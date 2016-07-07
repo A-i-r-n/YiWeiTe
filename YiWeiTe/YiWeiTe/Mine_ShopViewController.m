@@ -62,10 +62,10 @@
     self.tabedSlideView.tabbarBackgroundImage = [UIImage imageNamed:@"tabbarBk"];
     self.tabedSlideView.tabbarBottomSpacing = 3.0;
     
-    DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"默认" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
-    DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"促销优先" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
-    DLTabedbarItem *item3 = [DLTabedbarItem itemWithTitle:@"有券优先" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
-    DLTabedbarItem *item4 = [DLTabedbarItem itemWithTitle:@"筛选" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
+    DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"默认" image:[UIImage imageNamed:@" "] selectedImage:[UIImage imageNamed:@" "]];
+    DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"促销优先" image:[UIImage imageNamed:@" "] selectedImage:[UIImage imageNamed:@" "]];
+    DLTabedbarItem *item3 = [DLTabedbarItem itemWithTitle:@"有券优先" image:[UIImage imageNamed:@" "] selectedImage:[UIImage imageNamed:@" "]];
+    DLTabedbarItem *item4 = [DLTabedbarItem itemWithTitle:@"筛选" image:[UIImage imageNamed:@" "] selectedImage:[UIImage imageNamed:@" "]];
     
     
     self.tabedSlideView.tabbarItems = @[item1, item2, item3,item4];

@@ -179,6 +179,7 @@
                 <outlet property="ruleImg" destination="PWj-hR-5En" id="Bu3-Lb-YkY"/>
                 <outlet property="ruleLab" destination="wmK-An-jly" id="H2g-So-HrR"/>
             </connections>
+            <point key="canvasLocation" x="203" y="138"/>
         </tableViewCell>
     </objects>
     <resources>
