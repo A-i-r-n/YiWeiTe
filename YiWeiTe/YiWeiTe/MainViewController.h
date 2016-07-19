@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "DLCustomSlideView.h"
+#import "SearchBarView.h"
+#import "SDCycleScrollView.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,DLTabedSlideViewDelegate,SearchBarViewDelegate,SDCycleScrollViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,strong) DLTabedSlideView *tabedSlideView;
 @end

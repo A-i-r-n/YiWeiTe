@@ -18,9 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self createMultileveMenu];
-    [self createNavigation];
     self.navigationItem.title = @"店铺";
+    [self createNavigation];
+    [self createMultileveMenu];
 }
 - (void)createNavigation
 {
@@ -38,7 +38,7 @@
 - (void)createMultileveMenu
 {
     
-    StoreView *sView = [[StoreView alloc]initWithFrame:CGRectMake(0, 64, ScreenWidth, 100)];
+    StoreView *sView = [[StoreView alloc]initWithFrame:CGRectMake(0,64, ScreenWidth, 100)];
     [sView.sDetail addTarget:self action:@selector(detailClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:sView];
     

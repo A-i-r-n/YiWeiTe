@@ -8,6 +8,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Company_OpenViewController">
             <connections>
+                <outlet property="bgView" destination="XGt-ke-Mqq" id="hn5-qS-rqV"/>
+                <outlet property="sendPhoto" destination="F4t-lm-sXp" id="bK7-T1-I38"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -72,13 +74,19 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGt-ke-Mqq">
                     <rect key="frame" x="0.0" y="102" width="375" height="220"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="och-tQ-e9M">
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="och-tQ-e9M">
                             <rect key="frame" x="8" y="10" width="109.5" height="66"/>
                             <state key="normal" image="企业开店_1"/>
+                            <connections>
+                                <action selector="postPhoto:" destination="-1" eventType="touchUpInside" id="e2E-T2-Lhq"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guD-HY-0nt">
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guD-HY-0nt">
                             <rect key="frame" x="132" y="10" width="110" height="66"/>
                             <state key="normal" image="企业开店_2"/>
+                            <connections>
+                                <action selector="postPhoto:" destination="-1" eventType="touchUpInside" id="SwH-Le-w9K"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手持身份证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkq-51-pMz">
                             <rect key="frame" x="28" y="86" width="70" height="17"/>
@@ -104,13 +112,19 @@
                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kO-Tg-kFf">
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kO-Tg-kFf">
                             <rect key="frame" x="257" y="10" width="110" height="66"/>
                             <state key="normal" image="企业开店_3"/>
+                            <connections>
+                                <action selector="postPhoto:" destination="-1" eventType="touchUpInside" id="ctS-md-zfB"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4t-lm-sXp">
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4t-lm-sXp">
                             <rect key="frame" x="8" y="111" width="109.5" height="66"/>
                             <state key="normal" image="企业开店_4"/>
+                            <connections>
+                                <action selector="postPhoto:" destination="-1" eventType="touchUpInside" id="ahK-tg-Cbo"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
