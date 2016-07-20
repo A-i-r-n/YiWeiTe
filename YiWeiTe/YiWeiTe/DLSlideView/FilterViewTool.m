@@ -349,7 +349,8 @@
     /// 计算当前按钮文字的宽度
     NSString *strNew = change[@"new"];
     /// 得到文字和图片的大小
-    CGSize sizeNewString = [strNew sizeWithFont:btnChange.titleLabel.font];
+    //CGSize sizeNewString = [strNew sizeWithFont:btnChange.titleLabel.font];
+    CGSize sizeNewString = [strNew sizeWithAttributes:@{NSFontAttributeName:btnChange.titleLabel.font}];
     CGSize sizeImage = btnChange.imageView.frame.size;
     /// 设置图片和文字
     [btnChange setTitleEdgeInsets:UIEdgeInsetsMake(0, -sizeImage.width + 5, 0, sizeImage.width+5)];

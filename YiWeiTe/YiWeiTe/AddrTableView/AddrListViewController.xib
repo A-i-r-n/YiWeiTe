@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddrListViewController">
+            <connections>
+                <outlet property="addrListTableView" destination="cCn-Um-biS" id="kbm-ch-XBH"/>
+                <outlet property="view" destination="iN0-l3-epB" id="LHG-xu-uqz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cCn-Um-biS">
+                    <rect key="frame" x="0.0" y="64" width="375" height="548"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4Wu-QU-ueJ"/>
+                        <outlet property="delegate" destination="-1" id="kJ2-DJ-k0i"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msl-if-fbg">
+                    <rect key="frame" x="25" y="622" width="325" height="35"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="rYd-yI-soi"/>
+                    </constraints>
+                    <state key="normal" title="添加地址">
+                        <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addNewAddr:" destination="-1" eventType="touchUpInside" id="6lC-B9-GgD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cCn-Um-biS" secondAttribute="trailing" id="9ox-f4-fvR"/>
+                <constraint firstItem="msl-if-fbg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="G43-Lz-G3J"/>
+                <constraint firstItem="msl-if-fbg" firstAttribute="top" secondItem="cCn-Um-biS" secondAttribute="bottom" constant="10" id="H30-po-CWd"/>
+                <constraint firstItem="cCn-Um-biS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="Ld9-iv-jYJ"/>
+                <constraint firstAttribute="bottom" secondItem="msl-if-fbg" secondAttribute="bottom" constant="10" id="liV-iA-i1v"/>
+                <constraint firstItem="cCn-Um-biS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qR5-MS-bKt"/>
+                <constraint firstAttribute="trailing" secondItem="msl-if-fbg" secondAttribute="trailing" constant="25" id="rI8-wA-sEY"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="271" y="274"/>
+        </view>
+    </objects>
+</document>

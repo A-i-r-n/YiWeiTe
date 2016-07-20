@@ -125,7 +125,6 @@
 - (void)segmentedControlChangedValue:(HMSegmentedControl *)segmentedControl {
     NSLog(@"选中%ld", (long)segmentedControl.selectedSegmentIndex);
    //_SelectedIndex = segmentedControl.selectedSegmentIndex;
-    
 }
 
 //返回
