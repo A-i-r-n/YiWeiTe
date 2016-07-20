@@ -35,19 +35,21 @@
 
 - (void)layoutSubviews
 {
+    
     [_imgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        //make.left.offset(0);
+
         make.top.offset(0);
-        //make.right.offset(0);
         make.centerX.equalTo(self.mas_centerX);
         make.width.equalTo(self.mas_width);
         make.height.equalTo(self.mas_width);
     }];
+    
+    
     [_lab mas_makeConstraints:^(MASConstraintMaker *make) {
+        
         make.top.equalTo(_imgView.mas_bottom).offset(10);
         make.centerX.equalTo(_imgView.mas_centerX);
-        //make.width.equalTo(self.mas_width).offset(25);
-        //make.height.offset(20);
+        
     }];
  
 }

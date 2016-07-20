@@ -21,8 +21,8 @@
                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="sectionIndexBackgroundColor" red="0.54119551809210531" green="0.36721319901315785" blue="0.31632915296052633" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="4uf-uy-Ilj"/>
-                        <outlet property="delegate" destination="-1" id="axf-ZN-Hmd"/>
+                        <outlet property="dataSource" destination="-1" id="2aP-se-MpJ"/>
+                        <outlet property="delegate" destination="-1" id="Rb4-jF-HMg"/>
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQn-W4-0uz">
@@ -44,7 +44,7 @@
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="48" y="63"/>
+            <point key="canvasLocation" x="65.5" y="23.5"/>
         </view>
     </objects>
 </document>

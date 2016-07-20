@@ -8,7 +8,6 @@
 
 #import "MainViewController.h"
 #import "UIButton+LXMImagePosition.h"
-#import "SDCycleScrollView.h"
 
 #import "BtnTableViewCell.h"
 #import "TwoBtnTableViewCell.h"
@@ -50,7 +49,7 @@
 #import "DetailViewController.h"
 
 #import "HMSegmentedControl.h"
-#import "SearchBarView.h"
+
 
 #import "MyButton.h"
 #import "MessageButton.h"
@@ -58,7 +57,7 @@
 #import "HttpManager.h"
 
 
-@interface MainViewController ()<UITableViewDataSource,UITableViewDelegate,DLTabedSlideViewDelegate,SearchBarViewDelegate,SDCycleScrollViewDelegate>
+@interface MainViewController ()
 {
     
     NSMutableArray *_itemArray;
@@ -536,5 +535,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end

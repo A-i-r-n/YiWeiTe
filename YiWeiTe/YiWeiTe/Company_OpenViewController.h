@@ -10,4 +10,10 @@
 
 @interface Company_OpenViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *sendPhoto;
+@property (strong, nonatomic) IBOutlet UIView *bgView;
+
+
+- (IBAction)postPhoto:(id)sender;
+
 @end

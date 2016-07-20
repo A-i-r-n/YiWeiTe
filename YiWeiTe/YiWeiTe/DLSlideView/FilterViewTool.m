@@ -350,7 +350,13 @@
     NSString *strNew = change[@"new"];
     /// 得到文字和图片的大小
     //CGSize sizeNewString = [strNew sizeWithFont:btnChange.titleLabel.font];
+<<<<<<< HEAD
     CGSize sizeNewString = [strNew sizeWithAttributes:@{NSFontAttributeName:btnChange.titleLabel.font}];
+=======
+    CGSize sizeNewString = [strNew sizeWithAttributes:
+                   @{NSFontAttributeName:btnChange.titleLabel.font
+                         }];
+>>>>>>> 859823a90c7ce46d0b0fd14fd99da4942bdedc77
     CGSize sizeImage = btnChange.imageView.frame.size;
     /// 设置图片和文字
     [btnChange setTitleEdgeInsets:UIEdgeInsetsMake(0, -sizeImage.width + 5, 0, sizeImage.width+5)];

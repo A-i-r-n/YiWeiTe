@@ -224,7 +224,7 @@
         if(self.delegate && newindex!=self.selectedIndex && bol ) [self.delegate onMenuChanged:newindex];
         self.selectedIndex=newindex;
     }else{
-        NSLog(@"选择菜单出了问题:@%ld",newindex);
+       // NSLog(@"选择菜单出了问题:@%ld",newindex);
     }
 }
 
